@@ -1,0 +1,87 @@
+{
+  "recipe_id": "8091_enhanced",
+  "original_recipe_id": "8091",
+  "title": "Ho Ho Cake (Community Enhanced)",
+  "ingredients": [
+    "1 (18.5 ounce) package chocolate cake mix",
+    "5 tablespoons all-purpose flour",
+    "1.25 cups milk",
+    "1 cup white sugar",
+    "0.5 cup butter",
+    "1 cup shortening",
+    "0.5 cup margarine",
+    "1 teaspoon vanilla extract",
+    "1 egg",
+    "1.5 teaspoons hot water",
+    "3 (1 ounce) squares bittersweet chocolate, melted",
+    "1.75 cups confectioners' sugar"
+  ],
+  "instructions": [
+    "Prepare and bake cake as directed on the package in two 9-inch layers. Cool completely.",
+    "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup butter, and shortening. Add cooled milk mixture and 1 teaspoon vanilla extract, and beat well. Spread over cake. Refrigerate.",
+    "In a small bowl, beat egg. Whip in vanilla, melted chocolate, hot water, confectioner’s sugar, and 1/2 cup butter until fluffy. Spread over the entire cake and finish with brown and white jimmies. Refrigerate."
+  ],
+  "modifications_applied": [
+    {
+      "source_review": {
+        "text": "Judging by the other 37 reviews, it seems I'm the first to notice that there's an obvious misprint in the recipe, which calls for a 9-oz. cake mix, and luckily the other reviewers just happened to use what the recipe SHOULD call for, which is a standard, 18.5 oz. cake mix. I think this recipe would be disastrous if a 9 oz. cake mix was actually used. Having said that, I was very pleased with this cake, as were about 10 other people, who completely polished it off. Where margarine was called for I substituted butter. I added a teaspoon of vanilla to the filling to give it a flavor boost, however, even with the vanilla the filling was still more fluffy and creamy than flavorful, but it was perfect when considered as a whole with the finished cake. I made the cake in two 9\" layers, with the filling thickly in between and it was definitely unique looking, but baking this in three layers would probably have been easier to work with. Rather than the unsweetened chocolate in the glaze I used a fine quality bittersweet chocolate which I was pleased with. I whipped the ingredients rather than stirring them as I wanted a fluffy frosting rather than a glaze, and it was enough to frost the entire cake. I finished it off with brown and white jimmies. A perfectly decadent dessert sensation!",
+        "reviewer": "naples34102",
+        "rating": 4
+      },
+      "modification_type": "ingredient_substitution",
+      "reasoning": "The reviewer corrected the cake mix to a standard 18.5-ounce package, used butter instead of margarine, and chose bittersweet chocolate for a richer glaze. They also added vanilla to the filling, baked the cake in two layers, whipped the topping into a fluffy frosting, and finished it with jimmies.",
+      "changes_made": [
+        {
+          "type": "ingredient",
+          "from_text": "1 (9 ounce) package chocolate cake mix",
+          "to_text": "1 (18.5 ounce) package chocolate cake mix",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "0.5 cup margarine",
+          "to_text": "0.5 cup butter",
+          "operation": "replace"
+        },
+        {
+          "type": "instruction",
+          "from_text": "Prepare and bake cake as directed on the package for a 9 x 13 inch pan. Cool completely.",
+          "to_text": "Prepare and bake cake as directed on the package in two 9-inch layers. Cool completely.",
+          "operation": "replace"
+        },
+        {
+          "type": "instruction",
+          "from_text": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup margarine, and shortening. Add cooled milk mixture, and beat well. Spread over cake. Refrigerate.",
+          "to_text": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup butter, and shortening. Add cooled milk mixture and 1 teaspoon vanilla extract, and beat well. Spread over cake. Refrigerate.",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "3 (1 ounce) squares unsweetened chocolate, melted",
+          "to_text": "3 (1 ounce) squares bittersweet chocolate, melted",
+          "operation": "replace"
+        },
+        {
+          "type": "instruction",
+          "from_text": "In a small bowl, beat egg. Stir in vanilla, melted chocolate, hot water, confectioner’s sugar, and 1/2 cup margarine. Pour over second layer. Refrigerate.",
+          "to_text": "In a small bowl, beat egg. Whip in vanilla, melted chocolate, hot water, confectioner’s sugar, and 1/2 cup butter until fluffy. Spread over the entire cake and finish with brown and white jimmies. Refrigerate.",
+          "operation": "replace"
+        }
+      ]
+    }
+  ],
+  "enhancement_summary": {
+    "total_changes": 6,
+    "change_types": [
+      "ingredient_substitution"
+    ],
+    "expected_impact": "The reviewer corrected the cake mix to a standard 18.5-ounce package, used butter instead of margarine, and chose bittersweet chocolate for a richer glaze. They also added vanilla to the filling, baked the cake in two layers, whipped the topping into a fluffy frosting, and finished it with jimmies."
+  },
+  "description": null,
+  "servings": "18",
+  "prep_time": null,
+  "cook_time": null,
+  "total_time": null,
+  "created_at": "2026-11-22T04:18:31.053091",
+  "pipeline_version": "1.0.0"
+}

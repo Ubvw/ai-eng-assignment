@@ -1,0 +1,79 @@
+{
+  "model": "openai/gpt-6-luna (default)",
+  "inputs": 2,
+  "outputs": 2,
+  "outcome_counts": {
+    "proposal": 2
+  },
+  "all_skip_traces_follow_stage2_order": true,
+  "all_evidence_quotes_verbatim": true,
+  "all_edit_target_ids_known": true,
+  "results": [
+    {
+      "input_path": "data/test_data/recipe_15641.json",
+      "output_path": "data/stage3_test/fallback_check/recipe_15641.json",
+      "outcome": "proposal",
+      "cli_exit_code": 0,
+      "selected_review": {
+        "id": "review-featured-0005",
+        "source": "featured",
+        "reviewer": "Jillian",
+        "rating": 5,
+        "helpful_votes": 83,
+        "date": "10/21/2009",
+        "permalink": null
+      },
+      "skipped_reviews": [
+        {
+          "review_id": "review-primary-0001",
+          "source": "primary",
+          "reason": "The reviewer says to use dried herbs in decreased amounts but gives no exact quantities, so the changes cannot be specified. The other comments praise or repeat existing recipe instructions."
+        }
+      ],
+      "eligible_candidate_count": 9,
+      "attempted_candidate_count": 2,
+      "proposal_count": 6,
+      "model": "openai/gpt-6-luna (default)",
+      "cli_elapsed_seconds": 36.002,
+      "structural_checks": {
+        "stdout_is_json": true,
+        "skip_trace_follows_stage2_order": true,
+        "evidence_quotes_verbatim": true,
+        "edit_target_ids_known": true
+      }
+    },
+    {
+      "input_path": "data/test_data/recipe_255272.json",
+      "output_path": "data/stage3_test/fallback_check/recipe_255272.json",
+      "outcome": "proposal",
+      "cli_exit_code": 0,
+      "selected_review": {
+        "id": "review-featured-0002",
+        "source": "featured",
+        "reviewer": "GWilson",
+        "rating": 5,
+        "helpful_votes": 3,
+        "date": "08/26/2018",
+        "permalink": null
+      },
+      "skipped_reviews": [
+        {
+          "review_id": "review-primary-0001",
+          "source": "primary",
+          "reason": "The review praises the recipe but suggests no changes."
+        }
+      ],
+      "eligible_candidate_count": 11,
+      "attempted_candidate_count": 2,
+      "proposal_count": 1,
+      "model": "openai/gpt-6-luna (default)",
+      "cli_elapsed_seconds": 17.946,
+      "structural_checks": {
+        "stdout_is_json": true,
+        "skip_trace_follows_stage2_order": true,
+        "evidence_quotes_verbatim": true,
+        "edit_target_ids_known": true
+      }
+    }
+  ]
+}

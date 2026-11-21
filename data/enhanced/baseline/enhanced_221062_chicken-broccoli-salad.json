@@ -1,0 +1,61 @@
+{
+  "recipe_id": "221062_enhanced",
+  "original_recipe_id": "221062",
+  "title": "Chicken Broccoli Salad (Community Enhanced)",
+  "ingredients": [
+    "8 cups broccoli florets",
+    "3 cooked skinless, boneless chicken breast halves, cubed",
+    "1 cup chopped walnuts",
+    "6 green onions, chopped",
+    "1 cup mayonnaise",
+    "Salt and pepper",
+    "0.25 cup apple cider vinegar",
+    "0.25 cup white sugar",
+    "0.25 cup crumbled cooked bacon"
+  ],
+  "instructions": [
+    "Combine broccoli, chicken, walnuts, and green onions in a large bowl.",
+    "Add salt and pepper to the mayonnaise, vinegar, and sugar, then whisk together in a bowl until well blended.",
+    "Pour mayonnaise dressing over broccoli mixture; toss to coat.",
+    "Cover and refrigerate until chilled, if desired. Sprinkle with crumbled bacon to serve."
+  ],
+  "modifications_applied": [
+    {
+      "source_review": {
+        "text": "This salad is exceptional! I adore the bacon/chicken combo it is super in this salad. Love the crunch of the walnuts. Simply added S&P to the dressing before whisking it up. I used raw broccoli. Thanks for sharing",
+        "reviewer": "Lori",
+        "rating": 5
+      },
+      "modification_type": "addition",
+      "reasoning": "Salt and pepper add seasoning to the dressing.",
+      "changes_made": [
+        {
+          "type": "ingredient",
+          "from_text": "",
+          "to_text": "Salt and pepper",
+          "operation": "add"
+        },
+        {
+          "type": "instruction",
+          "from_text": "Whisk mayonnaise, vinegar, and sugar together in a bowl until well blended.",
+          "to_text": "Add salt and pepper to the mayonnaise, vinegar, and sugar, then whisk together in a bowl until well blended.",
+          "operation": "replace"
+        }
+      ]
+    }
+  ],
+  "enhancement_summary": {
+    "total_changes": 2,
+    "change_types": [
+      "addition"
+    ],
+    "expected_impact": "Salt and pepper add seasoning to the dressing."
+  },
+  "description": null,
+  "servings": "10",
+  "prep_time": null,
+  "cook_time": null,
+  "total_time": null,
+  "created_at": "2026-11-22T04:17:10.302380",
+  "pipeline_version": "1.0.0"
+}

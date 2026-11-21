@@ -1,0 +1,83 @@
+{
+  "status": "proposal",
+  "review_id": "review-primary-0001",
+  "decision": "propose",
+  "modifications": [
+    {
+      "id": "modification-1",
+      "evidence_quotes": [
+        "I used double the noodles and mozzarella cheese."
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Doubling the pasta and mozzarella may make the dish more substantial and cheesier."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "ingredient-0001",
+          "replacement_text": "1 pound penne pasta",
+          "quantity_change": null
+        },
+        {
+          "operation": "replace",
+          "target_id": "ingredient-0005",
+          "replacement_text": "16 ounces shredded mozzarella cheese, divided",
+          "quantity_change": null
+        }
+      ]
+    },
+    {
+      "id": "modification-2",
+      "evidence_quotes": [
+        "I also used cottage cheese instead of ricotta."
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Cottage cheese offers an alternative creamy cheese mixture."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "ingredient-0004",
+          "replacement_text": "1 (15 ounce) container cottage cheese",
+          "quantity_change": null
+        },
+        {
+          "operation": "replace",
+          "target_id": "instruction-0004",
+          "replacement_text": "In a bowl, combine cottage cheese, 1 cup mozzarella, Parmesan and beaten egg. Stir until well combined.",
+          "quantity_change": null
+        }
+      ]
+    },
+    {
+      "id": "modification-3",
+      "evidence_quotes": [
+        "I layered pasta/cheese mix/sauce/pasta/cheese mix/sauce/pasta/sauce/mozz cheese."
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "The additional pasta and sauce layers may distribute the components more evenly through the dish."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "instruction-0005",
+          "replacement_text": "In the prepared dish layer pasta, cheese mixture and sauce; repeat, then layer the remaining pasta and sauce. Top with remaining mozzarella.",
+          "quantity_change": null
+        }
+      ]
+    }
+  ],
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "reviewer": "Stefanie Frank Stewart",
+    "rating": 5,
+    "helpful_votes": 228,
+    "date": "10/26/2007",
+    "permalink": null
+  },
+  "failures": []
+}

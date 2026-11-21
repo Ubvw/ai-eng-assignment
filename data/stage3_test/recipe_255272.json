@@ -1,0 +1,14 @@
+{
+  "status": "exhausted",
+  "reason": "The highest-ranked eligible review did not propose an actionable modification.",
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "reviewer": "taelynn wade",
+    "rating": 5,
+    "helpful_votes": 3,
+    "date": "09/20/2016",
+    "permalink": null
+  },
+  "failures": []
+}

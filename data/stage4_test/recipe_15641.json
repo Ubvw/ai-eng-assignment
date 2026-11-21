@@ -1,0 +1,165 @@
+{
+  "status": "routed",
+  "selected_review": {
+    "id": "review-featured-0005",
+    "source": "featured",
+    "reviewer": "Jillian",
+    "rating": 5,
+    "helpful_votes": 83,
+    "date": "10/21/2009",
+    "permalink": null
+  },
+  "review_id": "review-featured-0005",
+  "modifications": [
+    {
+      "review_id": "review-featured-0005",
+      "selected_review": {
+        "id": "review-featured-0005",
+        "source": "featured",
+        "reviewer": "Jillian",
+        "rating": 5,
+        "helpful_votes": 83,
+        "date": "10/21/2009",
+        "permalink": null
+      },
+      "id": "modification-1",
+      "evidence_quotes": [
+        "I had fresh rosemary on hand which was nice and used dried thyme and dried parsley."
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Using dried thyme and parsley provides an option when fresh versions are not available."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "ingredient-0004",
+          "replacement_text": "2 tablespoons dried parsley",
+          "quantity_change": null,
+          "section": "ingredients",
+          "index": 3,
+          "matched_record": {
+            "id": "ingredient-0004",
+            "text": "2 tablespoons chopped Italian flat leaf parsley",
+            "name": "chopped Italian flat leaf parsley",
+            "quantity": "2",
+            "unit": "tablespoon"
+          }
+        },
+        {
+          "operation": "replace",
+          "target_id": "ingredient-0006",
+          "replacement_text": "2 teaspoons dried thyme",
+          "quantity_change": null,
+          "section": "ingredients",
+          "index": 5,
+          "matched_record": {
+            "id": "ingredient-0006",
+            "text": "2 teaspoons chopped fresh thyme",
+            "name": "chopped fresh thyme",
+            "quantity": "2",
+            "unit": "teaspoon"
+          }
+        }
+      ]
+    },
+    {
+      "review_id": "review-featured-0005",
+      "selected_review": {
+        "id": "review-featured-0005",
+        "source": "featured",
+        "reviewer": "Jillian",
+        "rating": 5,
+        "helpful_votes": 83,
+        "date": "10/21/2009",
+        "permalink": null
+      },
+      "id": "modification-2",
+      "evidence_quotes": [
+        "I put everything into a mini food processor to blend.",
+        "I pounded the chicken down thin and let it marinate for close to 12 hours.",
+        "If you're not a fan of balsamic - use white wine or white wine vinegar."
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "A mini food processor, thin chicken breasts, a 12-hour marinade, and white wine instead of balsamic may make the marinade easier to prepare and provide an alternative flavor."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "ingredient-0001",
+          "replacement_text": "0.5 cup white wine",
+          "quantity_change": null,
+          "section": "ingredients",
+          "index": 0,
+          "matched_record": {
+            "id": "ingredient-0001",
+            "text": "0.5 cup balsamic vinegar",
+            "name": "balsamic vinegar",
+            "quantity": "1/2",
+            "unit": "cup"
+          }
+        },
+        {
+          "operation": "insert",
+          "anchor_id": "instruction-0001",
+          "position": "before",
+          "text": "Pound the chicken breasts thin.",
+          "section": "instructions",
+          "index": 0,
+          "matched_record": {
+            "id": "instruction-0001",
+            "text": "Blend vinegar, oil, garlic, parsley, rosemary, thyme, sage, salt, and pepper in a blender until well combined. Place chicken in a glass dish or bowl and pour marinade over top. Cover and marinate in the refrigerator for at least 2 hours or up to 48 hours."
+          }
+        },
+        {
+          "operation": "replace",
+          "target_id": "instruction-0001",
+          "replacement_text": "Process white wine, oil, garlic, parsley, rosemary, thyme, sage, salt, and pepper in a mini food processor until well combined. Place chicken in a glass dish or bowl and pour marinade over top. Cover and marinate in the refrigerator for 12 hours.",
+          "quantity_change": null,
+          "section": "instructions",
+          "index": 0,
+          "matched_record": {
+            "id": "instruction-0001",
+            "text": "Blend vinegar, oil, garlic, parsley, rosemary, thyme, sage, salt, and pepper in a blender until well combined. Place chicken in a glass dish or bowl and pour marinade over top. Cover and marinate in the refrigerator for at least 2 hours or up to 48 hours."
+          }
+        }
+      ]
+    },
+    {
+      "review_id": "review-featured-0005",
+      "selected_review": {
+        "id": "review-featured-0005",
+        "source": "featured",
+        "reviewer": "Jillian",
+        "rating": 5,
+        "helpful_votes": 83,
+        "date": "10/21/2009",
+        "permalink": null
+      },
+      "id": "modification-3",
+      "evidence_quotes": [
+        "This chicken would be great over pasta!"
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Serving the chicken over pasta may provide another appealing way to serve it."
+      },
+      "edits": [
+        {
+          "operation": "insert",
+          "anchor_id": "instruction-0003",
+          "position": "after",
+          "text": "Serve over pasta.",
+          "section": "instructions",
+          "index": 2,
+          "matched_record": {
+            "id": "instruction-0003",
+            "text": "Cook chicken on the preheated grill until no longer pink in the center and the juices run clear, 6 to 7 minutes per side. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C)."
+          }
+        }
+      ]
+    }
+  ],
+  "diagnostics": []
+}

@@ -1,0 +1,47 @@
+{
+  "status": "proposal",
+  "review_id": "review-primary-0001",
+  "decision": "propose",
+  "modifications": [
+    {
+      "id": "modification-1",
+      "evidence_quotes": [
+        "Simply added S&P to the dressing before whisking it up."
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Salt and pepper may enhance the dressing's flavor."
+      },
+      "edits": [
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0007",
+          "position": "after",
+          "text": "Salt, to taste"
+        },
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0007",
+          "position": "after",
+          "text": "Black pepper, to taste"
+        },
+        {
+          "operation": "replace",
+          "target_id": "instruction-0002",
+          "replacement_text": "Whisk mayonnaise, vinegar, sugar, salt, and black pepper together in a bowl until well blended.",
+          "quantity_change": null
+        }
+      ]
+    }
+  ],
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "reviewer": "Lori",
+    "rating": 5,
+    "helpful_votes": 36,
+    "date": "05/26/2016",
+    "permalink": null
+  },
+  "failures": []
+}

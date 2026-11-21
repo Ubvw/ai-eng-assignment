@@ -1,0 +1,42 @@
+{
+  "status": "proposal",
+  "review_id": "review-primary-0001",
+  "decision": "propose",
+  "modifications": [
+    {
+      "id": "modification-1",
+      "evidence_quotes": [
+        "I made a few small changes... I didn't include the pimientos because I didn't have them, and I added smoked paprika because I love it.",
+        "I thought this dish was creamy and warm and perfect for a cold night. My family agrees."
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Smoked paprika may add a smoky flavor to the dish."
+      },
+      "edits": [
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0009",
+          "position": "before",
+          "text": "smoked paprika"
+        },
+        {
+          "operation": "replace",
+          "target_id": "instruction-0004",
+          "replacement_text": "Off heat, stir in Cheddar cheese until melted; add chives and stir to combine. Season with salt, black pepper, cayenne pepper, and smoked paprika.",
+          "quantity_change": null
+        }
+      ]
+    }
+  ],
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "reviewer": "DanuNepthys",
+    "rating": 5,
+    "helpful_votes": 17,
+    "date": "12/17/2013",
+    "permalink": null
+  },
+  "failures": []
+}

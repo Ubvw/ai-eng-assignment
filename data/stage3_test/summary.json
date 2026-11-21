@@ -1,0 +1,325 @@
+{
+  "model": "openai/gpt-6-luna (default)",
+  "inputs": 10,
+  "outputs": 10,
+  "distinct_input_files": 10,
+  "outcome_counts": {
+    "exhausted": 2,
+    "proposal": 8
+  },
+  "all_stage2_selection_checks_pass": true,
+  "all_evidence_quotes_verbatim": true,
+  "all_edit_target_ids_known": false,
+  "results": [
+    {
+      "input_path": "data/test_data/recipe_13974.json",
+      "output_path": "data/stage3_test/recipe_13974.json",
+      "outcome": "proposal",
+      "cli_exit_code": 0,
+      "selected_review": {
+        "id": "review-featured-0001",
+        "source": "featured",
+        "reviewer": "pipedreamMD",
+        "rating": 5,
+        "helpful_votes": 251,
+        "date": "09/02/2006",
+        "permalink": null
+      },
+      "expected_stage2_first_candidate": {
+        "id": "review-featured-0001",
+        "source": "featured",
+        "helpful_votes": 251
+      },
+      "eligible_candidate_count": 7,
+      "proposal_count": 7,
+      "failure_count": 0,
+      "model": "openai/gpt-6-luna (default)",
+      "cli_elapsed_seconds": 28.719,
+      "structural_checks": {
+        "stdout_is_json": true,
+        "selected_review_matches_stage2_first": true,
+        "evidence_quotes_verbatim": true,
+        "edit_target_ids_known": true
+      }
+    },
+    {
+      "input_path": "data/test_data/recipe_15641.json",
+      "output_path": "data/stage3_test/recipe_15641.json",
+      "outcome": "exhausted",
+      "cli_exit_code": 0,
+      "selected_review": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "reviewer": "MINDYJEAN",
+        "rating": 5,
+        "helpful_votes": 117,
+        "date": "06/11/2003",
+        "permalink": null
+      },
+      "expected_stage2_first_candidate": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "helpful_votes": 117
+      },
+      "eligible_candidate_count": 9,
+      "proposal_count": 0,
+      "failure_count": 0,
+      "model": "openai/gpt-6-luna (default)",
+      "cli_elapsed_seconds": 4.912,
+      "structural_checks": {
+        "stdout_is_json": true,
+        "selected_review_matches_stage2_first": true,
+        "evidence_quotes_verbatim": true,
+        "edit_target_ids_known": true
+      }
+    },
+    {
+      "input_path": "data/test_data/recipe_221062.json",
+      "output_path": "data/stage3_test/recipe_221062.json",
+      "outcome": "proposal",
+      "cli_exit_code": 0,
+      "selected_review": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "reviewer": "Lori",
+        "rating": 5,
+        "helpful_votes": 36,
+        "date": "05/26/2016",
+        "permalink": null
+      },
+      "expected_stage2_first_candidate": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "helpful_votes": 36
+      },
+      "eligible_candidate_count": 8,
+      "proposal_count": 1,
+      "failure_count": 0,
+      "model": "openai/gpt-6-luna (default)",
+      "cli_elapsed_seconds": 7.788,
+      "structural_checks": {
+        "stdout_is_json": true,
+        "selected_review_matches_stage2_first": true,
+        "evidence_quotes_verbatim": true,
+        "edit_target_ids_known": true
+      }
+    },
+    {
+      "input_path": "data/test_data/recipe_22158.json",
+      "output_path": "data/stage3_test/recipe_22158.json",
+      "outcome": "proposal",
+      "cli_exit_code": 0,
+      "selected_review": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "reviewer": "Stefanie Frank Stewart",
+        "rating": 5,
+        "helpful_votes": 228,
+        "date": "10/26/2007",
+        "permalink": null
+      },
+      "expected_stage2_first_candidate": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "helpful_votes": 228
+      },
+      "eligible_candidate_count": 7,
+      "proposal_count": 3,
+      "failure_count": 0,
+      "model": "openai/gpt-6-luna (default)",
+      "cli_elapsed_seconds": 24.632,
+      "structural_checks": {
+        "stdout_is_json": true,
+        "selected_review_matches_stage2_first": true,
+        "evidence_quotes_verbatim": true,
+        "edit_target_ids_known": true
+      }
+    },
+    {
+      "input_path": "data/test_data/recipe_229445.json",
+      "output_path": "data/stage3_test/recipe_229445.json",
+      "outcome": "proposal",
+      "cli_exit_code": 0,
+      "selected_review": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "reviewer": "DanuNepthys",
+        "rating": 5,
+        "helpful_votes": 17,
+        "date": "12/17/2013",
+        "permalink": null
+      },
+      "expected_stage2_first_candidate": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "helpful_votes": 17
+      },
+      "eligible_candidate_count": 10,
+      "proposal_count": 1,
+      "failure_count": 0,
+      "model": "openai/gpt-6-luna (default)",
+      "cli_elapsed_seconds": 12.935,
+      "structural_checks": {
+        "stdout_is_json": true,
+        "selected_review_matches_stage2_first": true,
+        "evidence_quotes_verbatim": true,
+        "edit_target_ids_known": true
+      }
+    },
+    {
+      "input_path": "data/test_data/recipe_24380.json",
+      "output_path": "data/stage3_test/recipe_24380.json",
+      "outcome": "proposal",
+      "cli_exit_code": 0,
+      "selected_review": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "reviewer": "Jillian",
+        "rating": 5,
+        "helpful_votes": 215,
+        "date": "11/29/2010",
+        "permalink": null
+      },
+      "expected_stage2_first_candidate": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "helpful_votes": 215
+      },
+      "eligible_candidate_count": 8,
+      "proposal_count": 3,
+      "failure_count": 0,
+      "model": "openai/gpt-6-luna (default)",
+      "cli_elapsed_seconds": 37.099,
+      "structural_checks": {
+        "stdout_is_json": true,
+        "selected_review_matches_stage2_first": true,
+        "evidence_quotes_verbatim": true,
+        "edit_target_ids_known": true
+      }
+    },
+    {
+      "input_path": "data/test_data/recipe_255272.json",
+      "output_path": "data/stage3_test/recipe_255272.json",
+      "outcome": "exhausted",
+      "cli_exit_code": 0,
+      "selected_review": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "reviewer": "taelynn wade",
+        "rating": 5,
+        "helpful_votes": 3,
+        "date": "09/20/2016",
+        "permalink": null
+      },
+      "expected_stage2_first_candidate": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "helpful_votes": 3
+      },
+      "eligible_candidate_count": 11,
+      "proposal_count": 0,
+      "failure_count": 0,
+      "model": "openai/gpt-6-luna (default)",
+      "cli_elapsed_seconds": 3.969,
+      "structural_checks": {
+        "stdout_is_json": true,
+        "selected_review_matches_stage2_first": true,
+        "evidence_quotes_verbatim": true,
+        "edit_target_ids_known": true
+      }
+    },
+    {
+      "input_path": "data/test_data/recipe_8091.json",
+      "output_path": "data/stage3_test/recipe_8091.json",
+      "outcome": "proposal",
+      "cli_exit_code": 0,
+      "selected_review": {
+        "id": "review-featured-0007",
+        "source": "featured",
+        "reviewer": "EDUGATOR",
+        "rating": 5,
+        "helpful_votes": 24,
+        "date": "02/01/2007",
+        "permalink": null
+      },
+      "expected_stage2_first_candidate": {
+        "id": "review-featured-0007",
+        "source": "featured",
+        "helpful_votes": 24
+      },
+      "eligible_candidate_count": 5,
+      "proposal_count": 3,
+      "failure_count": 0,
+      "model": "openai/gpt-6-luna (default)",
+      "cli_elapsed_seconds": 25.364,
+      "structural_checks": {
+        "stdout_is_json": true,
+        "selected_review_matches_stage2_first": true,
+        "evidence_quotes_verbatim": true,
+        "edit_target_ids_known": false
+      }
+    },
+    {
+      "input_path": "data/test_data/recipe_9138.json",
+      "output_path": "data/stage3_test/recipe_9138.json",
+      "outcome": "proposal",
+      "cli_exit_code": 0,
+      "selected_review": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "reviewer": "NANNOUSE",
+        "rating": 5,
+        "helpful_votes": 61,
+        "date": "10/11/2005",
+        "permalink": null
+      },
+      "expected_stage2_first_candidate": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "helpful_votes": 61
+      },
+      "eligible_candidate_count": 7,
+      "proposal_count": 2,
+      "failure_count": 0,
+      "model": "openai/gpt-6-luna (default)",
+      "cli_elapsed_seconds": 15.463,
+      "structural_checks": {
+        "stdout_is_json": true,
+        "selected_review_matches_stage2_first": true,
+        "evidence_quotes_verbatim": true,
+        "edit_target_ids_known": true
+      }
+    },
+    {
+      "input_path": "data/test_data/recipe_9397.json",
+      "output_path": "data/stage3_test/recipe_9397.json",
+      "outcome": "proposal",
+      "cli_exit_code": 0,
+      "selected_review": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "reviewer": "MyRecipes Member",
+        "rating": 5,
+        "helpful_votes": 140,
+        "date": "06/10/2002",
+        "permalink": null
+      },
+      "expected_stage2_first_candidate": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "helpful_votes": 140
+      },
+      "eligible_candidate_count": 10,
+      "proposal_count": 2,
+      "failure_count": 0,
+      "model": "openai/gpt-6-luna (default)",
+      "cli_elapsed_seconds": 58.615,
+      "structural_checks": {
+        "stdout_is_json": true,
+        "selected_review_matches_stage2_first": true,
+        "evidence_quotes_verbatim": true,
+        "edit_target_ids_known": true
+      }
+    }
+  ]
+}

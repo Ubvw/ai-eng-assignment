@@ -1,0 +1,116 @@
+{
+  "recipe_id": "24380_enhanced",
+  "original_recipe_id": "24380",
+  "title": "Green Salad with Cranberry Vinaigrette (Community Enhanced)",
+  "ingredients": [
+    "1 cup walnuts",
+    "0.33333298563957 cup olive oil",
+    "0.25 cup fresh cranberries",
+    "3 tablespoons red wine vinegar",
+    "2 tablespoons water",
+    "1 tablespoon Dijon mustard",
+    "0.5 teaspoon minced garlic",
+    "0.5 teaspoon salt",
+    "0.5 teaspoon ground black pepper",
+    "1 pound romaine lettuce and spring mix",
+    "0.5 red onion, thinly sliced",
+    "4 ounces crumbled feta cheese",
+    "Thinly sliced Granny Smith apples; craisins; lemon juice and water for soaking the apple slices",
+    "2 tablespoons white sugar"
+  ],
+  "instructions": [
+    "Preheat the oven to 375 degrees F (190 degrees C).",
+    "Arrange walnuts in a single layer on a baking sheet. Toast in the preheated oven until nuts begin to brown, about 5 minutes.",
+    "Combine oil, cranberries, vinegar, water, Dijon mustard, garlic, salt, black pepper, and white sugar in a blender or the bowl of a food processor; blend until vinaigrette is smooth.",
+    "Toss romaine lettuce, spring mix, walnuts, onion, feta cheese, sliced Granny Smith apples, and craisins with vinaigrette in a large bowl until evenly coated.",
+    "For a leftover variation, top servings with diced cooked turkey.",
+    "Soak the thinly sliced Granny Smith apples in a little lemon juice and water to prevent browning, then add them and craisins to the salad."
+  ],
+  "modifications_applied": [
+    {
+      "source_review": {
+        "text": "OMG! This was a huge hit at our Thanksgiving gathering. Everyone loved it! You definitely need to add the 2 Tbsp. of white sugar to decrease the tartness, but other than that this recipe is spot on in terms of flavor. I used toasted walnuts instead of almonds (personal preference), a mixture of romaine lettuce and spring mix along with the red onion, added some thin sliced Granny Smith apples that I soaked in a bit of lemon juice and water to prevent them from browning, craisins, and feta cheese. That mixture proved to be the right combination of sweet and tart and needless to say it was very pretty! It was also a great way to use up leftover turkey, the next day I diced some of it and put it over top - YUM!",
+        "reviewer": "Jillian",
+        "rating": 5
+      },
+      "modification_type": "ingredient_substitution",
+      "reasoning": "The swaps reflect the reviewer’s preferences for walnuts, romaine and spring mix, and feta. Sugar softens the vinaigrette’s tartness, while apples and craisins add sweetness and texture; soaking the apples prevents browning.",
+      "changes_made": [
+        {
+          "type": "ingredient",
+          "from_text": "1 cup sliced almonds",
+          "to_text": "1 cup walnuts",
+          "operation": "replace"
+        },
+        {
+          "type": "instruction",
+          "from_text": "Arrange almonds in a single layer on a baking sheet. Toast in the preheated oven until nuts begin to brown, about 5 minutes.",
+          "to_text": "Arrange walnuts in a single layer on a baking sheet. Toast in the preheated oven until nuts begin to brown, about 5 minutes.",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "1 pound mixed salad greens",
+          "to_text": "1 pound romaine lettuce and spring mix",
+          "operation": "replace"
+        },
+        {
+          "type": "instruction",
+          "from_text": "Toss mixed greens, almonds, onion, and blue cheese with vinaigrette in a large bowl until evenly coated.",
+          "to_text": "Toss romaine lettuce, spring mix, walnuts, onion, feta cheese, sliced Granny Smith apples, and craisins with vinaigrette in a large bowl until evenly coated.",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "4 ounces crumbled blue cheese",
+          "to_text": "4 ounces crumbled feta cheese",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "",
+          "to_text": "2 tablespoons white sugar",
+          "operation": "add"
+        },
+        {
+          "type": "instruction",
+          "from_text": "Combine oil, cranberries, vinegar, water, Dijon mustard, garlic, salt, and black pepper in a blender or the bowl of a food processor; blend until vinaigrette is smooth.",
+          "to_text": "Combine oil, cranberries, vinegar, water, Dijon mustard, garlic, salt, black pepper, and white sugar in a blender or the bowl of a food processor; blend until vinaigrette is smooth.",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "",
+          "to_text": "Thinly sliced Granny Smith apples; craisins; lemon juice and water for soaking the apple slices",
+          "operation": "add"
+        },
+        {
+          "type": "instruction",
+          "from_text": "",
+          "to_text": "Soak the thinly sliced Granny Smith apples in a little lemon juice and water to prevent browning, then add them and craisins to the salad.",
+          "operation": "add"
+        },
+        {
+          "type": "instruction",
+          "from_text": "",
+          "to_text": "For a leftover variation, top servings with diced cooked turkey.",
+          "operation": "add"
+        }
+      ]
+    }
+  ],
+  "enhancement_summary": {
+    "total_changes": 10,
+    "change_types": [
+      "ingredient_substitution"
+    ],
+    "expected_impact": "The swaps reflect the reviewer’s preferences for walnuts, romaine and spring mix, and feta. Sugar softens the vinaigrette’s tartness, while apples and craisins add sweetness and texture; soaking the apples prevents browning."
+  },
+  "description": null,
+  "servings": "8",
+  "prep_time": null,
+  "cook_time": null,
+  "total_time": null,
+  "created_at": "2026-11-22T04:17:51.221512",
+  "pipeline_version": "1.0.0"
+}

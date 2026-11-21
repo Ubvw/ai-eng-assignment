@@ -1,0 +1,70 @@
+{
+  "recipe_id": "9397_enhanced",
+  "original_recipe_id": "9397",
+  "title": "Green Bell Pepper Jelly (Community Enhanced)",
+  "ingredients": [
+    "6.5 cups white sugar",
+    "1.5 cups finely shredded red bell pepper",
+    "1/2 cup distilled white vinegar",
+    "1 cup bottled lemon juice",
+    "3 ounces liquid pectin"
+  ],
+  "instructions": [
+    "Shred the red bell pepper using the shredding wheel of a food processor and remove any large skins. Bring sugar, red pepper, bottled lemon juice, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes.",
+    "Stir in liquid pectin, then cook, stirring constantly, 3 more minutes. Skim off foam with a metal spoon; remove from heat.",
+    "Pack jelly into hot, sterilized jars, filling to within 1/4 inch of the top. Run a clean knife or thin spatula around the insides of the jars to remove any air bubbles. Wipe the rims with a moist paper towel to remove any residue. Top with lids and screw rings on tightly.",
+    "Place a rack in the bottom of a large stockpot and fill halfway with water. Bring to a boil and lower jars 2 inches apart into the boiling water using a holder. Pour in more boiling water to cover jars by at least 1 inch. Bring to a rolling boil, cover, and process for 10 minutes.",
+    "Remove the jars from the stockpot and let rest, several inches apart, for 12 to 24 hours. Press the center of each lid with a finger to ensure the lid does not move up or down. Remove the rings for storage and store in a cool, dark area."
+  ],
+  "modifications_applied": [
+    {
+      "source_review": {
+        "text": "WOW!!! I used red peppers instead of the green and 1C of bottled lemon juice and 1/2C of vinegar, no food colouring and OH MY!! It jelled beautifully and after processing the lids popped right away!\nIt made 5 250ml jars. I used the shredding wheel of my food processor and removed any large skins. There was hardly any skimming to do and what there was, was easy to skim as the jelly had become a little firm at that point.\nYou will not be disappointed in this! They're sitting on my kitchen counter just sparkling!!\nThank you for this recipe! It's a keeper!! Now. Our bottled wine is calling me...red wine and cranberry jelly, or pink zinfandel jelly? ;-D",
+        "reviewer": "GLITTER53",
+        "rating": 5
+      },
+      "modification_type": "ingredient_substitution",
+      "reasoning": "The red peppers and reduced vinegar, with bottled lemon juice added, produced a jelly that set beautifully. The user also used a food processor to shred the peppers and removed large skins.",
+      "changes_made": [
+        {
+          "type": "ingredient",
+          "from_text": "1.5 cups finely chopped green bell pepper",
+          "to_text": "1.5 cups finely shredded red bell pepper",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "1.5 cups distilled white vinegar",
+          "to_text": "1/2 cup distilled white vinegar",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "",
+          "to_text": "1 cup bottled lemon juice",
+          "operation": "add"
+        },
+        {
+          "type": "instruction",
+          "from_text": "Bring sugar, green pepper, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes.",
+          "to_text": "Shred the red bell pepper using the shredding wheel of a food processor and remove any large skins. Bring sugar, red pepper, bottled lemon juice, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes.",
+          "operation": "replace"
+        }
+      ]
+    }
+  ],
+  "enhancement_summary": {
+    "total_changes": 4,
+    "change_types": [
+      "ingredient_substitution"
+    ],
+    "expected_impact": "The red peppers and reduced vinegar, with bottled lemon juice added, produced a jelly that set beautifully. The user also used a food processor to shred the peppers and removed large skins."
+  },
+  "description": null,
+  "servings": "28",
+  "prep_time": null,
+  "cook_time": null,
+  "total_time": null,
+  "created_at": "2026-11-22T04:18:51.680237",
+  "pipeline_version": "1.0.0"
+}

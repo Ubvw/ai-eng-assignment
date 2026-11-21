@@ -1,0 +1,99 @@
+{
+  "status": "routed",
+  "selected_review": {
+    "id": "review-featured-0007",
+    "source": "featured",
+    "reviewer": "EDUGATOR",
+    "rating": 5,
+    "helpful_votes": 24,
+    "date": "02/01/2007",
+    "permalink": null
+  },
+  "review_id": "review-featured-0007",
+  "modifications": [
+    {
+      "review_id": "review-featured-0007",
+      "selected_review": {
+        "id": "review-featured-0007",
+        "source": "featured",
+        "reviewer": "EDUGATOR",
+        "rating": 5,
+        "helpful_votes": 24,
+        "date": "02/01/2007",
+        "permalink": null
+      },
+      "id": "modification-1",
+      "evidence_quotes": [
+        "Just as previously commented you MUST cream the shortening, margarine and sugar at least 10-12 minutes and do not leave out the flour and milk either."
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Creaming the shortening, margarine, and sugar for the recommended time may help develop a smoother filling."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "instruction-0002",
+          "replacement_text": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup margarine, and shortening for at least 10-12 minutes. Add cooled milk mixture, and beat well. Spread over cake. Refrigerate.",
+          "quantity_change": null,
+          "section": "instructions",
+          "index": 1,
+          "matched_record": {
+            "id": "instruction-0002",
+            "text": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup margarine, and shortening. Add cooled milk mixture, and beat well. Spread over cake. Refrigerate."
+          }
+        }
+      ]
+    },
+    {
+      "review_id": "review-featured-0007",
+      "selected_review": {
+        "id": "review-featured-0007",
+        "source": "featured",
+        "reviewer": "EDUGATOR",
+        "rating": 5,
+        "helpful_votes": 24,
+        "date": "02/01/2007",
+        "permalink": null
+      },
+      "id": "modification-2",
+      "evidence_quotes": [
+        "Once you spread it on the cake, refrigerate it for about an hour then spread the icing."
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Refrigerating the filling for about an hour before icing may help it set."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "instruction-0002",
+          "replacement_text": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup margarine, and shortening. Add cooled milk mixture, and beat well. Spread over cake. Refrigerate for about an hour.",
+          "quantity_change": null,
+          "section": "instructions",
+          "index": 1,
+          "matched_record": {
+            "id": "instruction-0002",
+            "text": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup margarine, and shortening. Add cooled milk mixture, and beat well. Spread over cake. Refrigerate."
+          }
+        }
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "review_id": "review-featured-0007",
+      "modification_id": "modification-3",
+      "selected_review": {
+        "id": "review-featured-0007",
+        "source": "featured",
+        "reviewer": "EDUGATOR",
+        "rating": 5,
+        "helpful_votes": 24,
+        "date": "02/01/2007",
+        "permalink": null
+      },
+      "reason": "unknown target ID 'ingredient-7'"
+    }
+  ]
+}

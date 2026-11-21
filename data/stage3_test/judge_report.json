@@ -1,0 +1,183 @@
+{
+  "report_type": "stage3_independent_judgment",
+  "scope": "Review selection and proposal correctness only. No application grades included.",
+  "baseline_note": "All outputs are saved pre-ID-fix results. For recipes 15641 and 255272, the fallback_check files replace their exhausted top-level outputs. Recipe 8091 is the raw top-level result from before the ID fix and is judged as recorded. No raw result files were overwritten.",
+  "method": "Candidate ranks and earlier-candidate checks were obtained by the offline LLMAnalysisPipeline.parse_normalized_recipe_data loader for every input. This applies five-star eligibility, cross-source descending helpful-vote sort, known counts before missing, stable source/input order for ties, and deduplication by matching text plus reviewer. Proposal correctness is judged independently against the selected review and source recipe under the approved Stage 3 prompt/spec/ADR.",
+  "cases": [
+    {
+      "recipe_id": "13974",
+      "input_path": "data/test_data/recipe_13974.json",
+      "output_path": "data/stage3_test/recipe_13974.json",
+      "selected_review": {
+        "review_id": "review-featured-0001",
+        "reviewer": "pipedreamMD",
+        "source": "featured",
+        "helpful_votes": 251,
+        "rank": 1
+      },
+      "chosen_review_correct": "Y",
+      "chosen_review_rationale": "The four-star primary is ineligible. The selected five-star featured review is rank 1 at 251 votes, and it describes multiple concrete additions and exact sugar and ginger changes; no higher-ranked eligible candidate exists.",
+      "proposed_edit_correct": "Y",
+      "proposed_edit_rationale": "The proposal identifies chicken, peanuts, green onion parts, snow peas, 2 tablespoons sugar, 2 tablespoons ginger, and sesame seeds from the review, with matching ingredient/step edits. The exact stated sugar and ginger quantities are used; no unsupported amounts are invented."
+    },
+    {
+      "recipe_id": "15641",
+      "input_path": "data/test_data/recipe_15641.json",
+      "output_path": "data/stage3_test/fallback_check/recipe_15641.json",
+      "selected_review": {
+        "review_id": "review-featured-0005",
+        "reviewer": "Jillian",
+        "source": "featured",
+        "helpful_votes": 83,
+        "rank": 2
+      },
+      "chosen_review_correct": "Y",
+      "chosen_review_rationale": "The primary is rank 1 but says only to decrease dried-herb amounts without specifying amounts, so it is not actionable under the approved rules. Jillian is the next eligible candidate and has concrete method changes, a close-to-12-hour marinade, and an explicit vinegar alternative.",
+      "proposed_edit_correct": "N",
+      "proposed_edit_rationale": "The proposal emits five incompatible replacements for the same instruction-0001. For example, modification-2 says use a mini food processor, while modification-3 replaces the same step with a blender and adds pounding; modification-4 then replaces that step again with 12 hours and loses both details. It also changes parsley and thyme to dried forms without reducing their amounts, although the review only says to use dried thyme/parsley and supplies no conversion. The review says white wine OR white wine vinegar; the selected wine is one allowed alternative, but overlapping edits make the combined plan unreliable."
+    },
+    {
+      "recipe_id": "221062",
+      "input_path": "data/test_data/recipe_221062.json",
+      "output_path": "data/stage3_test/recipe_221062.json",
+      "selected_review": {
+        "review_id": "review-primary-0001",
+        "reviewer": "Lori",
+        "source": "primary",
+        "helpful_votes": 36,
+        "rank": 1
+      },
+      "chosen_review_correct": "Y",
+      "chosen_review_rationale": "The rank-1 five-star primary review explicitly says to add salt and pepper to the dressing before whisking; no higher-ranked eligible candidate exists.",
+      "proposed_edit_correct": "Y",
+      "proposed_edit_rationale": "The proposal inserts salt and black pepper as to-taste ingredients and updates the dressing-whisking step, matching the exact actionable change without guessing amounts."
+    },
+    {
+      "recipe_id": "22158",
+      "input_path": "data/test_data/recipe_22158.json",
+      "output_path": "data/stage3_test/recipe_22158.json",
+      "selected_review": {
+        "review_id": "review-primary-0001",
+        "reviewer": "Stefanie Frank Stewart",
+        "source": "primary",
+        "helpful_votes": 228,
+        "rank": 1
+      },
+      "chosen_review_correct": "Y",
+      "chosen_review_rationale": "The rank-1 five-star primary review describes doubling noodles and mozzarella, substituting cottage cheese, adding sauce, and a concrete layer order. No higher-ranked eligible candidate exists.",
+      "proposed_edit_correct": "N",
+      "proposed_edit_rationale": "Although it doubles penne from 0.5 to 1 pound, doubles mozzarella from 8 to 16 ounces, substitutes cottage cheese with an instruction update, and revises layering, it omits the review's ‘I also added a little more sauce’ (vague amount, so correctly not quantified) and leaves instruction-0004 at ‘1 cup mozzarella’ despite doubling mozzarella. The coordinated ingredient/instruction amounts are therefore inconsistent."
+    },
+    {
+      "recipe_id": "229445",
+      "input_path": "data/test_data/recipe_229445.json",
+      "output_path": "data/stage3_test/recipe_229445.json",
+      "selected_review": {
+        "review_id": "review-primary-0001",
+        "reviewer": "DanuNepthys",
+        "source": "primary",
+        "helpful_votes": 17,
+        "rank": 1
+      },
+      "chosen_review_correct": "Y",
+      "chosen_review_rationale": "The rank-1 five-star primary explicitly adds smoked paprika and reports a positive result; no higher-ranked eligible candidate exists. Omitting pimientos because they were unavailable is not an actionable beneficial change to the recipe.",
+      "proposed_edit_correct": "Y",
+      "proposed_edit_rationale": "The proposal adds smoked paprika and incorporates it into the seasoning instruction with a verbatim supporting quote. It does not turn the unavailability-driven pimiento omission into a recipe improvement."
+    },
+    {
+      "recipe_id": "24380",
+      "input_path": "data/test_data/recipe_24380.json",
+      "output_path": "data/stage3_test/recipe_24380.json",
+      "selected_review": {
+        "review_id": "review-primary-0001",
+        "reviewer": "Jillian",
+        "source": "primary",
+        "helpful_votes": 215,
+        "rank": 1
+      },
+      "chosen_review_correct": "Y",
+      "chosen_review_rationale": "The rank-1 five-star primary includes exact 2 tablespoons sugar, walnut substitution, green mix, apple soaking, craisins, feta, and optional leftover turkey; no higher-ranked eligible candidate exists.",
+      "proposed_edit_correct": "Y",
+      "proposed_edit_rationale": "The proposal captures the reported sugar change, salad substitutions/additions, apple soaking, turkey topping, and corresponding instruction updates, using source IDs and verbatim evidence. It preserves the original blue cheese while adding feta and does not invent amounts where the review gives none."
+    },
+    {
+      "recipe_id": "255272",
+      "input_path": "data/test_data/recipe_255272.json",
+      "output_path": "data/stage3_test/fallback_check/recipe_255272.json",
+      "selected_review": {
+        "review_id": "review-featured-0002",
+        "reviewer": "GWilson",
+        "source": "featured",
+        "helpful_votes": 3,
+        "rank": 2
+      },
+      "chosen_review_correct": "Y",
+      "chosen_review_rationale": "The normalized loader ranks the three-vote primary first and GWilson second (stable primary-first tie). The primary only praises the recipe, so GWilson is the first eligible candidate with applicable changes: mild Italian sausage instead of chorizo, half an onion, and two garlic cloves. Candi is third at 3 votes and Alex is fourth at 2 votes, so neither is an earlier counterexample.",
+      "proposed_edit_correct": "Y",
+      "proposed_edit_rationale": "The edits replace chorizo with 4 ounces mild Italian sausage, add the stated half onion and two garlic cloves, and update the cooking step to use them while retaining the corn and beef actions. These match the selected review and source quantities."
+    },
+    {
+      "recipe_id": "8091",
+      "input_path": "data/test_data/recipe_8091.json",
+      "output_path": "data/stage3_test/recipe_8091.json",
+      "selected_review": {
+        "review_id": "review-featured-0007",
+        "reviewer": "EDUGATOR",
+        "source": "featured",
+        "helpful_votes": 24,
+        "rank": 1
+      },
+      "chosen_review_correct": "Y",
+      "chosen_review_rationale": "EDUGATOR is the top eligible five-star candidate and recommends creaming for 10–12 minutes, refrigerating for about an hour, and using commercial icing; no higher-ranked eligible candidate exists.",
+      "proposed_edit_correct": "N",
+      "proposed_edit_rationale": "The proposal has two independent defects. First, modifications 1 and 2 both replace instruction-0002; modification-2 omits the 10–12-minute creaming duration from modification-1, losing a supported change through overlapping edits. Second, modification-3 uses ingredient-7 through ingredient-12 and anchor ingredient-6, while Stage 2 normalized IDs are ingredient-0007 through ingredient-0012 and ingredient-0006; these are not exact IDs. This is the saved top-level output from before the ID fix, and the ID mismatch is included in proposal correctness as required by the exact-ID rubric."
+    },
+    {
+      "recipe_id": "9138",
+      "input_path": "data/test_data/recipe_9138.json",
+      "output_path": "data/stage3_test/recipe_9138.json",
+      "selected_review": {
+        "review_id": "review-primary-0001",
+        "reviewer": "NANNOUSE",
+        "source": "primary",
+        "helpful_votes": 61,
+        "rank": 1
+      },
+      "chosen_review_correct": "Y",
+      "chosen_review_rationale": "The rank-1 five-star review explicitly substitutes olive oil for walnut oil and adds three garlic cloves; no higher-ranked eligible candidate exists.",
+      "proposed_edit_correct": "Y",
+      "proposed_edit_rationale": "The proposal substitutes olive oil while preserving the source's 2-tablespoon amount, adds exactly three garlic cloves, and updates the cooking step to include garlic at the review's stated point. Both changes have verbatim evidence."
+    },
+    {
+      "recipe_id": "9397",
+      "input_path": "data/test_data/recipe_9397.json",
+      "output_path": "data/stage3_test/recipe_9397.json",
+      "selected_review": {
+        "review_id": "review-primary-0001",
+        "reviewer": "MyRecipes Member",
+        "source": "primary",
+        "helpful_votes": 140,
+        "rank": 1
+      },
+      "chosen_review_correct": "Y",
+      "chosen_review_rationale": "The rank-1 five-star primary recommends equal amounts of sweet green/red peppers, using a food processor, and serving the jelly with roast pork. No higher-ranked eligible candidate exists.",
+      "proposed_edit_correct": "Y",
+      "proposed_edit_rationale": "The proposal adds red pepper at the normalized source quantity to match the existing green pepper amount, adds the food-processor preparation, and adds roast-pork serving guidance. The edits are tied to exact recipe IDs and verbatim review passages."
+    }
+  ],
+  "totals": {
+    "case_count": 10,
+    "chosen_review_correct": {
+      "Y": 10,
+      "N": 0,
+      "denominator": 10
+    },
+    "proposed_edit_correct": {
+      "Y": 7,
+      "N": 3,
+      "denominator": 10
+    },
+    "proposal_grade_blank": 0,
+    "application_grades_excluded": true
+  }
+}

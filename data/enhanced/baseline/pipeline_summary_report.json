@@ -1,0 +1,105 @@
+{
+  "pipeline_summary": {
+    "recipes_processed": 10,
+    "total_modifications_applied": 10,
+    "total_changes_made": 49,
+    "change_type_distribution": {
+      "quantity_adjustment": 1,
+      "technique_change": 1,
+      "addition": 2,
+      "ingredient_substitution": 6
+    }
+  },
+  "enhanced_recipes": [
+    {
+      "recipe_id": "13974_enhanced",
+      "title": "Peanut Noodles (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 8,
+      "change_types": [
+        "quantity_adjustment"
+      ]
+    },
+    {
+      "recipe_id": "15641_enhanced",
+      "title": "Grilled Chicken with Herbs (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 7,
+      "change_types": [
+        "technique_change"
+      ]
+    },
+    {
+      "recipe_id": "221062_enhanced",
+      "title": "Chicken Broccoli Salad (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "22158_enhanced",
+      "title": "Pasta Lasagna (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 6,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "229445_enhanced",
+      "title": "Israeli Couscous and Cheese (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "addition"
+      ]
+    },
+    {
+      "recipe_id": "24380_enhanced",
+      "title": "Green Salad with Cranberry Vinaigrette (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 10,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "255272_enhanced",
+      "title": "Spanish Rice Stuffed Bell Peppers (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "8091_enhanced",
+      "title": "Ho Ho Cake (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 6,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "9138_enhanced",
+      "title": "Green Beans With Walnuts (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 2,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    },
+    {
+      "recipe_id": "9397_enhanced",
+      "title": "Green Bell Pepper Jelly (Community Enhanced)",
+      "modifications_count": 1,
+      "changes_count": 4,
+      "change_types": [
+        "ingredient_substitution"
+      ]
+    }
+  ]
+}

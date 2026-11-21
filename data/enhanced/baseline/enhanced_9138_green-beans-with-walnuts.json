@@ -1,0 +1,59 @@
+{
+  "recipe_id": "9138_enhanced",
+  "original_recipe_id": "9138",
+  "title": "Green Beans With Walnuts (Community Enhanced)",
+  "ingredients": [
+    "1 cup chopped walnuts",
+    "2 pounds fresh green beans, washed and trimmed",
+    "2 tablespoons butter",
+    "3 cloves fresh garlic",
+    "2 tablespoons olive oil",
+    "salt to taste",
+    "ground black pepper to taste",
+    "2 tablespoons minced fresh parsley"
+  ],
+  "instructions": [
+    "Place the walnuts on an ungreased baking sheet. Bake at 350 degrees F (175 degrees C) for 5 to 8 minutes.",
+    "Cook beans in large pot of boiling salted water until just tender, about 5 minutes. Drain. Rinse beans with cold water, and drain well. Can be prepared 6 hours ahead. Let stand at room temperature.",
+    "Melt butter with oil in heavy large skillet over high heat. Add beans and toss until heated through, about 4 minutes. Season with salt and pepper. Add walnuts and parsley and toss. Transfer to bowl and serve."
+  ],
+  "modifications_applied": [
+    {
+      "source_review": {
+        "text": "I made this recipe was a side dish for Thanksgiving dinner, it was incredible! The taste of the walnuts with the green beans was very unique, my family really liked it, I didn't have walnut oil, so I just added olive oil, and I also added 3 cloves of fresh garlic - that I toasted with the butter just before serving. A definite keeper, excellent side dish for any dinner! No more boring beans!",
+        "reviewer": "NANNOUSE",
+        "rating": 5
+      },
+      "modification_type": "ingredient_substitution",
+      "reasoning": "Olive oil replaced the unavailable walnut oil, and toasted fresh garlic added extra flavor to the beans.",
+      "changes_made": [
+        {
+          "type": "ingredient",
+          "from_text": "2 tablespoons walnut oil",
+          "to_text": "2 tablespoons olive oil",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "",
+          "to_text": "3 cloves fresh garlic",
+          "operation": "add"
+        }
+      ]
+    }
+  ],
+  "enhancement_summary": {
+    "total_changes": 2,
+    "change_types": [
+      "ingredient_substitution"
+    ],
+    "expected_impact": "Olive oil replaced the unavailable walnut oil, and toasted fresh garlic added extra flavor to the beans."
+  },
+  "description": null,
+  "servings": "8",
+  "prep_time": null,
+  "cook_time": null,
+  "total_time": null,
+  "created_at": "2026-11-22T04:18:38.242104",
+  "pipeline_version": "1.0.0"
+}

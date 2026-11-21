@@ -1,0 +1,35 @@
+{
+  "recipe_id": "10813",
+  "title": "Best Chocolate Chip Cookies",
+  "ingredients": [
+    "1 cup butter, softened",
+    "1 cup white sugar",
+    "1 cup packed brown sugar",
+    "2 eggs",
+    "2 teaspoons vanilla extract",
+    "1 teaspoon baking soda",
+    "2 teaspoons hot water",
+    "0.5 teaspoon salt",
+    "3 cups all-purpose flour",
+    "2 cups semisweet chocolate chips",
+    "1 cup chopped walnuts"
+  ],
+  "instructions": [
+    "Gather your ingredients, making sure your butter is softened, and your eggs are room temperature.",
+    "Preheat the oven to 350 degrees F (175 degrees C). Beat butter, white sugar, and brown sugar together in a large bowl with an electric mixer until light and creamy, about 4 minutes.",
+    "Beat in eggs, one at a time, then stir in vanilla.",
+    "Dissolve baking soda in hot water; add to batter along with salt and mix until combined.",
+    "Stir in flour just until no dry streaks remain. Fold in chocolate chips and walnuts, if using, until evenly distributed.",
+    "Drop rounded 1 ½-tablespoon portions of dough 2 inches apart onto ungreased baking sheets, using a medium cookie scoop if desired.",
+    "Bake in the preheated oven until the edges are lightly browned and the centers are just set, about 10 minutes.",
+    "Let the cookies cool briefly on the baking sheets, then transfer them to a wire rack to cool completely.",
+    "Serve or store cooled cookies in an airtight container."
+  ],
+  "prep_time": "PT20M",
+  "cook_time": "PT10M",
+  "total_time": "PT30M",
+  "servings": "48",
+  "yield": "48",
+  "most_helpful_positive_review": null,
+  "featured_tweaks": []
+}

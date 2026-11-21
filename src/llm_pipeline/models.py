@@ -141,4 +141,9 @@ class Review(BaseModel):
     text: str
     rating: Optional[int] = None
     username: Optional[str] = None
-    has_modification: bool = False
+    review_id: Optional[str] = None
+    helpful_votes: Optional[int] = None
+    date: Optional[str] = None
+    source: Optional[str] = None
+    permalink: Optional[str] = None
+    metadata: Dict[str, Any] = Field(default_factory=dict)

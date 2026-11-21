@@ -1,0 +1,90 @@
+{
+  "recipe_id": "15641_enhanced",
+  "original_recipe_id": "15641",
+  "title": "Grilled Chicken with Herbs (Community Enhanced)",
+  "ingredients": [
+    "0.25 cup balsamic vinegar",
+    "1/3 cup olive oil",
+    "3 cloves garlic, minced",
+    "2 tablespoons chopped Italian flat leaf parsley",
+    "2 teaspoons dried rosemary, minced",
+    "2 teaspoons dried thyme",
+    "basil instead of sage",
+    "salt and pepper to taste",
+    "1.5 pounds skinless, boneless chicken breasts"
+  ],
+  "instructions": [
+    "Blend vinegar, oil, garlic, parsley, rosemary, thyme, sage, salt, and pepper in a blender until well combined. Place chicken in a glass dish or bowl and pour marinade over top. Cover and marinate in the refrigerator for at least 2 hours or up to 48 hours.",
+    "When ready to cook, preheat the oven to 350 degrees F. Bake the chicken for approximately 20 minutes. Reserve the leftover marinade and add more about three-quarters of the way through cooking.",
+    "Cook until the chicken reaches an internal temperature of 150 degrees F. Cover with foil and let rest for 10 minutes."
+  ],
+  "modifications_applied": [
+    {
+      "source_review": {
+        "text": "Super simple recipe and excellent flavor! I read other reviews and decided to do 1/4 cup balsamic vinegar and 1/3 cup of olive oil, I also used majority dried herbs with the exception of parsley and basil (which I substituted for the sage). I baked at 350 for approximately 20min. I've started measuring temperature for chicken instead of going off time to make sure the chicken is not over cooked. I reserved the leftover marinade and added more about 3/4 way through and pulled the chicken out once it reached internal temp of 150degrees. Covered it wit foil and let it rest for 10minutes as it continues to cook. Turned out absolutely perfect! I also was short on time and only marinaded it for 2hrs. The trick is to watch internal temp. This was the first time I tried this recipe and I will def use it again! Thanks!",
+        "reviewer": "SarahN",
+        "rating": 4
+      },
+      "modification_type": "technique_change",
+      "reasoning": "The user adjusted the marinade proportions and herbs, then baked and temperature-monitored the chicken to avoid overcooking. Resting it covered after cooking helped it finish cooking while staying juicy.",
+      "changes_made": [
+        {
+          "type": "ingredient",
+          "from_text": "0.5 cup balsamic vinegar",
+          "to_text": "0.25 cup balsamic vinegar",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "0.25 cup olive oil",
+          "to_text": "1/3 cup olive oil",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "2 teaspoons fresh rosemary, minced",
+          "to_text": "2 teaspoons dried rosemary, minced",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "2 teaspoons chopped fresh thyme",
+          "to_text": "2 teaspoons dried thyme",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "1 teaspoon dried sage",
+          "to_text": "basil instead of sage",
+          "operation": "replace"
+        },
+        {
+          "type": "instruction",
+          "from_text": "When ready to cook, preheat the grill to medium-high heat and lightly oil the grate. Remove chicken from marinade and shake off excess. Discard remaining marinade.",
+          "to_text": "When ready to cook, preheat the oven to 350 degrees F. Bake the chicken for approximately 20 minutes. Reserve the leftover marinade and add more about three-quarters of the way through cooking.",
+          "operation": "replace"
+        },
+        {
+          "type": "instruction",
+          "from_text": "Cook chicken on the preheated grill until no longer pink in the center and the juices run clear, 6 to 7 minutes per side. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C).",
+          "to_text": "Cook until the chicken reaches an internal temperature of 150 degrees F. Cover with foil and let rest for 10 minutes.",
+          "operation": "replace"
+        }
+      ]
+    }
+  ],
+  "enhancement_summary": {
+    "total_changes": 7,
+    "change_types": [
+      "technique_change"
+    ],
+    "expected_impact": "The user adjusted the marinade proportions and herbs, then baked and temperature-monitored the chicken to avoid overcooking. Resting it covered after cooking helped it finish cooking while staying juicy."
+  },
+  "description": null,
+  "servings": "6",
+  "prep_time": null,
+  "cook_time": null,
+  "total_time": null,
+  "created_at": "2026-11-22T04:16:58.600694",
+  "pipeline_version": "1.0.0"
+}

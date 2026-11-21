@@ -1,0 +1,98 @@
+{
+  "recipe_id": "13974_enhanced",
+  "original_recipe_id": "13974",
+  "title": "Peanut Noodles (Community Enhanced)",
+  "ingredients": [
+    "8 ounces spaghetti",
+    "1 bunch spring Bermuda onions, sliced (white parts only)",
+    "1 tablespoon sesame oil",
+    "1 tablespoon minced fresh ginger root",
+    "2 cloves garlic, minced",
+    "1/3 cup plus 2 tablespoons peanut butter",
+    "1/8 cup soy sauce",
+    "1/3 cup hot water",
+    "1 tablespoon cider vinegar",
+    "1 teaspoon white sugar",
+    "A couple pinches cayenne pepper powder"
+  ],
+  "instructions": [
+    "Cook pasta in a large pot of boiling water until done. Drain.",
+    "Meanwhile, combine oil and onions in a small skillet. Saute over low heat until tender. Add ginger; cook and stir for 1 to 2 minutes. Mix in peanut butter, soy sauce, water, vinegar, sugar, and red pepper flakes. Remove from heat.",
+    "Toss noodles with sauce, and serve."
+  ],
+  "modifications_applied": [
+    {
+      "source_review": {
+        "text": "Great base recipe. As with most people who gave four or five stars, I tinkered with the proportions. That's not a problem with the recipe, just an issue of personal tastes and preferences. Here are the quantities I used: \r\n8 ounces spaghetti\r\n1 bunch green onions, sliced (white parts only)\r\n(for the onions, I had access to spring bermuda onions which worked very well)\r\n1 tablespoon sesame oil\r\n1 tablespoon minced fresh ginger root\r\n2 cloves garlic, minced\r\n1/3 + 2 TBS cup peanut butter\t\r\n1/8 cup soy sauce\r\n1/3 cup hot water\r\n1 tablespoon cider or rice) vinegar\r\n1 teaspoon white sugar\r\n1/4 teaspoon crushed red pepper flakes (I used a couple pinches of cayenne pepper powder)\r\n\r\nI reduced the amount of soy because 1/4 cup seemed like too much sodium for me. I also tripled the ginger (1 TBS instead of 1 tsp) because I like a good, strong ginger flavor and it really turned out well. I also increased the water from 1/4 to 1/3 cup since I reduced the amount of liquid when I decreased the soy sauce. I also added a couple cloves of minced garlic which I added to the oil/onions with the ginger. \r\n\r\nAs I alluded to before, the sign of a truly good recipe is one that can be easily altered to suit individual preferences! Very happy with this recipe.",
+        "reviewer": "SDTERP",
+        "rating": 4
+      },
+      "modification_type": "quantity_adjustment",
+      "reasoning": "The user reduced soy sauce to lower sodium, increased ginger for a stronger flavor, and increased water to compensate for the reduced soy sauce. They also adjusted other ingredient amounts and used garlic and ingredient alternatives to suit their preferences.",
+      "changes_made": [
+        {
+          "type": "ingredient",
+          "from_text": "2 tablespoons sesame oil",
+          "to_text": "1 tablespoon sesame oil",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "1 teaspoon minced fresh ginger root",
+          "to_text": "1 tablespoon minced fresh ginger root",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "",
+          "to_text": "2 cloves garlic, minced",
+          "operation": "add"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "0.33333334326744 cup peanut butter",
+          "to_text": "1/3 cup plus 2 tablespoons peanut butter",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "0.25 cup soy sauce",
+          "to_text": "1/8 cup soy sauce",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "0.25 cup hot water",
+          "to_text": "1/3 cup hot water",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "1 bunch green onions, sliced (white parts only)",
+          "to_text": "1 bunch spring Bermuda onions, sliced (white parts only)",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "0.25 teaspoon crushed red pepper flakes",
+          "to_text": "A couple pinches cayenne pepper powder",
+          "operation": "replace"
+        }
+      ]
+    }
+  ],
+  "enhancement_summary": {
+    "total_changes": 8,
+    "change_types": [
+      "quantity_adjustment"
+    ],
+    "expected_impact": "The user reduced soy sauce to lower sodium, increased ginger for a stronger flavor, and increased water to compensate for the reduced soy sauce. They also adjusted other ingredient amounts and used garlic and ingredient alternatives to suit their preferences."
+  },
+  "description": null,
+  "servings": "3",
+  "prep_time": null,
+  "cook_time": null,
+  "total_time": null,
+  "created_at": "2026-11-22T04:16:49.099799",
+  "pipeline_version": "1.0.0"
+}

@@ -1,0 +1,27 @@
+{
+  "recipe_id": "45613",
+  "title": "Mango Teriyaki Marinade",
+  "ingredients": [
+    "1.5 cups mango nectar",
+    "1.5 cups teriyaki sauce",
+    "0.75 cup dried cherries",
+    "1 clove garlic, peeled and crushed",
+    "salt and pepper to taste"
+  ],
+  "instructions": [
+    "In a blender, thoroughly mix mango nectar, teriyaki sauce, dried cherries, garlic, salt and pepper. In the refrigerator, marinate meat in the mixture at least 2 hours before grilling as desired."
+  ],
+  "prep_time": "PT10M",
+  "cook_time": null,
+  "total_time": "PT130M",
+  "servings": "8",
+  "yield": "8",
+  "most_helpful_positive_review": {
+    "text": "Simply put. Tasty, quick and easy. My family loved this recipe and I will be making this again! Great job!",
+    "rating": 5,
+    "username": "Chef Ron",
+    "helpful_count": 6,
+    "date": "02/21/2007"
+  },
+  "featured_tweaks": []
+}

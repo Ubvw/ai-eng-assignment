@@ -1,0 +1,66 @@
+{
+  "status": "proposal",
+  "review_id": "review-primary-0001",
+  "decision": "propose",
+  "modifications": [
+    {
+      "id": "modification-1",
+      "evidence_quotes": [
+        "I've been making this for years and it's wonderful BUT use equal amounts sweet green and red peppers - the colour of the jelly will be a wonderful amber hue.",
+        "Also, do use your food processor that's what those blades are for!"
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Using equal amounts of green and red peppers is expected to give the jelly the described amber hue; a food processor can finely chop the peppers."
+      },
+      "edits": [
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0002",
+          "position": "after",
+          "text": "1.5 cups finely chopped sweet red bell pepper"
+        },
+        {
+          "operation": "replace",
+          "target_id": "instruction-0001",
+          "replacement_text": "Bring sugar, green and red bell peppers, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes.",
+          "quantity_change": null
+        },
+        {
+          "operation": "insert",
+          "anchor_id": "instruction-0001",
+          "position": "before",
+          "text": "Finely chop the sweet green and red peppers in a food processor."
+        }
+      ]
+    },
+    {
+      "id": "modification-2",
+      "evidence_quotes": [
+        "By the way, this jelly is a wonderful accompaniment for roast pork!"
+      ],
+      "benefit": {
+        "basis": "reported",
+        "description": "The reviewer describes the jelly as a wonderful accompaniment for roast pork."
+      },
+      "edits": [
+        {
+          "operation": "insert",
+          "anchor_id": "instruction-0005",
+          "position": "after",
+          "text": "Serve the jelly with roast pork."
+        }
+      ]
+    }
+  ],
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "reviewer": "MyRecipes Member",
+    "rating": 5,
+    "helpful_votes": 140,
+    "date": "06/10/2002",
+    "permalink": null
+  },
+  "failures": []
+}

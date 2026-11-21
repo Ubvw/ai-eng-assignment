@@ -1,0 +1,144 @@
+{
+  "status": "proposal",
+  "review_id": "review-featured-0005",
+  "decision": "propose",
+  "modifications": [
+    {
+      "id": "modification-1",
+      "evidence_quotes": [
+        "I had fresh rosemary on hand which was nice and used dried thyme and dried parsley."
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Using dried thyme and parsley offers a convenient alternative when fresh herbs are unavailable."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "ingredient-0004",
+          "replacement_text": "2 tablespoons dried Italian flat leaf parsley",
+          "quantity_change": null
+        },
+        {
+          "operation": "replace",
+          "target_id": "ingredient-0006",
+          "replacement_text": "2 teaspoons dried thyme",
+          "quantity_change": null
+        }
+      ]
+    },
+    {
+      "id": "modification-2",
+      "evidence_quotes": [
+        "I put everything into a mini food processor to blend."
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "A mini food processor provides an alternative way to blend the marinade."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "instruction-0001",
+          "replacement_text": "Blend vinegar, oil, garlic, parsley, rosemary, thyme, sage, salt, and pepper in a mini food processor until well combined. Place chicken in a glass dish or bowl and pour marinade over top. Cover and marinate in the refrigerator for at least 2 hours or up to 48 hours.",
+          "quantity_change": null
+        }
+      ]
+    },
+    {
+      "id": "modification-3",
+      "evidence_quotes": [
+        "I pounded the chicken down thin"
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Thinner chicken may cook more evenly on the grill."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "instruction-0001",
+          "replacement_text": "Blend vinegar, oil, garlic, parsley, rosemary, thyme, sage, salt, and pepper in a blender until well combined. Pound chicken breasts thin. Place chicken in a glass dish or bowl and pour marinade over top. Cover and marinate in the refrigerator for at least 2 hours or up to 48 hours.",
+          "quantity_change": null
+        }
+      ]
+    },
+    {
+      "id": "modification-4",
+      "evidence_quotes": [
+        "I pounded the chicken down thin and let it marinate for close to 12 hours."
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Marinating for 12 hours may allow the chicken to take on more flavor."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "instruction-0001",
+          "replacement_text": "Blend vinegar, oil, garlic, parsley, rosemary, thyme, sage, salt, and pepper in a blender until well combined. Place chicken in a glass dish or bowl and pour marinade over top. Cover and marinate in the refrigerator for 12 hours.",
+          "quantity_change": null
+        }
+      ]
+    },
+    {
+      "id": "modification-5",
+      "evidence_quotes": [
+        "If you're not a fan of balsamic - use white wine or white wine vinegar."
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "White wine offers an alternative for people who do not like balsamic vinegar."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "ingredient-0001",
+          "replacement_text": "1/2 cup white wine",
+          "quantity_change": null
+        },
+        {
+          "operation": "replace",
+          "target_id": "instruction-0001",
+          "replacement_text": "Blend white wine, oil, garlic, parsley, rosemary, thyme, sage, salt, and pepper in a blender until well combined. Place chicken in a glass dish or bowl and pour marinade over top. Cover and marinate in the refrigerator for at least 2 hours or up to 48 hours.",
+          "quantity_change": null
+        }
+      ]
+    },
+    {
+      "id": "modification-6",
+      "evidence_quotes": [
+        "This chicken would be great over pasta!"
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Serving the chicken over pasta may make a satisfying meal."
+      },
+      "edits": [
+        {
+          "operation": "insert",
+          "anchor_id": "instruction-0003",
+          "position": "after",
+          "text": "Serve over pasta."
+        }
+      ]
+    }
+  ],
+  "selected_review": {
+    "id": "review-featured-0005",
+    "source": "featured",
+    "reviewer": "Jillian",
+    "rating": 5,
+    "helpful_votes": 83,
+    "date": "10/21/2009",
+    "permalink": null
+  },
+  "skipped_reviews": [
+    {
+      "review_id": "review-primary-0001",
+      "source": "primary",
+      "reason": "The reviewer says to use dried herbs in decreased amounts but gives no exact quantities, so the changes cannot be specified. The other comments praise or repeat existing recipe instructions."
+    }
+  ],
+  "failures": []
+}

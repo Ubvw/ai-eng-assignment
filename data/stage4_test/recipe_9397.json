@@ -1,0 +1,112 @@
+{
+  "status": "routed",
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "reviewer": "MyRecipes Member",
+    "rating": 5,
+    "helpful_votes": 140,
+    "date": "06/10/2002",
+    "permalink": null
+  },
+  "review_id": "review-primary-0001",
+  "modifications": [
+    {
+      "review_id": "review-primary-0001",
+      "selected_review": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "reviewer": "MyRecipes Member",
+        "rating": 5,
+        "helpful_votes": 140,
+        "date": "06/10/2002",
+        "permalink": null
+      },
+      "id": "modification-1",
+      "evidence_quotes": [
+        "I've been making this for years and it's wonderful BUT use equal amounts sweet green and red peppers - the colour of the jelly will be a wonderful amber hue.",
+        "Also, do use your food processor that's what those blades are for!"
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Using equal amounts of green and red peppers is expected to give the jelly the described amber hue; a food processor can finely chop the peppers."
+      },
+      "edits": [
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0002",
+          "position": "after",
+          "text": "1.5 cups finely chopped sweet red bell pepper",
+          "section": "ingredients",
+          "index": 1,
+          "matched_record": {
+            "id": "ingredient-0002",
+            "text": "1.5 cups finely chopped green bell pepper",
+            "name": "finely chopped green bell pepper",
+            "quantity": "3/2",
+            "unit": "cup"
+          }
+        },
+        {
+          "operation": "replace",
+          "target_id": "instruction-0001",
+          "replacement_text": "Bring sugar, green and red bell peppers, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes.",
+          "quantity_change": null,
+          "section": "instructions",
+          "index": 0,
+          "matched_record": {
+            "id": "instruction-0001",
+            "text": "Bring sugar, green pepper, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes."
+          }
+        },
+        {
+          "operation": "insert",
+          "anchor_id": "instruction-0001",
+          "position": "before",
+          "text": "Finely chop the sweet green and red peppers in a food processor.",
+          "section": "instructions",
+          "index": 0,
+          "matched_record": {
+            "id": "instruction-0001",
+            "text": "Bring sugar, green pepper, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes."
+          }
+        }
+      ]
+    },
+    {
+      "review_id": "review-primary-0001",
+      "selected_review": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "reviewer": "MyRecipes Member",
+        "rating": 5,
+        "helpful_votes": 140,
+        "date": "06/10/2002",
+        "permalink": null
+      },
+      "id": "modification-2",
+      "evidence_quotes": [
+        "By the way, this jelly is a wonderful accompaniment for roast pork!"
+      ],
+      "benefit": {
+        "basis": "reported",
+        "description": "The reviewer describes the jelly as a wonderful accompaniment for roast pork."
+      },
+      "edits": [
+        {
+          "operation": "insert",
+          "anchor_id": "instruction-0005",
+          "position": "after",
+          "text": "Serve the jelly with roast pork.",
+          "section": "instructions",
+          "index": 4,
+          "matched_record": {
+            "id": "instruction-0005",
+            "text": "Remove the jars from the stockpot and let rest, several inches apart, for 12 to 24 hours. Press the center of each lid with a finger to ensure the lid does not move up or down. Remove the rings for storage and store in a cool, dark area."
+          }
+        }
+      ]
+    }
+  ],
+  "diagnostics": []
+}

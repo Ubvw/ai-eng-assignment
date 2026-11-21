@@ -1,0 +1,96 @@
+{
+  "status": "routed",
+  "selected_review": {
+    "id": "review-featured-0002",
+    "source": "featured",
+    "reviewer": "GWilson",
+    "rating": 5,
+    "helpful_votes": 3,
+    "date": "08/26/2018",
+    "permalink": null
+  },
+  "review_id": "review-featured-0002",
+  "modifications": [
+    {
+      "review_id": "review-featured-0002",
+      "selected_review": {
+        "id": "review-featured-0002",
+        "source": "featured",
+        "reviewer": "GWilson",
+        "rating": 5,
+        "helpful_votes": 3,
+        "date": "08/26/2018",
+        "permalink": null
+      },
+      "id": "modification-1",
+      "evidence_quotes": [
+        "Great recipe, only changes I made were that I used mild Italian sausage instead of chorizo because I could get any at the time. I also added half a chopped sweet onion and 2 cloves of fresh minced garlic, some sea salt and pepper.",
+        "But great recipe and very flavour full and I will definitely be making this again!"
+      ],
+      "benefit": {
+        "basis": "reported",
+        "description": "The reviewer found the recipe very flavourful and said they would make it again."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "ingredient-0003",
+          "replacement_text": "4 ounces mild Italian sausage, finely chopped",
+          "quantity_change": null,
+          "section": "ingredients",
+          "index": 2,
+          "matched_record": {
+            "id": "ingredient-0003",
+            "text": "4 ounces chorizo, finely chopped",
+            "name": "chorizo, finely chopped",
+            "quantity": "4",
+            "unit": "ounce"
+          }
+        },
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0003",
+          "position": "after",
+          "text": "1/2 sweet onion, chopped",
+          "section": "ingredients",
+          "index": 2,
+          "matched_record": {
+            "id": "ingredient-0003",
+            "text": "4 ounces chorizo, finely chopped",
+            "name": "chorizo, finely chopped",
+            "quantity": "4",
+            "unit": "ounce"
+          }
+        },
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0003",
+          "position": "after",
+          "text": "2 cloves fresh garlic, minced",
+          "section": "ingredients",
+          "index": 2,
+          "matched_record": {
+            "id": "ingredient-0003",
+            "text": "4 ounces chorizo, finely chopped",
+            "name": "chorizo, finely chopped",
+            "quantity": "4",
+            "unit": "ounce"
+          }
+        },
+        {
+          "operation": "replace",
+          "target_id": "instruction-0002",
+          "replacement_text": "Heat a large nonstick skillet over medium-high. Cook mild Italian sausage, corn, chopped sweet onion, and minced garlic until corn begins to turn golden and sausage begins to brown, about 5 minutes. Add ground beef and cook until browned, about 10 minutes.",
+          "quantity_change": null,
+          "section": "instructions",
+          "index": 1,
+          "matched_record": {
+            "id": "instruction-0002",
+            "text": "Heat a large nonstick skillet over medium-high. Cook chorizo and corn until corn begins to turn golden and chorizo begins to brown about 5 minutes. Add ground beef and cook until browned, about 10 minutes."
+          }
+        }
+      ]
+    }
+  ],
+  "diagnostics": []
+}

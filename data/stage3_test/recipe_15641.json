@@ -1,0 +1,14 @@
+{
+  "status": "exhausted",
+  "reason": "The highest-ranked eligible review did not propose an actionable modification.",
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "reviewer": "MINDYJEAN",
+    "rating": 5,
+    "helpful_votes": 117,
+    "date": "06/11/2003",
+    "permalink": null
+  },
+  "failures": []
+}

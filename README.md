@@ -25,7 +25,9 @@ uv pip sync pyproject.toml
 Create a `.env` file in the project root:
 
 ```env
-OPENAI_API_KEY=your-openai-api-key-here
+OPENROUTER_API_KEY=your-openrouter-api-key-here
+OPENAI_BASE_URL=https://openrouter.ai/api/v1
+OPENAI_MODEL=openai/gpt-6-luna
 ```
 
 ## Usage
@@ -46,6 +48,18 @@ uv run python test_pipeline.py single
 
 # Process all recipes
 uv run python test_pipeline.py all
+
+# Route a saved Stage 3 proposal against a saved scrape (offline)
+uv run python test_pipeline.py stage4 ../data/recipe.json ../data/stage3-result.json
+
+# Validate a saved Stage 4 result against its scrape (offline)
+uv run python test_pipeline.py stage5 ../data/recipe.json ../data/stage4-result.json
+
+# Apply a saved Stage 5 validated plan to its scrape (offline)
+uv run python test_pipeline.py stage6 ../data/recipe.json ../data/stage5-result.json
+
+# Generate the final recipe and review evidence from a saved Stage 6 result (offline)
+uv run python test_pipeline.py stage7 ../data/stage6-result.json
 ```
 
 ## Output
@@ -59,7 +73,7 @@ Enhanced recipes are saved in `src/data/enhanced/`:
 
 ### Data Structure
 
-Original scraped recipes in `data/` directory contain reviews with `has_modification: true` flags. Enhanced recipes include:
+Scraped recipe files contain the recipe title, ID, ingredients, instructions, prep/cook/total times, servings, yield, the most helpful positive review, and up to 10 featured tweaks. Reviews and tweaks include their rating, username, date, and helpful-vote count. The enhancement pipeline tries the most helpful review first, then tries featured tweaks in order. Enhanced recipes include:
 
 ```json
 {
@@ -87,13 +101,19 @@ Original scraped recipes in `data/` directory contain reviews with `has_modifica
 
 ## How It Works
 
-The LLM Analysis Pipeline processes recipes in 3 steps:
+The legacy LLM Analysis Pipeline processes recipes in 3 steps:
 
 1. **Tweak Extraction**: Selects one random review with modifications and uses GPT-4o-mini to extract structured changes
 2. **Recipe Modification**: Applies changes to the original recipe using fuzzy string matching
 3. **Enhanced Recipe Generation**: Creates enhanced version with full citation tracking back to source review
 
-Each run produces one enhanced recipe per original recipe, with complete attribution showing exactly what changed and why.
+Stage 4 accepts a raw scrape and saved Stage 3 result as local JSON files. It routes modification groups by exact normalized IDs without making model calls.
+
+Stage 5 accepts a raw scrape and saved Stage 4 result as local JSON files. It verifies evidence and grouped edits, prints validation diagnostics, and returns status `continue` with the next ranked review when every modification is rejected. The command does not call a model provider; exit code 3 signals that the caller should continue candidate processing.
+
+Stage 6 accepts the same raw scrape and a saved Stage 5 result. It prints the detached resulting recipe, actual edits, and review evidence. Exit code 0 means the plan was applied or the recipe is unchanged, 1 means the run failed, and 3 signals that candidate processing should continue. A failed application includes the rejected operation in the diagnostics.
+
+Stage 7 reads the saved Stage 6 result and prints final JSON. An `enhanced` result includes the complete recipe and its applied edits with verbatim review evidence and reported or inferred benefits. An `unchanged` result includes the source recipe and a reason. Both exit with code 0. A `failed` result preserves diagnostics and exits with code 1. A `continue` result carries the next candidate for the caller and exits with code 3.
 
 ## Development
 

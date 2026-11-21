@@ -1,0 +1,60 @@
+{
+  "recipe_id": "255272_enhanced",
+  "original_recipe_id": "255272",
+  "title": "Spanish Rice Stuffed Bell Peppers (Community Enhanced)",
+  "ingredients": [
+    "cooking spray",
+    "4 large bell peppers (any color or a combination of colors) - cored, seeded, tops reserved",
+    "4 ounces turkey sausage, finely chopped",
+    "chopped onion (amount not specified)",
+    "1 cup fresh corn kernels or thawed frozen corn",
+    "8 ounces lean ground beef",
+    "1 (5.6 ounce) package Knorr® Fiesta Sides™ - Spanish Rice",
+    "1 cup shredded Mexican cheese blend or Monterey Jack cheese, divided"
+  ],
+  "instructions": [
+    "Preheat the oven to 375 degrees (190 degrees C). Spray an 8- or 9-inch square baking dish with cooking spray, and set aside. Finely chop pepper tops, and set aside.",
+    "Heat a large nonstick skillet over medium-high. Cook chorizo and corn until corn begins to turn golden and chorizo begins to brown about 5 minutes. Add ground beef and cook until browned, about 10 minutes.",
+    "Stir 2 cups water, Knorr® Fiesta Sides™ - Spanish Rice, and chopped pepper tops to the skillet. Cook according to package directions. Stir in 3/4 cup cheese and let stand 2 minutes. Stuff peppers equally with rice mixture and arrange in the prepared baking dish. Add 2 tablespoons water to the baking dish and cover tightly with foil.",
+    "Bake until peppers are tender, about 45 minutes. Remove and discard the foil. Sprinkle peppers evenly with remaining 1/4 cup cheese. Continue to bake until the cheese melts, about 2 minutes."
+  ],
+  "modifications_applied": [
+    {
+      "source_review": {
+        "text": "We LOVE this dish. We use turkey sausage instead of chorizo and we add in chopped onion as well. It’s now a HUGE staple in my house. Can’t get enough of it! And we use the leftover stuffing stuff for burritos the next day! Love it!!",
+        "reviewer": "Alex",
+        "rating": 5
+      },
+      "modification_type": "ingredient_substitution",
+      "reasoning": "The user prefers turkey sausage to chorizo, adds chopped onion for extra flavor, and uses leftover filling as burrito filling the next day.",
+      "changes_made": [
+        {
+          "type": "ingredient",
+          "from_text": "4 ounces chorizo, finely chopped",
+          "to_text": "4 ounces turkey sausage, finely chopped",
+          "operation": "replace"
+        },
+        {
+          "type": "ingredient",
+          "from_text": "",
+          "to_text": "chopped onion (amount not specified)",
+          "operation": "add"
+        }
+      ]
+    }
+  ],
+  "enhancement_summary": {
+    "total_changes": 2,
+    "change_types": [
+      "ingredient_substitution"
+    ],
+    "expected_impact": "The user prefers turkey sausage to chorizo, adds chopped onion for extra flavor, and uses leftover filling as burrito filling the next day."
+  },
+  "description": null,
+  "servings": "4",
+  "prep_time": null,
+  "cook_time": null,
+  "total_time": null,
+  "created_at": "2026-11-22T04:18:05.620355",
+  "pipeline_version": "1.0.0"
+}

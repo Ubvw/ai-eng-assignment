@@ -1,0 +1,67 @@
+{
+  "started_at_utc": "2026-11-21T21:35:22.469566+00:00",
+  "cases": [
+    {
+      "recipe_id": "15641",
+      "title": "Grilled Chicken with Herbs",
+      "input_file": "data/test_data/recipe_15641.json",
+      "stage3_output": "data/stage3_test/fallback_stage4_check/stage3/recipe_15641.json",
+      "stage4_output": "data/stage3_test/fallback_stage4_check/stage4/recipe_15641.json",
+      "stage3_status": "proposal",
+      "stage4_status": "routed",
+      "selected_review": {
+        "id": "review-featured-0005",
+        "source": "featured",
+        "reviewer": "Jillian",
+        "rating": 5,
+        "helpful_votes": 83,
+        "date": "10/21/2009",
+        "permalink": null
+      },
+      "skipped_reviews": [
+        {
+          "review_id": "review-primary-0001",
+          "source": "primary",
+          "reason": "The reviewer uses dried herbs instead of fresh ones but does not specify exact replacement amounts; the recipe already instructs grilling the chicken."
+        }
+      ],
+      "proposed_groups": 3,
+      "routed_groups": 3,
+      "diagnostics": [],
+      "stage4_pass": true,
+      "seconds": 36.64
+    },
+    {
+      "recipe_id": "255272",
+      "title": "Spanish Rice Stuffed Bell Peppers",
+      "input_file": "data/test_data/recipe_255272.json",
+      "stage3_output": "data/stage3_test/fallback_stage4_check/stage3/recipe_255272.json",
+      "stage4_output": "data/stage3_test/fallback_stage4_check/stage4/recipe_255272.json",
+      "stage3_status": "proposal",
+      "stage4_status": "routed",
+      "selected_review": {
+        "id": "review-featured-0002",
+        "source": "featured",
+        "reviewer": "GWilson",
+        "rating": 5,
+        "helpful_votes": 3,
+        "date": "08/26/2018",
+        "permalink": null
+      },
+      "skipped_reviews": [
+        {
+          "review_id": "review-primary-0001",
+          "source": "primary",
+          "reason": "The review praises the dish but does not describe any recipe change."
+        }
+      ],
+      "proposed_groups": 1,
+      "routed_groups": 1,
+      "diagnostics": [],
+      "stage4_pass": true,
+      "seconds": 21.208
+    }
+  ],
+  "finished_at_utc": "2026-11-21T21:36:20.321059+00:00",
+  "stage4_pass_count": 2
+}

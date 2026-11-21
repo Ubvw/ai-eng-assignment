@@ -18,8 +18,10 @@ from loguru import logger
 
 from .enhanced_recipe_generator import EnhancedRecipeGenerator
 from .models import EnhancedRecipe, Recipe, Review
+from .normalization import normalize_recipe_data
 from .recipe_modifier import RecipeModifier
 from .tweak_extractor import TweakExtractor
+from .classification import ClassificationFailure
 
 
 class LLMAnalysisPipeline:
@@ -78,40 +80,114 @@ class LLMAnalysisPipeline:
         Returns:
             Recipe object
         """
+        return self._legacy_recipe(self.parse_normalized_recipe_data(recipe_data)["recipe"])
+
+    @staticmethod
+    def parse_normalized_recipe_data(recipe_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Expose the canonical Stage 2 contract: recipe rows and review candidates."""
+        return normalize_recipe_data(recipe_data)
+
+    def classify_recipe_file(self, recipe_file: str) -> Dict[str, Any]:
+        """Run Stage 3 across normalized candidates and return its typed result as JSON data."""
+        input_path = Path(recipe_file).resolve()
+        logger.info(f"Stage 3 input file: {input_path}")
+        data = self.load_recipe_data(recipe_file)
+        normalized = self.parse_normalized_recipe_data(data)
+        recipe = normalized["recipe"]
+        candidates = normalized["review_candidates"]
+        recipe_id = recipe.get("recipe_id", "unknown")
+        logger.info(f"Stage 3 recipe {recipe_id}: {len(candidates)} candidate(s)")
+        if not candidates:
+            logger.info(f"Stage 3 recipe {recipe_id}: no eligible review candidates")
+            return {
+                "status": "exhausted",
+                "reason": "No eligible review candidates were available.",
+                "selected_review": None,
+                "skipped_reviews": [],
+                "failures": [],
+            }
+
+        skipped_reviews = []
+        for review in candidates:
+            details = _stage3_review_details(review)
+            selected_review = _stage3_review_metadata(review)
+            logger.info(f"Stage 3 considering candidate {details}: classifying")
+            try:
+                result = self.tweak_extractor.classifier.classify(
+                    recipe, review,
+                    on_retry=lambda attempt, reason: logger.warning(
+                        f"Stage 3 review={review['id']} source={review['source']}: retry {attempt} ({reason})"
+                    ),
+                )
+            except ClassificationFailure as exc:
+                logger.error(f"Stage 3 {details}: provider/contract failure: {exc}")
+                return {
+                    "status": "failed",
+                    "failures": [{"review_id": review["id"], "error": str(exc)}],
+                    "selected_review": selected_review,
+                    "skipped_reviews": skipped_reviews,
+                }
+
+            payload = result.model_dump(mode="json")
+            if result.decision == "skip":
+                skipped_reviews.append({
+                    "review_id": review["id"],
+                    "source": review["source"],
+                    "reason": result.reason,
+                })
+                logger.info(f"Stage 3 {details}: semantic skip; checking next ranked candidate")
+                continue
+
+            logger.info(
+                f"Stage 3 {details}: proposed {len(result.modifications)} modification(s)"
+            )
+            return {
+                "status": "proposal",
+                **payload,
+                "selected_review": selected_review,
+                "skipped_reviews": skipped_reviews,
+                "failures": [],
+            }
+
+        logger.info(f"Stage 3 recipe {recipe_id}: exhausted {len(candidates)} candidate(s), no proposal")
+        return {
+            "status": "exhausted",
+            "reason": "No eligible review candidate proposed an actionable modification.",
+            "selected_review": _stage3_review_metadata(candidates[0]),
+            "skipped_reviews": skipped_reviews,
+            "failures": [],
+        }
+    @staticmethod
+    def _legacy_recipe(normalized: Dict[str, Any]) -> Recipe:
+        """Project the canonical Stage 2 contract for existing pipeline callers."""
         return Recipe(
-            recipe_id=recipe_data.get("recipe_id", "unknown"),
-            title=recipe_data.get("title", "Unknown Recipe"),
-            ingredients=recipe_data.get("ingredients", []),
-            instructions=recipe_data.get("instructions", []),
-            description=recipe_data.get("description"),
-            servings=recipe_data.get("servings"),
-            rating=recipe_data.get("rating"),
+            recipe_id=str(normalized.get("recipe_id", "unknown")),
+            title=normalized.get("title", "Unknown Recipe"),
+            ingredients=[row["text"] for row in normalized["ingredients"]],
+            instructions=[row["text"] for row in normalized["instructions"]],
+            description=normalized.get("description"),
+            servings=normalized.get("servings"),
+            rating=normalized.get("rating"),
         )
 
     def parse_reviews_data(self, recipe_data: Dict[str, Any]) -> List[Review]:
         """
-        Parse raw review data into Review objects.
+        Parse the preferred review followed by featured tweaks into Review objects.
 
         Args:
-            recipe_data: Raw recipe data containing reviews
+            recipe_data: Scraped recipe data or a legacy reviews list
 
         Returns:
             List of Review objects
         """
-        reviews = []
-        raw_reviews = recipe_data.get("reviews", [])
+        return self._legacy_reviews(normalize_recipe_data(recipe_data)["review_candidates"])
 
-        for review_data in raw_reviews:
-            if review_data.get("text"):
-                review = Review(
-                    text=review_data["text"],
-                    rating=review_data.get("rating"),
-                    username=review_data.get("username"),
-                    has_modification=review_data.get("has_modification", False),
-                )
-                reviews.append(review)
-
-        return reviews
+    @staticmethod
+    def _legacy_reviews(candidates: List[Dict[str, Any]]) -> List[Review]:
+        return [Review(text=row["text"], rating=row["rating"], username=row["reviewer"],
+                       review_id=row["id"], helpful_votes=row["helpful_votes"],
+                       date=row["date"], source=row["source"], permalink=row["permalink"],
+                       metadata=row["metadata"]) for row in candidates]
 
     def process_single_recipe(
         self, recipe_file: str, save_output: bool = True
@@ -131,20 +207,15 @@ class LLMAnalysisPipeline:
 
             # Step 0: Load and parse data
             recipe_data = self.load_recipe_data(recipe_file)
-            recipe = self.parse_recipe_data(recipe_data)
-            reviews = self.parse_reviews_data(recipe_data)
+            normalized = self.parse_normalized_recipe_data(recipe_data)
+            recipe = self._legacy_recipe(normalized["recipe"])
+            reviews = self._legacy_reviews(normalized["review_candidates"])
 
             logger.info(f"Loaded recipe: {recipe.title}")
-            logger.info(
-                f"Found {len(reviews)} reviews, {len([r for r in reviews if r.has_modification])} with modifications"
-            )
+            logger.info(f"Found {len(reviews)} review candidates")
 
-            if not any(r.has_modification for r in reviews):
-                logger.warning("No reviews with modifications found")
-                return None
-
-            # Step 1: Extract modification from one random review
-            logger.info("Step 1: Extracting modification from a single review...")
+            # Step 1: Try the most helpful review, then featured tweaks in order.
+            logger.info("Step 1: Extracting a modification from review candidates...")
             modification, source_review = (
                 self.tweak_extractor.extract_single_modification(reviews, recipe)
             )
@@ -299,3 +370,23 @@ class LLMAnalysisPipeline:
 
         logger.info(f"Saved pipeline summary report to: {output_path}")
         return output_path
+
+
+def _stage3_review_details(review: Dict[str, Any]) -> str:
+    """Format only normalized review identifiers and compact available metadata for progress logs."""
+    fields = (
+        ("review", review.get("id")),
+        ("source", review.get("source")),
+        ("reviewer", review.get("reviewer")),
+        ("rating", review.get("rating")),
+        ("helpful_votes", review.get("helpful_votes")),
+        ("date", review.get("date")),
+    )
+    return " ".join(f"{name}={value if value is not None else 'unknown'}" for name, value in fields)
+
+
+def _stage3_review_metadata(review: Dict[str, Any]) -> Dict[str, Any]:
+    return {
+        key: review.get(key)
+        for key in ("id", "source", "reviewer", "rating", "helpful_votes", "date", "permalink")
+    }

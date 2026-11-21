@@ -1,0 +1,250 @@
+{
+  "status": "routed",
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "reviewer": "Jillian",
+    "rating": 5,
+    "helpful_votes": 215,
+    "date": "11/29/2010",
+    "permalink": null
+  },
+  "review_id": "review-primary-0001",
+  "modifications": [
+    {
+      "review_id": "review-primary-0001",
+      "selected_review": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "reviewer": "Jillian",
+        "rating": 5,
+        "helpful_votes": 215,
+        "date": "11/29/2010",
+        "permalink": null
+      },
+      "id": "modification-1",
+      "evidence_quotes": [
+        "You definitely need to add the 2 Tbsp. of white sugar to decrease the tartness, but other than that this recipe is spot on in terms of flavor."
+      ],
+      "benefit": {
+        "basis": "reported",
+        "description": "The reviewer said adding 2 tablespoons of white sugar decreased the tartness."
+      },
+      "edits": [
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0006",
+          "position": "after",
+          "text": "2 tablespoons white sugar",
+          "section": "ingredients",
+          "index": 5,
+          "matched_record": {
+            "id": "ingredient-0006",
+            "text": "1 tablespoon Dijon mustard",
+            "name": "Dijon mustard",
+            "quantity": "1",
+            "unit": "tablespoon"
+          }
+        },
+        {
+          "operation": "replace",
+          "target_id": "instruction-0003",
+          "replacement_text": "Combine oil, cranberries, vinegar, water, Dijon mustard, garlic, salt, black pepper, and white sugar in a blender or the bowl of a food processor; blend until vinaigrette is smooth.",
+          "quantity_change": null,
+          "section": "instructions",
+          "index": 2,
+          "matched_record": {
+            "id": "instruction-0003",
+            "text": "Combine oil, cranberries, vinegar, water, Dijon mustard, garlic, salt, and black pepper in a blender or the bowl of a food processor; blend until vinaigrette is smooth."
+          }
+        }
+      ]
+    },
+    {
+      "review_id": "review-primary-0001",
+      "selected_review": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "reviewer": "Jillian",
+        "rating": 5,
+        "helpful_votes": 215,
+        "date": "11/29/2010",
+        "permalink": null
+      },
+      "id": "modification-2",
+      "evidence_quotes": [
+        "I used toasted walnuts instead of almonds (personal preference), a mixture of romaine lettuce and spring mix along with the red onion, added some thin sliced Granny Smith apples that I soaked in a bit of lemon juice and water to prevent them from browning, craisins, and feta cheese. That mixture proved to be the right combination of sweet and tart and needless to say it was very pretty!"
+      ],
+      "benefit": {
+        "basis": "reported",
+        "description": "The reviewer said the salad mixture was a good combination of sweet and tart and looked pretty, and preferred toasted walnuts."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "ingredient-0001",
+          "replacement_text": "1 cup sliced walnuts",
+          "quantity_change": null,
+          "section": "ingredients",
+          "index": 0,
+          "matched_record": {
+            "id": "ingredient-0001",
+            "text": "1 cup sliced almonds",
+            "name": "sliced almonds",
+            "quantity": "1",
+            "unit": "cup"
+          }
+        },
+        {
+          "operation": "replace",
+          "target_id": "ingredient-0010",
+          "replacement_text": "1 pound romaine lettuce and spring mix",
+          "quantity_change": null,
+          "section": "ingredients",
+          "index": 9,
+          "matched_record": {
+            "id": "ingredient-0010",
+            "text": "1 pound mixed salad greens",
+            "name": "pound mixed salad greens",
+            "quantity": "1",
+            "unit": null
+          }
+        },
+        {
+          "operation": "replace",
+          "target_id": "instruction-0002",
+          "replacement_text": "Arrange walnuts in a single layer on a baking sheet. Toast in the preheated oven until nuts begin to brown, about 5 minutes.",
+          "quantity_change": null,
+          "section": "instructions",
+          "index": 1,
+          "matched_record": {
+            "id": "instruction-0002",
+            "text": "Arrange almonds in a single layer on a baking sheet. Toast in the preheated oven until nuts begin to brown, about 5 minutes."
+          }
+        },
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0012",
+          "position": "after",
+          "text": "Thinly sliced Granny Smith apples",
+          "section": "ingredients",
+          "index": 11,
+          "matched_record": {
+            "id": "ingredient-0012",
+            "text": "4 ounces crumbled blue cheese",
+            "name": "crumbled blue cheese",
+            "quantity": "4",
+            "unit": "ounce"
+          }
+        },
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0012",
+          "position": "after",
+          "text": "Lemon juice, for soaking the apples",
+          "section": "ingredients",
+          "index": 11,
+          "matched_record": {
+            "id": "ingredient-0012",
+            "text": "4 ounces crumbled blue cheese",
+            "name": "crumbled blue cheese",
+            "quantity": "4",
+            "unit": "ounce"
+          }
+        },
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0012",
+          "position": "after",
+          "text": "Craisins",
+          "section": "ingredients",
+          "index": 11,
+          "matched_record": {
+            "id": "ingredient-0012",
+            "text": "4 ounces crumbled blue cheese",
+            "name": "crumbled blue cheese",
+            "quantity": "4",
+            "unit": "ounce"
+          }
+        },
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0012",
+          "position": "after",
+          "text": "Feta cheese",
+          "section": "ingredients",
+          "index": 11,
+          "matched_record": {
+            "id": "ingredient-0012",
+            "text": "4 ounces crumbled blue cheese",
+            "name": "crumbled blue cheese",
+            "quantity": "4",
+            "unit": "ounce"
+          }
+        },
+        {
+          "operation": "replace",
+          "target_id": "instruction-0004",
+          "replacement_text": "Soak thinly sliced Granny Smith apples in lemon juice and water to prevent browning. Toss romaine lettuce, spring mix, walnuts, onion, blue cheese, apples, craisins, and feta with vinaigrette in a large bowl until evenly coated.",
+          "quantity_change": null,
+          "section": "instructions",
+          "index": 3,
+          "matched_record": {
+            "id": "instruction-0004",
+            "text": "Toss mixed greens, almonds, onion, and blue cheese with vinaigrette in a large bowl until evenly coated."
+          }
+        }
+      ]
+    },
+    {
+      "review_id": "review-primary-0001",
+      "selected_review": {
+        "id": "review-primary-0001",
+        "source": "primary",
+        "reviewer": "Jillian",
+        "rating": 5,
+        "helpful_votes": 215,
+        "date": "11/29/2010",
+        "permalink": null
+      },
+      "id": "modification-3",
+      "evidence_quotes": [
+        "It was also a great way to use up leftover turkey, the next day I diced some of it and put it over top - YUM!"
+      ],
+      "benefit": {
+        "basis": "reported",
+        "description": "The reviewer enjoyed diced leftover turkey served over the salad."
+      },
+      "edits": [
+        {
+          "operation": "insert",
+          "anchor_id": "instruction-0004",
+          "position": "after",
+          "text": "Top with diced leftover turkey when serving.",
+          "section": "instructions",
+          "index": 3,
+          "matched_record": {
+            "id": "instruction-0004",
+            "text": "Toss mixed greens, almonds, onion, and blue cheese with vinaigrette in a large bowl until evenly coated."
+          }
+        },
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0012",
+          "position": "after",
+          "text": "Leftover turkey, diced",
+          "section": "ingredients",
+          "index": 11,
+          "matched_record": {
+            "id": "ingredient-0012",
+            "text": "4 ounces crumbled blue cheese",
+            "name": "crumbled blue cheese",
+            "quantity": "4",
+            "unit": "ounce"
+          }
+        }
+      ]
+    }
+  ],
+  "diagnostics": []
+}

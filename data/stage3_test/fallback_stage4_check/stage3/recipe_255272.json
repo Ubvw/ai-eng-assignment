@@ -1,0 +1,61 @@
+{
+  "status": "proposal",
+  "review_id": "review-featured-0002",
+  "decision": "propose",
+  "modifications": [
+    {
+      "id": "modification-1",
+      "evidence_quotes": [
+        "Great recipe, only changes I made were that I used mild Italian sausage instead of chorizo because I could get any at the time. I also added half a chopped sweet onion and 2 cloves of fresh minced garlic, some sea salt and pepper.",
+        "But great recipe and very flavour full and I will definitely be making this again!"
+      ],
+      "benefit": {
+        "basis": "reported",
+        "description": "The reviewer found the recipe very flavourful and said they would make it again."
+      },
+      "edits": [
+        {
+          "operation": "replace",
+          "target_id": "ingredient-0003",
+          "replacement_text": "4 ounces mild Italian sausage, finely chopped",
+          "quantity_change": null
+        },
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0003",
+          "position": "after",
+          "text": "1/2 sweet onion, chopped"
+        },
+        {
+          "operation": "insert",
+          "anchor_id": "ingredient-0003",
+          "position": "after",
+          "text": "2 cloves fresh garlic, minced"
+        },
+        {
+          "operation": "replace",
+          "target_id": "instruction-0002",
+          "replacement_text": "Heat a large nonstick skillet over medium-high. Cook mild Italian sausage, corn, chopped sweet onion, and minced garlic until corn begins to turn golden and sausage begins to brown, about 5 minutes. Add ground beef and cook until browned, about 10 minutes.",
+          "quantity_change": null
+        }
+      ]
+    }
+  ],
+  "selected_review": {
+    "id": "review-featured-0002",
+    "source": "featured",
+    "reviewer": "GWilson",
+    "rating": 5,
+    "helpful_votes": 3,
+    "date": "08/26/2018",
+    "permalink": null
+  },
+  "skipped_reviews": [
+    {
+      "review_id": "review-primary-0001",
+      "source": "primary",
+      "reason": "The review praises the dish but does not describe any recipe change."
+    }
+  ],
+  "failures": []
+}
