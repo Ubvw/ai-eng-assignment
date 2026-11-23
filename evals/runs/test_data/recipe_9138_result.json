@@ -1,0 +1,434 @@
+{
+  "status": "enhanced",
+  "recipe": {
+    "recipe_id": "9138",
+    "title": "Green Beans With Walnuts",
+    "prep_time": null,
+    "cook_time": null,
+    "total_time": "PT0M",
+    "servings": "8",
+    "yield": "8",
+    "ingredients": [
+      {
+        "id": "ingredient-0001",
+        "text": "1 cup chopped walnuts",
+        "name": "chopped walnuts",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0002",
+        "text": "2 pounds fresh green beans, washed and trimmed",
+        "name": "fresh green beans, washed and trimmed",
+        "quantity": "2",
+        "unit": "pound"
+      },
+      {
+        "id": "ingredient-0003",
+        "text": "2 tablespoons butter",
+        "name": "butter",
+        "quantity": "2",
+        "unit": "tablespoon"
+      },
+      {
+        "id": "ingredient-0004",
+        "text": "2 tablespoons olive oil",
+        "name": "olive oil",
+        "quantity": "2",
+        "unit": "tablespoon"
+      },
+      {
+        "id": "ingredient-0005",
+        "text": "salt to taste",
+        "name": "salt to taste",
+        "quantity": null,
+        "unit": null
+      },
+      {
+        "id": "ingredient-0006",
+        "text": "ground black pepper to taste",
+        "name": "ground black pepper to taste",
+        "quantity": null,
+        "unit": null
+      },
+      {
+        "id": "ingredient-0007",
+        "text": "2 tablespoons minced fresh parsley",
+        "name": "minced fresh parsley",
+        "quantity": "2",
+        "unit": "tablespoon"
+      },
+      {
+        "id": "ingredient-0008",
+        "text": "3 cloves fresh garlic",
+        "name": "cloves fresh garlic",
+        "quantity": "3",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      {
+        "id": "instruction-0001",
+        "text": "Place the walnuts on an ungreased baking sheet. Bake at 350 degrees F (175 degrees C) for 5 to 8 minutes."
+      },
+      {
+        "id": "instruction-0002",
+        "text": "Cook beans in large pot of boiling salted water until just tender, about 5 minutes. Drain. Rinse beans with cold water, and drain well. Can be prepared 6 hours ahead. Let stand at room temperature."
+      },
+      {
+        "id": "instruction-0003",
+        "text": "Melt butter with oil in heavy large skillet over high heat. Add beans and toss until heated through, about 4 minutes. Season with salt and pepper. Just before serving, toast garlic with the butter. Add walnuts and parsley and toss. Transfer to bowl and serve."
+      }
+    ]
+  },
+  "recipe_id": "9138",
+  "review_id": "review-primary-0001",
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "text": "I made this recipe was a side dish for Thanksgiving dinner, it was incredible! The taste of the walnuts with the green beans was very unique, my family really liked it, I didn't have walnut oil, so I just added olive oil, and I also added 3 cloves of fresh garlic - that I toasted with the butter just before serving. A definite keeper, excellent side dish for any dinner! No more boring beans!",
+    "rating": 5,
+    "reviewer": "NANNOUSE",
+    "helpful_votes": 61,
+    "date": "10/11/2005",
+    "permalink": null,
+    "metadata": {}
+  },
+  "modifications": [
+    {
+      "id": "modification-1",
+      "changes": [
+        {
+          "modification_id": "modification-1",
+          "section": "ingredients",
+          "operation": "replace",
+          "target_id": "ingredient-0004",
+          "before": "2 tablespoons walnut oil",
+          "after": "2 tablespoons olive oil"
+        }
+      ],
+      "benefit": {
+        "basis": "reported",
+        "description": "The reviewer described the dish as incredible and said their family really liked it."
+      },
+      "evidence": [
+        {
+          "review_id": "review-primary-0001",
+          "quote": "I didn't have walnut oil, so I just added olive oil"
+        },
+        {
+          "review_id": "review-primary-0001",
+          "quote": "it was incredible! The taste of the walnuts with the green beans was very unique, my family really liked it"
+        }
+      ]
+    },
+    {
+      "id": "modification-2",
+      "changes": [
+        {
+          "modification_id": "modification-2",
+          "section": "ingredients",
+          "operation": "insert",
+          "target_id": "ingredient-0008",
+          "anchor_id": "ingredient-0007",
+          "position": "after",
+          "after": "3 cloves fresh garlic"
+        },
+        {
+          "modification_id": "modification-2",
+          "section": "instructions",
+          "operation": "replace",
+          "target_id": "instruction-0003",
+          "before": "Melt butter with oil in heavy large skillet over high heat. Add beans and toss until heated through, about 4 minutes. Season with salt and pepper. Add walnuts and parsley and toss. Transfer to bowl and serve.",
+          "after": "Melt butter with oil in heavy large skillet over high heat. Add beans and toss until heated through, about 4 minutes. Season with salt and pepper. Just before serving, toast garlic with the butter. Add walnuts and parsley and toss. Transfer to bowl and serve."
+        }
+      ],
+      "benefit": {
+        "basis": "reported",
+        "description": "The reviewer described the dish as incredible and said their family really liked it."
+      },
+      "evidence": [
+        {
+          "review_id": "review-primary-0001",
+          "quote": "I also added 3 cloves of fresh garlic - that I toasted with the butter just before serving."
+        },
+        {
+          "review_id": "review-primary-0001",
+          "quote": "it was incredible! The taste of the walnuts with the green beans was very unique, my family really liked it"
+        }
+      ]
+    }
+  ],
+  "diagnostics": [],
+  "skipped_reviews": [],
+  "review_evaluations": [
+    {
+      "review_id": "review-primary-0001",
+      "source": "primary",
+      "helpful_votes": 61,
+      "stage3": {
+        "review_id": "review-primary-0001",
+        "decision": "propose",
+        "modifications": [
+          {
+            "id": "modification-1",
+            "evidence_quotes": [
+              "I didn't have walnut oil, so I just added olive oil",
+              "it was incredible! The taste of the walnuts with the green beans was very unique, my family really liked it"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer described the dish as incredible and said their family really liked it."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0004",
+                "replacement_text": "2 tablespoons olive oil",
+                "quantity_change": null
+              }
+            ]
+          },
+          {
+            "id": "modification-2",
+            "evidence_quotes": [
+              "I also added 3 cloves of fresh garlic - that I toasted with the butter just before serving.",
+              "it was incredible! The taste of the walnuts with the green beans was very unique, my family really liked it"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer described the dish as incredible and said their family really liked it."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0007",
+                "position": "after",
+                "text": "3 cloves fresh garlic"
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0003",
+                "replacement_text": "Melt butter with oil in heavy large skillet over high heat. Add beans and toss until heated through, about 4 minutes. Season with salt and pepper. Just before serving, toast garlic with the butter. Add walnuts and parsley and toss. Transfer to bowl and serve.",
+                "quantity_change": null
+              }
+            ]
+          }
+        ]
+      },
+      "stage4": {
+        "status": "routed",
+        "selected_review": {
+          "id": "review-primary-0001",
+          "source": "primary",
+          "reviewer": "NANNOUSE",
+          "rating": 5,
+          "helpful_votes": 61,
+          "date": "10/11/2005",
+          "permalink": null
+        },
+        "review_id": "review-primary-0001",
+        "modifications": [
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "NANNOUSE",
+              "rating": 5,
+              "helpful_votes": 61,
+              "date": "10/11/2005",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "I didn't have walnut oil, so I just added olive oil",
+              "it was incredible! The taste of the walnuts with the green beans was very unique, my family really liked it"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer described the dish as incredible and said their family really liked it."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0004",
+                "replacement_text": "2 tablespoons olive oil",
+                "quantity_change": null,
+                "section": "ingredients",
+                "index": 3,
+                "matched_record": {
+                  "id": "ingredient-0004",
+                  "text": "2 tablespoons walnut oil",
+                  "name": "walnut oil",
+                  "quantity": "2",
+                  "unit": "tablespoon"
+                }
+              }
+            ]
+          },
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "NANNOUSE",
+              "rating": 5,
+              "helpful_votes": 61,
+              "date": "10/11/2005",
+              "permalink": null
+            },
+            "id": "modification-2",
+            "evidence_quotes": [
+              "I also added 3 cloves of fresh garlic - that I toasted with the butter just before serving.",
+              "it was incredible! The taste of the walnuts with the green beans was very unique, my family really liked it"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer described the dish as incredible and said their family really liked it."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0007",
+                "position": "after",
+                "text": "3 cloves fresh garlic",
+                "section": "ingredients",
+                "index": 6,
+                "matched_record": {
+                  "id": "ingredient-0007",
+                  "text": "2 tablespoons minced fresh parsley",
+                  "name": "minced fresh parsley",
+                  "quantity": "2",
+                  "unit": "tablespoon"
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0003",
+                "replacement_text": "Melt butter with oil in heavy large skillet over high heat. Add beans and toss until heated through, about 4 minutes. Season with salt and pepper. Just before serving, toast garlic with the butter. Add walnuts and parsley and toss. Transfer to bowl and serve.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 2,
+                "matched_record": {
+                  "id": "instruction-0003",
+                  "text": "Melt butter with oil in heavy large skillet over high heat. Add beans and toss until heated through, about 4 minutes. Season with salt and pepper. Add walnuts and parsley and toss. Transfer to bowl and serve."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": []
+      },
+      "stage5": {
+        "status": "validated",
+        "review_id": "review-primary-0001",
+        "selected_review": {
+          "id": "review-primary-0001",
+          "source": "primary",
+          "text": "I made this recipe was a side dish for Thanksgiving dinner, it was incredible! The taste of the walnuts with the green beans was very unique, my family really liked it, I didn't have walnut oil, so I just added olive oil, and I also added 3 cloves of fresh garlic - that I toasted with the butter just before serving. A definite keeper, excellent side dish for any dinner! No more boring beans!",
+          "rating": 5,
+          "reviewer": "NANNOUSE",
+          "helpful_votes": 61,
+          "date": "10/11/2005",
+          "permalink": null,
+          "metadata": {}
+        },
+        "modifications": [
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "NANNOUSE",
+              "rating": 5,
+              "helpful_votes": 61,
+              "date": "10/11/2005",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "I didn't have walnut oil, so I just added olive oil",
+              "it was incredible! The taste of the walnuts with the green beans was very unique, my family really liked it"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer described the dish as incredible and said their family really liked it."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0004",
+                "replacement_text": "2 tablespoons olive oil",
+                "quantity_change": null,
+                "section": "ingredients",
+                "index": 3,
+                "matched_record": {
+                  "id": "ingredient-0004",
+                  "text": "2 tablespoons walnut oil",
+                  "name": "walnut oil",
+                  "quantity": "2",
+                  "unit": "tablespoon"
+                }
+              }
+            ]
+          },
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "NANNOUSE",
+              "rating": 5,
+              "helpful_votes": 61,
+              "date": "10/11/2005",
+              "permalink": null
+            },
+            "id": "modification-2",
+            "evidence_quotes": [
+              "I also added 3 cloves of fresh garlic - that I toasted with the butter just before serving.",
+              "it was incredible! The taste of the walnuts with the green beans was very unique, my family really liked it"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer described the dish as incredible and said their family really liked it."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0007",
+                "position": "after",
+                "text": "3 cloves fresh garlic",
+                "section": "ingredients",
+                "index": 6,
+                "matched_record": {
+                  "id": "ingredient-0007",
+                  "text": "2 tablespoons minced fresh parsley",
+                  "name": "minced fresh parsley",
+                  "quantity": "2",
+                  "unit": "tablespoon"
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0003",
+                "replacement_text": "Melt butter with oil in heavy large skillet over high heat. Add beans and toss until heated through, about 4 minutes. Season with salt and pepper. Just before serving, toast garlic with the butter. Add walnuts and parsley and toss. Transfer to bowl and serve.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 2,
+                "matched_record": {
+                  "id": "instruction-0003",
+                  "text": "Melt butter with oil in heavy large skillet over high heat. Add beans and toss until heated through, about 4 minutes. Season with salt and pepper. Add walnuts and parsley and toss. Transfer to bowl and serve."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "next_review": null,
+        "recipe_id": "9138"
+      },
+      "status": "validated"
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+{
+  "status": "enhanced",
+  "recipe": {
+    "recipe_id": "22158",
+    "title": "Pasta Lasagna",
+    "prep_time": "PT10M",
+    "cook_time": "PT50M",
+    "total_time": "PT60M",
+    "servings": "5",
+    "yield": "5",
+    "ingredients": [
+      {
+        "id": "ingredient-0001",
+        "text": "0.5 pound penne pasta",
+        "name": "pound penne pasta",
+        "quantity": "1/2",
+        "unit": null
+      },
+      {
+        "id": "ingredient-0002",
+        "text": "0.5 pound lean ground beef",
+        "name": "pound lean ground beef",
+        "quantity": "1/2",
+        "unit": null
+      },
+      {
+        "id": "ingredient-0003",
+        "text": "1 (26 ounce) jar pasta sauce",
+        "name": "(26 ounce) jar pasta sauce",
+        "quantity": "1",
+        "unit": null
+      },
+      {
+        "id": "ingredient-0004",
+        "text": "1 (15 ounce) container ricotta cheese",
+        "name": "(15 ounce) container ricotta cheese",
+        "quantity": "1",
+        "unit": null
+      },
+      {
+        "id": "ingredient-0005",
+        "text": "8 ounces shredded mozzarella cheese, divided",
+        "name": "shredded mozzarella cheese, divided",
+        "quantity": "8",
+        "unit": "ounce"
+      },
+      {
+        "id": "ingredient-0006",
+        "text": "0.25 cup grated Parmesan cheese",
+        "name": "grated Parmesan cheese",
+        "quantity": "1/4",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0007",
+        "text": "1 egg, beaten",
+        "name": "egg, beaten",
+        "quantity": "1",
+        "unit": null
+      }
+    ],
+    "instructions": [
+      {
+        "id": "instruction-0001",
+        "text": "Preheat oven to 350 degrees F (175 degrees C). Grease a 2 1/2 quart baking dish."
+      },
+      {
+        "id": "instruction-0002",
+        "text": "Bring a large pot of lightly salted water to a boil. Add pasta and cook for 8 to 10 minutes or until al dente; drain."
+      },
+      {
+        "id": "instruction-0003",
+        "text": "In a large skillet over medium heat, cook beef until brown; drain. Stir in pasta sauce; remove from heat."
+      },
+      {
+        "id": "instruction-0004",
+        "text": "In a bowl, combine ricotta, 1 cup mozzarella, Parmesan and beaten egg. Stir until well combined."
+      },
+      {
+        "id": "instruction-0005",
+        "text": "In the prepared dish layer pasta, cheese mixture, sauce, pasta, cheese mixture, sauce, pasta and sauce. Top with mozzarella."
+      },
+      {
+        "id": "instruction-0006",
+        "text": "Bake in preheated oven 34 to 40 minutes, until hot and bubbly."
+      }
+    ]
+  },
+  "recipe_id": "22158",
+  "review_id": "review-primary-0001",
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "text": "Very good and much easier than messing with lasagna noodles. The whole family asked me to put this in the rotation. I used double the noodles and mozzarella cheese. I also used cottage cheese instead of ricotta. I also added a little more sauce. I layered pasta/cheese mix/sauce/pasta/cheese mix/sauce/pasta/sauce/mozz cheese.",
+    "rating": 5,
+    "reviewer": "Stefanie Frank Stewart",
+    "helpful_votes": 228,
+    "date": "10/26/2007",
+    "permalink": null,
+    "metadata": {}
+  },
+  "modifications": [
+    {
+      "id": "modification-2",
+      "changes": [
+        {
+          "modification_id": "modification-2",
+          "section": "instructions",
+          "operation": "replace",
+          "target_id": "instruction-0005",
+          "before": "In the prepared dish layer half the pasta, half the sauce and half the cheese mixture. Repeat. Top with remaining mozzarella.",
+          "after": "In the prepared dish layer pasta, cheese mixture, sauce, pasta, cheese mixture, sauce, pasta and sauce. Top with mozzarella."
+        }
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Using the described sequence adds another pasta layer and may distribute the pasta, cheese mixture, and sauce differently."
+      },
+      "evidence": [
+        {
+          "review_id": "review-primary-0001",
+          "quote": "I layered pasta/cheese mix/sauce/pasta/cheese mix/sauce/pasta/sauce/mozz cheese."
+        }
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "review_id": "review-primary-0001",
+      "modification_id": "modification-1",
+      "target": "instruction-0004",
+      "reason": "changed instruction value '2' is not supported by exact review evidence"
+    }
+  ],
+  "skipped_reviews": [],
+  "review_evaluations": [
+    {
+      "review_id": "review-primary-0001",
+      "source": "primary",
+      "helpful_votes": 228,
+      "stage3": {
+        "review_id": "review-primary-0001",
+        "decision": "propose",
+        "modifications": [
+          {
+            "id": "modification-1",
+            "evidence_quotes": [
+              "I used double the noodles and mozzarella cheese.",
+              "I also used cottage cheese instead of ricotta."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Doubling the noodles and mozzarella makes the dish more substantial and cheesy; cottage cheese offers an alternative to ricotta in the filling."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0001",
+                "replacement_text": "1 pound penne pasta",
+                "quantity_change": {
+                  "mode": "multiply",
+                  "amount": null,
+                  "unit": null,
+                  "factor": "2"
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0005",
+                "replacement_text": "16 ounces shredded mozzarella cheese, divided",
+                "quantity_change": {
+                  "mode": "multiply",
+                  "amount": null,
+                  "unit": null,
+                  "factor": "2"
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0004",
+                "replacement_text": "1 (15 ounce) container cottage cheese",
+                "quantity_change": null
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0004",
+                "replacement_text": "In a bowl, combine cottage cheese, 2 cups mozzarella, Parmesan and beaten egg. Stir until well combined.",
+                "quantity_change": null
+              }
+            ]
+          },
+          {
+            "id": "modification-2",
+            "evidence_quotes": [
+              "I layered pasta/cheese mix/sauce/pasta/cheese mix/sauce/pasta/sauce/mozz cheese."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Using the described sequence adds another pasta layer and may distribute the pasta, cheese mixture, and sauce differently."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "instruction-0005",
+                "replacement_text": "In the prepared dish layer pasta, cheese mixture, sauce, pasta, cheese mixture, sauce, pasta and sauce. Top with mozzarella.",
+                "quantity_change": null
+              }
+            ]
+          }
+        ]
+      },
+      "stage4": {
+        "status": "routed",
+        "selected_review": {
+          "id": "review-primary-0001",
+          "source": "primary",
+          "reviewer": "Stefanie Frank Stewart",
+          "rating": 5,
+          "helpful_votes": 228,
+          "date": "10/26/2007",
+          "permalink": null
+        },
+        "review_id": "review-primary-0001",
+        "modifications": [
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "Stefanie Frank Stewart",
+              "rating": 5,
+              "helpful_votes": 228,
+              "date": "10/26/2007",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "I used double the noodles and mozzarella cheese.",
+              "I also used cottage cheese instead of ricotta."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Doubling the noodles and mozzarella makes the dish more substantial and cheesy; cottage cheese offers an alternative to ricotta in the filling."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0001",
+                "replacement_text": "1 pound penne pasta",
+                "quantity_change": {
+                  "mode": "multiply",
+                  "amount": null,
+                  "unit": null,
+                  "factor": "2"
+                },
+                "section": "ingredients",
+                "index": 0,
+                "matched_record": {
+                  "id": "ingredient-0001",
+                  "text": "0.5 pound penne pasta",
+                  "name": "pound penne pasta",
+                  "quantity": "1/2",
+                  "unit": null
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0005",
+                "replacement_text": "16 ounces shredded mozzarella cheese, divided",
+                "quantity_change": {
+                  "mode": "multiply",
+                  "amount": null,
+                  "unit": null,
+                  "factor": "2"
+                },
+                "section": "ingredients",
+                "index": 4,
+                "matched_record": {
+                  "id": "ingredient-0005",
+                  "text": "8 ounces shredded mozzarella cheese, divided",
+                  "name": "shredded mozzarella cheese, divided",
+                  "quantity": "8",
+                  "unit": "ounce"
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0004",
+                "replacement_text": "1 (15 ounce) container cottage cheese",
+                "quantity_change": null,
+                "section": "ingredients",
+                "index": 3,
+                "matched_record": {
+                  "id": "ingredient-0004",
+                  "text": "1 (15 ounce) container ricotta cheese",
+                  "name": "(15 ounce) container ricotta cheese",
+                  "quantity": "1",
+                  "unit": null
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0004",
+                "replacement_text": "In a bowl, combine cottage cheese, 2 cups mozzarella, Parmesan and beaten egg. Stir until well combined.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 3,
+                "matched_record": {
+                  "id": "instruction-0004",
+                  "text": "In a bowl, combine ricotta, 1 cup mozzarella, Parmesan and beaten egg. Stir until well combined."
+                }
+              }
+            ]
+          },
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "Stefanie Frank Stewart",
+              "rating": 5,
+              "helpful_votes": 228,
+              "date": "10/26/2007",
+              "permalink": null
+            },
+            "id": "modification-2",
+            "evidence_quotes": [
+              "I layered pasta/cheese mix/sauce/pasta/cheese mix/sauce/pasta/sauce/mozz cheese."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Using the described sequence adds another pasta layer and may distribute the pasta, cheese mixture, and sauce differently."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "instruction-0005",
+                "replacement_text": "In the prepared dish layer pasta, cheese mixture, sauce, pasta, cheese mixture, sauce, pasta and sauce. Top with mozzarella.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 4,
+                "matched_record": {
+                  "id": "instruction-0005",
+                  "text": "In the prepared dish layer half the pasta, half the sauce and half the cheese mixture. Repeat. Top with remaining mozzarella."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": []
+      },
+      "stage5": {
+        "status": "validated",
+        "review_id": "review-primary-0001",
+        "selected_review": {
+          "id": "review-primary-0001",
+          "source": "primary",
+          "text": "Very good and much easier than messing with lasagna noodles. The whole family asked me to put this in the rotation. I used double the noodles and mozzarella cheese. I also used cottage cheese instead of ricotta. I also added a little more sauce. I layered pasta/cheese mix/sauce/pasta/cheese mix/sauce/pasta/sauce/mozz cheese.",
+          "rating": 5,
+          "reviewer": "Stefanie Frank Stewart",
+          "helpful_votes": 228,
+          "date": "10/26/2007",
+          "permalink": null,
+          "metadata": {}
+        },
+        "modifications": [
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "Stefanie Frank Stewart",
+              "rating": 5,
+              "helpful_votes": 228,
+              "date": "10/26/2007",
+              "permalink": null
+            },
+            "id": "modification-2",
+            "evidence_quotes": [
+              "I layered pasta/cheese mix/sauce/pasta/cheese mix/sauce/pasta/sauce/mozz cheese."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Using the described sequence adds another pasta layer and may distribute the pasta, cheese mixture, and sauce differently."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "instruction-0005",
+                "replacement_text": "In the prepared dish layer pasta, cheese mixture, sauce, pasta, cheese mixture, sauce, pasta and sauce. Top with mozzarella.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 4,
+                "matched_record": {
+                  "id": "instruction-0005",
+                  "text": "In the prepared dish layer half the pasta, half the sauce and half the cheese mixture. Repeat. Top with remaining mozzarella."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": [
+          {
+            "review_id": "review-primary-0001",
+            "modification_id": "modification-1",
+            "target": "instruction-0004",
+            "reason": "changed instruction value '2' is not supported by exact review evidence"
+          }
+        ],
+        "next_review": null,
+        "recipe_id": "22158"
+      },
+      "status": "validated"
+    }
+  ]
+}

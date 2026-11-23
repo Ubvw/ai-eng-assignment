@@ -77,6 +77,53 @@ class Stage3Tests(unittest.TestCase):
         finally:
             os.chdir(original)
 
+    def test_staged_run_resumes_after_validation_rejects_a_proposal(self):
+        with TemporaryDirectory() as folder:
+            path = Path(folder) / "recipe.json"
+            path.write_text(json.dumps({
+                "recipe_id": "r", "title": "Cake", "ingredients": ["1 cup flour"],
+                "instructions": ["Mix flour."],
+                "most_helpful_positive_review": {
+                    "rating": 5, "text": "I tried this.", "helpful_votes": 10,
+                },
+                "featured_tweaks": [{
+                    "rating": 5, "text": "I baked it at 350 degrees.", "helpful_votes": 5,
+                }],
+            }), encoding="utf-8")
+            pipeline = LLMAnalysisPipeline.__new__(LLMAnalysisPipeline)
+            classified_reviews = []
+
+            def classify(recipe, review, on_retry):
+                classified_reviews.append(review["id"])
+                evidence = "not in the review" if review["source"] == "primary" else "350 degrees"
+                return SimpleNamespace(
+                    decision="propose",
+                    model_dump=lambda mode: {
+                        "review_id": review["id"], "decision": "propose",
+                        "modifications": [{
+                            "id": "mod-1", "evidence_quotes": [evidence],
+                            "benefit": {"basis": "inferred", "description": "A clear bake temperature."},
+                            "edits": [{
+                                "operation": "insert", "anchor_id": "instruction-0001",
+                                "position": "after", "text": "Bake at 350 degrees.",
+                            }],
+                        }],
+                    },
+                )
+
+            pipeline.tweak_extractor = SimpleNamespace(classifier=SimpleNamespace(classify=classify))
+            result = pipeline.run_staged_recipe_file(str(path))
+
+        self.assertEqual(classified_reviews, ["review-primary-0001", "review-featured-0001"])
+        self.assertEqual(result["status"], "enhanced")
+        self.assertEqual(result["review_id"], "review-featured-0001")
+        self.assertEqual(result["recipe"]["instructions"][-1]["text"], "Bake at 350 degrees.")
+        self.assertTrue(any(item["reason"].startswith("evidence quote") for item in result["diagnostics"]))
+        evaluations = result["review_evaluations"]
+        self.assertEqual([item["status"] for item in evaluations], ["continue", "validated"])
+        self.assertEqual(evaluations[0]["stage3"]["modifications"][0]["evidence_quotes"], ["not in the review"])
+        self.assertEqual(evaluations[1]["stage5"]["modifications"][0]["id"], "mod-1")
+
     def test_approved_examples_use_canonical_padded_recipe_ids(self):
         for message in approved_messages()[1:]:
             content = json.loads(message["content"])

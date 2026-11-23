@@ -124,3 +124,16 @@ uv add <package_name>
 # Run tests
 cd src && uv run python test_pipeline.py single
 ```
+
+## Evaluation
+
+The held-out baseline comparison, scoring criteria, and per-recipe results are summarized in [evals/evaluation-summary.md](evals/evaluation-summary.md). The `evals/` folder also contains the frozen test inputs, baseline outputs, stage-level evaluation artifacts, and new pipeline run results.
+
+## Agent Traces
+- [evals/evaluation-summary.md](evals/evaluation-summary.md)
+- [data/agent_conversation_traces/agent1.md](data/agent_conversation_traces/agent1.md)
+- [data/agent_conversation_traces/agent1.md](data/agent_conversation_traces/agent2.md)
+- [data/agent_conversation_traces/agent1.md](data/agent_conversation_traces/agent3.md)
+
+## Write up Document
+- [assignment_approach.md](assignment_approach.md)

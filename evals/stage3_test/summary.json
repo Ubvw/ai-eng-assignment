@@ -12,8 +12,8 @@
   "all_edit_target_ids_known": false,
   "results": [
     {
-      "input_path": "data/test_data/recipe_13974.json",
-      "output_path": "data/stage3_test/recipe_13974.json",
+      "input_path": "evals/test_data/recipe_13974.json",
+      "output_path": "evals/stage3_test/recipe_13974.json",
       "outcome": "proposal",
       "cli_exit_code": 0,
       "selected_review": {
@@ -43,8 +43,8 @@
       }
     },
     {
-      "input_path": "data/test_data/recipe_15641.json",
-      "output_path": "data/stage3_test/recipe_15641.json",
+      "input_path": "evals/test_data/recipe_15641.json",
+      "output_path": "evals/stage3_test/recipe_15641.json",
       "outcome": "exhausted",
       "cli_exit_code": 0,
       "selected_review": {
@@ -74,8 +74,8 @@
       }
     },
     {
-      "input_path": "data/test_data/recipe_221062.json",
-      "output_path": "data/stage3_test/recipe_221062.json",
+      "input_path": "evals/test_data/recipe_221062.json",
+      "output_path": "evals/stage3_test/recipe_221062.json",
       "outcome": "proposal",
       "cli_exit_code": 0,
       "selected_review": {
@@ -105,8 +105,8 @@
       }
     },
     {
-      "input_path": "data/test_data/recipe_22158.json",
-      "output_path": "data/stage3_test/recipe_22158.json",
+      "input_path": "evals/test_data/recipe_22158.json",
+      "output_path": "evals/stage3_test/recipe_22158.json",
       "outcome": "proposal",
       "cli_exit_code": 0,
       "selected_review": {
@@ -136,8 +136,8 @@
       }
     },
     {
-      "input_path": "data/test_data/recipe_229445.json",
-      "output_path": "data/stage3_test/recipe_229445.json",
+      "input_path": "evals/test_data/recipe_229445.json",
+      "output_path": "evals/stage3_test/recipe_229445.json",
       "outcome": "proposal",
       "cli_exit_code": 0,
       "selected_review": {
@@ -167,8 +167,8 @@
       }
     },
     {
-      "input_path": "data/test_data/recipe_24380.json",
-      "output_path": "data/stage3_test/recipe_24380.json",
+      "input_path": "evals/test_data/recipe_24380.json",
+      "output_path": "evals/stage3_test/recipe_24380.json",
       "outcome": "proposal",
       "cli_exit_code": 0,
       "selected_review": {
@@ -198,8 +198,8 @@
       }
     },
     {
-      "input_path": "data/test_data/recipe_255272.json",
-      "output_path": "data/stage3_test/recipe_255272.json",
+      "input_path": "evals/test_data/recipe_255272.json",
+      "output_path": "evals/stage3_test/recipe_255272.json",
       "outcome": "exhausted",
       "cli_exit_code": 0,
       "selected_review": {
@@ -229,8 +229,8 @@
       }
     },
     {
-      "input_path": "data/test_data/recipe_8091.json",
-      "output_path": "data/stage3_test/recipe_8091.json",
+      "input_path": "evals/test_data/recipe_8091.json",
+      "output_path": "evals/stage3_test/recipe_8091.json",
       "outcome": "proposal",
       "cli_exit_code": 0,
       "selected_review": {
@@ -260,8 +260,8 @@
       }
     },
     {
-      "input_path": "data/test_data/recipe_9138.json",
-      "output_path": "data/stage3_test/recipe_9138.json",
+      "input_path": "evals/test_data/recipe_9138.json",
+      "output_path": "evals/stage3_test/recipe_9138.json",
       "outcome": "proposal",
       "cli_exit_code": 0,
       "selected_review": {
@@ -291,8 +291,8 @@
       }
     },
     {
-      "input_path": "data/test_data/recipe_9397.json",
-      "output_path": "data/stage3_test/recipe_9397.json",
+      "input_path": "evals/test_data/recipe_9397.json",
+      "output_path": "evals/stage3_test/recipe_9397.json",
       "outcome": "proposal",
       "cli_exit_code": 0,
       "selected_review": {

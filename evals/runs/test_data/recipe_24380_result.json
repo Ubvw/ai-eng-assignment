@@ -1,0 +1,606 @@
+{
+  "status": "enhanced",
+  "recipe": {
+    "recipe_id": "24380",
+    "title": "Green Salad with Cranberry Vinaigrette",
+    "prep_time": "PT15M",
+    "cook_time": "PT5M",
+    "total_time": "PT20M",
+    "servings": "8",
+    "yield": "8",
+    "ingredients": [
+      {
+        "id": "ingredient-0001",
+        "text": "1 cup sliced almonds",
+        "name": "sliced almonds",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0002",
+        "text": "0.33333298563957 cup olive oil",
+        "name": "olive oil",
+        "quantity": "33333298563957/100000000000000",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0003",
+        "text": "0.25 cup fresh cranberries",
+        "name": "fresh cranberries",
+        "quantity": "1/4",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0004",
+        "text": "3 tablespoons red wine vinegar",
+        "name": "red wine vinegar",
+        "quantity": "3",
+        "unit": "tablespoon"
+      },
+      {
+        "id": "ingredient-0005",
+        "text": "2 tablespoons water",
+        "name": "water",
+        "quantity": "2",
+        "unit": "tablespoon"
+      },
+      {
+        "id": "ingredient-0006",
+        "text": "1 tablespoon Dijon mustard",
+        "name": "Dijon mustard",
+        "quantity": "1",
+        "unit": "tablespoon"
+      },
+      {
+        "id": "ingredient-0013",
+        "text": "2 tablespoons white sugar",
+        "name": "white sugar",
+        "quantity": "2",
+        "unit": "tablespoon"
+      },
+      {
+        "id": "ingredient-0007",
+        "text": "0.5 teaspoon minced garlic",
+        "name": "minced garlic",
+        "quantity": "1/2",
+        "unit": "teaspoon"
+      },
+      {
+        "id": "ingredient-0008",
+        "text": "0.5 teaspoon salt",
+        "name": "salt",
+        "quantity": "1/2",
+        "unit": "teaspoon"
+      },
+      {
+        "id": "ingredient-0009",
+        "text": "0.5 teaspoon ground black pepper",
+        "name": "ground black pepper",
+        "quantity": "1/2",
+        "unit": "teaspoon"
+      },
+      {
+        "id": "ingredient-0010",
+        "text": "1 pound mixed salad greens",
+        "name": "pound mixed salad greens",
+        "quantity": "1",
+        "unit": null
+      },
+      {
+        "id": "ingredient-0011",
+        "text": "0.5 red onion, thinly sliced",
+        "name": "red onion, thinly sliced",
+        "quantity": "1/2",
+        "unit": null
+      },
+      {
+        "id": "ingredient-0012",
+        "text": "4 ounces crumbled blue cheese",
+        "name": "crumbled blue cheese",
+        "quantity": "4",
+        "unit": "ounce"
+      },
+      {
+        "id": "ingredient-0014",
+        "text": "Thinly sliced Granny Smith apples",
+        "name": "Thinly sliced Granny Smith apples",
+        "quantity": null,
+        "unit": null
+      }
+    ],
+    "instructions": [
+      {
+        "id": "instruction-0001",
+        "text": "Preheat the oven to 375 degrees F (190 degrees C)."
+      },
+      {
+        "id": "instruction-0002",
+        "text": "Arrange almonds in a single layer on a baking sheet. Toast in the preheated oven until nuts begin to brown, about 5 minutes."
+      },
+      {
+        "id": "instruction-0003",
+        "text": "Combine oil, cranberries, vinegar, water, Dijon mustard, white sugar, garlic, salt, and black pepper in a blender or the bowl of a food processor; blend until vinaigrette is smooth."
+      },
+      {
+        "id": "instruction-0004",
+        "text": "Toss mixed greens, almonds, onion, and blue cheese with vinaigrette in a large bowl until evenly coated."
+      },
+      {
+        "id": "instruction-0005",
+        "text": "Add thinly sliced Granny Smith apples to the salad."
+      }
+    ]
+  },
+  "recipe_id": "24380",
+  "review_id": "review-primary-0001",
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "text": "OMG! This was a huge hit at our Thanksgiving gathering. Everyone loved it! You definitely need to add the 2 Tbsp. of white sugar to decrease the tartness, but other than that this recipe is spot on in terms of flavor. I used toasted walnuts instead of almonds (personal preference), a mixture of romaine lettuce and spring mix along with the red onion, added some thin sliced Granny Smith apples that I soaked in a bit of lemon juice and water to prevent them from browning, craisins, and feta cheese. That mixture proved to be the right combination of sweet and tart and needless to say it was very pretty! It was also a great way to use up leftover turkey, the next day I diced some of it and put it over top - YUM!",
+    "rating": 5,
+    "reviewer": "Jillian",
+    "helpful_votes": 215,
+    "date": "11/29/2010",
+    "permalink": null,
+    "metadata": {}
+  },
+  "modifications": [
+    {
+      "id": "modification-1",
+      "changes": [
+        {
+          "modification_id": "modification-1",
+          "section": "ingredients",
+          "operation": "insert",
+          "target_id": "ingredient-0013",
+          "anchor_id": "ingredient-0006",
+          "position": "after",
+          "after": "2 tablespoons white sugar"
+        },
+        {
+          "modification_id": "modification-1",
+          "section": "instructions",
+          "operation": "replace",
+          "target_id": "instruction-0003",
+          "before": "Combine oil, cranberries, vinegar, water, Dijon mustard, garlic, salt, and black pepper in a blender or the bowl of a food processor; blend until vinaigrette is smooth.",
+          "after": "Combine oil, cranberries, vinegar, water, Dijon mustard, white sugar, garlic, salt, and black pepper in a blender or the bowl of a food processor; blend until vinaigrette is smooth."
+        }
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "The added sugar may reduce the vinaigrette’s tartness."
+      },
+      "evidence": [
+        {
+          "review_id": "review-primary-0001",
+          "quote": "You definitely need to add the 2 Tbsp. of white sugar to decrease the tartness"
+        }
+      ]
+    },
+    {
+      "id": "modification-2",
+      "changes": [
+        {
+          "modification_id": "modification-2",
+          "section": "ingredients",
+          "operation": "insert",
+          "target_id": "ingredient-0014",
+          "anchor_id": "ingredient-0012",
+          "position": "after",
+          "after": "Thinly sliced Granny Smith apples"
+        },
+        {
+          "modification_id": "modification-2",
+          "section": "instructions",
+          "operation": "insert",
+          "target_id": "instruction-0005",
+          "anchor_id": "instruction-0004",
+          "position": "after",
+          "after": "Add thinly sliced Granny Smith apples to the salad."
+        }
+      ],
+      "benefit": {
+        "basis": "reported",
+        "description": "The reviewer found the salad mixture had a good balance of sweet and tart and looked pretty."
+      },
+      "evidence": [
+        {
+          "review_id": "review-primary-0001",
+          "quote": "added some thin sliced Granny Smith apples that I soaked in a bit of lemon juice and water to prevent them from browning"
+        },
+        {
+          "review_id": "review-primary-0001",
+          "quote": "That mixture proved to be the right combination of sweet and tart and needless to say it was very pretty!"
+        }
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "review_id": "review-primary-0001",
+      "modification_id": "modification-3",
+      "target": "ingredient-0012",
+      "reason": "conflicts with kept modification 'modification-2' on target 'ingredient-0012'",
+      "kept_modification_id": "modification-2"
+    }
+  ],
+  "skipped_reviews": [],
+  "review_evaluations": [
+    {
+      "review_id": "review-primary-0001",
+      "source": "primary",
+      "helpful_votes": 215,
+      "stage3": {
+        "review_id": "review-primary-0001",
+        "decision": "propose",
+        "modifications": [
+          {
+            "id": "modification-1",
+            "evidence_quotes": [
+              "You definitely need to add the 2 Tbsp. of white sugar to decrease the tartness"
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "The added sugar may reduce the vinaigrette’s tartness."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0006",
+                "position": "after",
+                "text": "2 tablespoons white sugar"
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0003",
+                "replacement_text": "Combine oil, cranberries, vinegar, water, Dijon mustard, white sugar, garlic, salt, and black pepper in a blender or the bowl of a food processor; blend until vinaigrette is smooth.",
+                "quantity_change": null
+              }
+            ]
+          },
+          {
+            "id": "modification-2",
+            "evidence_quotes": [
+              "added some thin sliced Granny Smith apples that I soaked in a bit of lemon juice and water to prevent them from browning",
+              "That mixture proved to be the right combination of sweet and tart and needless to say it was very pretty!"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer found the salad mixture had a good balance of sweet and tart and looked pretty."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0012",
+                "position": "after",
+                "text": "Thinly sliced Granny Smith apples"
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "instruction-0004",
+                "position": "after",
+                "text": "Add thinly sliced Granny Smith apples to the salad."
+              }
+            ]
+          },
+          {
+            "id": "modification-3",
+            "evidence_quotes": [
+              "It was also a great way to use up leftover turkey, the next day I diced some of it and put it over top - YUM!"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer used leftover turkey as a topping."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0012",
+                "position": "after",
+                "text": "Diced leftover turkey"
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "instruction-0004",
+                "position": "after",
+                "text": "Top with diced leftover turkey."
+              }
+            ]
+          }
+        ]
+      },
+      "stage4": {
+        "status": "routed",
+        "selected_review": {
+          "id": "review-primary-0001",
+          "source": "primary",
+          "reviewer": "Jillian",
+          "rating": 5,
+          "helpful_votes": 215,
+          "date": "11/29/2010",
+          "permalink": null
+        },
+        "review_id": "review-primary-0001",
+        "modifications": [
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "Jillian",
+              "rating": 5,
+              "helpful_votes": 215,
+              "date": "11/29/2010",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "You definitely need to add the 2 Tbsp. of white sugar to decrease the tartness"
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "The added sugar may reduce the vinaigrette’s tartness."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0006",
+                "position": "after",
+                "text": "2 tablespoons white sugar",
+                "section": "ingredients",
+                "index": 5,
+                "matched_record": {
+                  "id": "ingredient-0006",
+                  "text": "1 tablespoon Dijon mustard",
+                  "name": "Dijon mustard",
+                  "quantity": "1",
+                  "unit": "tablespoon"
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0003",
+                "replacement_text": "Combine oil, cranberries, vinegar, water, Dijon mustard, white sugar, garlic, salt, and black pepper in a blender or the bowl of a food processor; blend until vinaigrette is smooth.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 2,
+                "matched_record": {
+                  "id": "instruction-0003",
+                  "text": "Combine oil, cranberries, vinegar, water, Dijon mustard, garlic, salt, and black pepper in a blender or the bowl of a food processor; blend until vinaigrette is smooth."
+                }
+              }
+            ]
+          },
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "Jillian",
+              "rating": 5,
+              "helpful_votes": 215,
+              "date": "11/29/2010",
+              "permalink": null
+            },
+            "id": "modification-2",
+            "evidence_quotes": [
+              "added some thin sliced Granny Smith apples that I soaked in a bit of lemon juice and water to prevent them from browning",
+              "That mixture proved to be the right combination of sweet and tart and needless to say it was very pretty!"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer found the salad mixture had a good balance of sweet and tart and looked pretty."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0012",
+                "position": "after",
+                "text": "Thinly sliced Granny Smith apples",
+                "section": "ingredients",
+                "index": 11,
+                "matched_record": {
+                  "id": "ingredient-0012",
+                  "text": "4 ounces crumbled blue cheese",
+                  "name": "crumbled blue cheese",
+                  "quantity": "4",
+                  "unit": "ounce"
+                }
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "instruction-0004",
+                "position": "after",
+                "text": "Add thinly sliced Granny Smith apples to the salad.",
+                "section": "instructions",
+                "index": 3,
+                "matched_record": {
+                  "id": "instruction-0004",
+                  "text": "Toss mixed greens, almonds, onion, and blue cheese with vinaigrette in a large bowl until evenly coated."
+                }
+              }
+            ]
+          },
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "Jillian",
+              "rating": 5,
+              "helpful_votes": 215,
+              "date": "11/29/2010",
+              "permalink": null
+            },
+            "id": "modification-3",
+            "evidence_quotes": [
+              "It was also a great way to use up leftover turkey, the next day I diced some of it and put it over top - YUM!"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer used leftover turkey as a topping."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0012",
+                "position": "after",
+                "text": "Diced leftover turkey",
+                "section": "ingredients",
+                "index": 11,
+                "matched_record": {
+                  "id": "ingredient-0012",
+                  "text": "4 ounces crumbled blue cheese",
+                  "name": "crumbled blue cheese",
+                  "quantity": "4",
+                  "unit": "ounce"
+                }
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "instruction-0004",
+                "position": "after",
+                "text": "Top with diced leftover turkey.",
+                "section": "instructions",
+                "index": 3,
+                "matched_record": {
+                  "id": "instruction-0004",
+                  "text": "Toss mixed greens, almonds, onion, and blue cheese with vinaigrette in a large bowl until evenly coated."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": []
+      },
+      "stage5": {
+        "status": "validated",
+        "review_id": "review-primary-0001",
+        "selected_review": {
+          "id": "review-primary-0001",
+          "source": "primary",
+          "text": "OMG! This was a huge hit at our Thanksgiving gathering. Everyone loved it! You definitely need to add the 2 Tbsp. of white sugar to decrease the tartness, but other than that this recipe is spot on in terms of flavor. I used toasted walnuts instead of almonds (personal preference), a mixture of romaine lettuce and spring mix along with the red onion, added some thin sliced Granny Smith apples that I soaked in a bit of lemon juice and water to prevent them from browning, craisins, and feta cheese. That mixture proved to be the right combination of sweet and tart and needless to say it was very pretty! It was also a great way to use up leftover turkey, the next day I diced some of it and put it over top - YUM!",
+          "rating": 5,
+          "reviewer": "Jillian",
+          "helpful_votes": 215,
+          "date": "11/29/2010",
+          "permalink": null,
+          "metadata": {}
+        },
+        "modifications": [
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "Jillian",
+              "rating": 5,
+              "helpful_votes": 215,
+              "date": "11/29/2010",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "You definitely need to add the 2 Tbsp. of white sugar to decrease the tartness"
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "The added sugar may reduce the vinaigrette’s tartness."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0006",
+                "position": "after",
+                "text": "2 tablespoons white sugar",
+                "section": "ingredients",
+                "index": 5,
+                "matched_record": {
+                  "id": "ingredient-0006",
+                  "text": "1 tablespoon Dijon mustard",
+                  "name": "Dijon mustard",
+                  "quantity": "1",
+                  "unit": "tablespoon"
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0003",
+                "replacement_text": "Combine oil, cranberries, vinegar, water, Dijon mustard, white sugar, garlic, salt, and black pepper in a blender or the bowl of a food processor; blend until vinaigrette is smooth.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 2,
+                "matched_record": {
+                  "id": "instruction-0003",
+                  "text": "Combine oil, cranberries, vinegar, water, Dijon mustard, garlic, salt, and black pepper in a blender or the bowl of a food processor; blend until vinaigrette is smooth."
+                }
+              }
+            ]
+          },
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "Jillian",
+              "rating": 5,
+              "helpful_votes": 215,
+              "date": "11/29/2010",
+              "permalink": null
+            },
+            "id": "modification-2",
+            "evidence_quotes": [
+              "added some thin sliced Granny Smith apples that I soaked in a bit of lemon juice and water to prevent them from browning",
+              "That mixture proved to be the right combination of sweet and tart and needless to say it was very pretty!"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer found the salad mixture had a good balance of sweet and tart and looked pretty."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0012",
+                "position": "after",
+                "text": "Thinly sliced Granny Smith apples",
+                "section": "ingredients",
+                "index": 11,
+                "matched_record": {
+                  "id": "ingredient-0012",
+                  "text": "4 ounces crumbled blue cheese",
+                  "name": "crumbled blue cheese",
+                  "quantity": "4",
+                  "unit": "ounce"
+                }
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "instruction-0004",
+                "position": "after",
+                "text": "Add thinly sliced Granny Smith apples to the salad.",
+                "section": "instructions",
+                "index": 3,
+                "matched_record": {
+                  "id": "instruction-0004",
+                  "text": "Toss mixed greens, almonds, onion, and blue cheese with vinaigrette in a large bowl until evenly coated."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": [
+          {
+            "review_id": "review-primary-0001",
+            "modification_id": "modification-3",
+            "target": "ingredient-0012",
+            "reason": "conflicts with kept modification 'modification-2' on target 'ingredient-0012'",
+            "kept_modification_id": "modification-2"
+          }
+        ],
+        "next_review": null,
+        "recipe_id": "24380"
+      },
+      "status": "validated"
+    }
+  ]
+}

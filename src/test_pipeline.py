@@ -7,6 +7,7 @@ Run the legacy recipe pipeline or verify individual stage boundaries.
 Usage:
     python test_pipeline.py single    # Test single chocolate chip cookie recipe
     python test_pipeline.py all       # Test all recipes in data directory
+    python test_pipeline.py run data/recipe.json data/enhanced/staged-recipe.json
     python test_pipeline.py stage3 data/recipe_10813_best-chocolate-chip-cookies.json
     python test_pipeline.py stage4 data/recipe.json data/stage3-result.json
     python test_pipeline.py stage5 data/recipe.json data/stage4-result.json
@@ -125,7 +126,7 @@ def test_all_recipes():
 def main():
     """Main test function with mode selection."""
 
-    usage = "Usage: python test_pipeline.py [single|all|stage3|stage4|stage5|stage6|stage7]"
+    usage = "Usage: python test_pipeline.py [single|all|run|stage3|stage4|stage5|stage6|stage7]"
     # Parse command line argument
     if len(sys.argv) < 2:
         logger.error(usage)
@@ -134,6 +135,28 @@ def main():
         sys.exit(1)
 
     mode = sys.argv[1].lower()
+
+    if mode == "run":
+        if len(sys.argv) != 4:
+            logger.error("Usage: python test_pipeline.py run <saved-recipe.json> <output.json>")
+            sys.exit(2)
+        recipe_path, output_path = map(Path, sys.argv[2:])
+        if not recipe_path.is_file():
+            logger.error("Saved recipe file not found: {}", recipe_path)
+            sys.exit(2)
+        try:
+            pipeline = LLMAnalysisPipeline()
+            result = pipeline.run_staged_recipe_file(str(recipe_path))
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            output_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+            logger.info("Pipeline {} recipe={} output={}", result["status"], result.get("recipe_id"), output_path)
+            if result["status"] == "failed":
+                sys.exit(1)
+        except Exception as exc:
+            logger.error("Pipeline run failed: {}: {}", type(exc).__name__, exc)
+            sys.exit(1)
+        return
 
     if mode == "stage7":
         if len(sys.argv) != 3:

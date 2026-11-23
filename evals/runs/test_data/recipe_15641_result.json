@@ -1,0 +1,272 @@
+{
+  "status": "enhanced",
+  "recipe": {
+    "recipe_id": "15641",
+    "title": "Grilled Chicken with Herbs",
+    "prep_time": "PT15M",
+    "cook_time": "PT15M",
+    "total_time": "PT150M",
+    "servings": "6",
+    "yield": "6",
+    "ingredients": [
+      {
+        "id": "ingredient-0001",
+        "text": "0.5 cup balsamic vinegar",
+        "name": "balsamic vinegar",
+        "quantity": "1/2",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0002",
+        "text": "0.25 cup olive oil",
+        "name": "olive oil",
+        "quantity": "1/4",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0003",
+        "text": "3 cloves garlic, minced",
+        "name": "cloves garlic, minced",
+        "quantity": "3",
+        "unit": null
+      },
+      {
+        "id": "ingredient-0004",
+        "text": "2 tablespoons chopped Italian flat leaf parsley",
+        "name": "chopped Italian flat leaf parsley",
+        "quantity": "2",
+        "unit": "tablespoon"
+      },
+      {
+        "id": "ingredient-0005",
+        "text": "2 teaspoons fresh rosemary, minced",
+        "name": "fresh rosemary, minced",
+        "quantity": "2",
+        "unit": "teaspoon"
+      },
+      {
+        "id": "ingredient-0006",
+        "text": "2 teaspoons chopped fresh thyme",
+        "name": "chopped fresh thyme",
+        "quantity": "2",
+        "unit": "teaspoon"
+      },
+      {
+        "id": "ingredient-0007",
+        "text": "1 teaspoon dried sage",
+        "name": "dried sage",
+        "quantity": "1",
+        "unit": "teaspoon"
+      },
+      {
+        "id": "ingredient-0008",
+        "text": "salt and pepper to taste",
+        "name": "salt and pepper to taste",
+        "quantity": null,
+        "unit": null
+      },
+      {
+        "id": "ingredient-0009",
+        "text": "1.5 pounds skinless, boneless chicken breasts",
+        "name": "skinless, boneless chicken breasts",
+        "quantity": "3/2",
+        "unit": "pound"
+      }
+    ],
+    "instructions": [
+      {
+        "id": "instruction-0001",
+        "text": "Blend vinegar, oil, garlic, parsley, rosemary, thyme, sage, salt, and pepper in a blender until well combined. Place chicken in a glass dish or bowl and pour marinade over top. Cover and marinate in the refrigerator for at least 2 hours or up to 48 hours."
+      },
+      {
+        "id": "instruction-0002",
+        "text": "When ready to cook, preheat the grill to medium-high heat and lightly oil the grate. Remove chicken from marinade and shake off excess. Discard remaining marinade."
+      },
+      {
+        "id": "instruction-0003",
+        "text": "Cook chicken on the preheated grill until no longer pink in the center and the juices run clear, 6 to 7 minutes per side. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C)."
+      },
+      {
+        "id": "instruction-0004",
+        "text": "Serve with roasted garlic mashed potatoes and grilled asparagus."
+      }
+    ]
+  },
+  "recipe_id": "15641",
+  "review_id": "review-primary-0001",
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "text": "We love the strong herb flavors of this chicken! If you don't like balsalmic vinegar I would suggest you don't even try it. I make it with dried herbs as I don't usually have fresh herbs on hand and it turns out fine. Just make sure to decrease the amounts as dry herbs are stronger than fresh. This chicken is best when cooked on the grill as the smoky flavor blends incredibly well with the herbs and balsalmic vinegar. I have made this chicken for a few guests and everyone has said they loved it. It's great served with roasted garlic mashed potatoes and grilled asparagus.",
+    "rating": 5,
+    "reviewer": "MINDYJEAN",
+    "helpful_votes": 117,
+    "date": "06/11/2003",
+    "permalink": null,
+    "metadata": {}
+  },
+  "modifications": [
+    {
+      "id": "modification-1",
+      "changes": [
+        {
+          "modification_id": "modification-1",
+          "section": "instructions",
+          "operation": "insert",
+          "target_id": "instruction-0004",
+          "anchor_id": "instruction-0003",
+          "position": "after",
+          "after": "Serve with roasted garlic mashed potatoes and grilled asparagus."
+        }
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "The serving suggestion provides complementary sides for the chicken."
+      },
+      "evidence": [
+        {
+          "review_id": "review-primary-0001",
+          "quote": "It's great served with roasted garlic mashed potatoes and grilled asparagus."
+        }
+      ]
+    }
+  ],
+  "diagnostics": [],
+  "skipped_reviews": [],
+  "review_evaluations": [
+    {
+      "review_id": "review-primary-0001",
+      "source": "primary",
+      "helpful_votes": 117,
+      "stage3": {
+        "review_id": "review-primary-0001",
+        "decision": "propose",
+        "modifications": [
+          {
+            "id": "modification-1",
+            "evidence_quotes": [
+              "It's great served with roasted garlic mashed potatoes and grilled asparagus."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "The serving suggestion provides complementary sides for the chicken."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "instruction-0003",
+                "position": "after",
+                "text": "Serve with roasted garlic mashed potatoes and grilled asparagus."
+              }
+            ]
+          }
+        ]
+      },
+      "stage4": {
+        "status": "routed",
+        "selected_review": {
+          "id": "review-primary-0001",
+          "source": "primary",
+          "reviewer": "MINDYJEAN",
+          "rating": 5,
+          "helpful_votes": 117,
+          "date": "06/11/2003",
+          "permalink": null
+        },
+        "review_id": "review-primary-0001",
+        "modifications": [
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "MINDYJEAN",
+              "rating": 5,
+              "helpful_votes": 117,
+              "date": "06/11/2003",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "It's great served with roasted garlic mashed potatoes and grilled asparagus."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "The serving suggestion provides complementary sides for the chicken."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "instruction-0003",
+                "position": "after",
+                "text": "Serve with roasted garlic mashed potatoes and grilled asparagus.",
+                "section": "instructions",
+                "index": 2,
+                "matched_record": {
+                  "id": "instruction-0003",
+                  "text": "Cook chicken on the preheated grill until no longer pink in the center and the juices run clear, 6 to 7 minutes per side. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C)."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": []
+      },
+      "stage5": {
+        "status": "validated",
+        "review_id": "review-primary-0001",
+        "selected_review": {
+          "id": "review-primary-0001",
+          "source": "primary",
+          "text": "We love the strong herb flavors of this chicken! If you don't like balsalmic vinegar I would suggest you don't even try it. I make it with dried herbs as I don't usually have fresh herbs on hand and it turns out fine. Just make sure to decrease the amounts as dry herbs are stronger than fresh. This chicken is best when cooked on the grill as the smoky flavor blends incredibly well with the herbs and balsalmic vinegar. I have made this chicken for a few guests and everyone has said they loved it. It's great served with roasted garlic mashed potatoes and grilled asparagus.",
+          "rating": 5,
+          "reviewer": "MINDYJEAN",
+          "helpful_votes": 117,
+          "date": "06/11/2003",
+          "permalink": null,
+          "metadata": {}
+        },
+        "modifications": [
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "MINDYJEAN",
+              "rating": 5,
+              "helpful_votes": 117,
+              "date": "06/11/2003",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "It's great served with roasted garlic mashed potatoes and grilled asparagus."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "The serving suggestion provides complementary sides for the chicken."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "instruction-0003",
+                "position": "after",
+                "text": "Serve with roasted garlic mashed potatoes and grilled asparagus.",
+                "section": "instructions",
+                "index": 2,
+                "matched_record": {
+                  "id": "instruction-0003",
+                  "text": "Cook chicken on the preheated grill until no longer pink in the center and the juices run clear, 6 to 7 minutes per side. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C)."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "next_review": null,
+        "recipe_id": "15641"
+      },
+      "status": "validated"
+    }
+  ]
+}

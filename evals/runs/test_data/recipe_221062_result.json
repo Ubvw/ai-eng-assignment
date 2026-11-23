@@ -1,0 +1,368 @@
+{
+  "status": "enhanced",
+  "recipe": {
+    "recipe_id": "221062",
+    "title": "Chicken Broccoli Salad",
+    "prep_time": "PT15M",
+    "cook_time": null,
+    "total_time": "PT75M",
+    "servings": "10",
+    "yield": "10",
+    "ingredients": [
+      {
+        "id": "ingredient-0001",
+        "text": "8 cups broccoli florets",
+        "name": "broccoli florets",
+        "quantity": "8",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0002",
+        "text": "3 cooked skinless, boneless chicken breast halves, cubed",
+        "name": "cooked skinless, boneless chicken breast halves, cubed",
+        "quantity": "3",
+        "unit": null
+      },
+      {
+        "id": "ingredient-0003",
+        "text": "1 cup chopped walnuts",
+        "name": "chopped walnuts",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0004",
+        "text": "6 green onions, chopped",
+        "name": "green onions, chopped",
+        "quantity": "6",
+        "unit": null
+      },
+      {
+        "id": "ingredient-0005",
+        "text": "1 cup mayonnaise",
+        "name": "mayonnaise",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0006",
+        "text": "0.25 cup apple cider vinegar",
+        "name": "apple cider vinegar",
+        "quantity": "1/4",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0007",
+        "text": "0.25 cup white sugar",
+        "name": "white sugar",
+        "quantity": "1/4",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0009",
+        "text": "Salt",
+        "name": "Salt",
+        "quantity": null,
+        "unit": null
+      },
+      {
+        "id": "ingredient-0010",
+        "text": "Pepper",
+        "name": "Pepper",
+        "quantity": null,
+        "unit": null
+      },
+      {
+        "id": "ingredient-0008",
+        "text": "0.25 cup crumbled cooked bacon",
+        "name": "crumbled cooked bacon",
+        "quantity": "1/4",
+        "unit": "cup"
+      }
+    ],
+    "instructions": [
+      {
+        "id": "instruction-0001",
+        "text": "Combine broccoli, chicken, walnuts, and green onions in a large bowl."
+      },
+      {
+        "id": "instruction-0002",
+        "text": "Add salt and pepper to the mayonnaise, vinegar, and sugar in a bowl; whisk until well blended."
+      },
+      {
+        "id": "instruction-0003",
+        "text": "Pour mayonnaise dressing over broccoli mixture; toss to coat."
+      },
+      {
+        "id": "instruction-0004",
+        "text": "Cover and refrigerate until chilled, if desired. Sprinkle with crumbled bacon to serve."
+      }
+    ]
+  },
+  "recipe_id": "221062",
+  "review_id": "review-primary-0001",
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "text": "This salad is exceptional! I adore the bacon/chicken combo it is super in this salad. Love the crunch of the walnuts. Simply added S&P to the dressing before whisking it up. I used raw broccoli. Thanks for sharing",
+    "rating": 5,
+    "reviewer": "Lori",
+    "helpful_votes": 36,
+    "date": "05/26/2016",
+    "permalink": null,
+    "metadata": {}
+  },
+  "modifications": [
+    {
+      "id": "modification-1",
+      "changes": [
+        {
+          "modification_id": "modification-1",
+          "section": "ingredients",
+          "operation": "insert",
+          "target_id": "ingredient-0009",
+          "anchor_id": "ingredient-0007",
+          "position": "after",
+          "after": "Salt"
+        },
+        {
+          "modification_id": "modification-1",
+          "section": "ingredients",
+          "operation": "insert",
+          "target_id": "ingredient-0010",
+          "anchor_id": "ingredient-0007",
+          "position": "after",
+          "after": "Pepper"
+        },
+        {
+          "modification_id": "modification-1",
+          "section": "instructions",
+          "operation": "replace",
+          "target_id": "instruction-0002",
+          "before": "Whisk mayonnaise, vinegar, and sugar together in a bowl until well blended.",
+          "after": "Add salt and pepper to the mayonnaise, vinegar, and sugar in a bowl; whisk until well blended."
+        }
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Seasoning the dressing with salt and pepper may improve its flavor."
+      },
+      "evidence": [
+        {
+          "review_id": "review-primary-0001",
+          "quote": "Simply added S&P to the dressing before whisking it up."
+        }
+      ]
+    }
+  ],
+  "diagnostics": [],
+  "skipped_reviews": [],
+  "review_evaluations": [
+    {
+      "review_id": "review-primary-0001",
+      "source": "primary",
+      "helpful_votes": 36,
+      "stage3": {
+        "review_id": "review-primary-0001",
+        "decision": "propose",
+        "modifications": [
+          {
+            "id": "modification-1",
+            "evidence_quotes": [
+              "Simply added S&P to the dressing before whisking it up."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Seasoning the dressing with salt and pepper may improve its flavor."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0007",
+                "position": "after",
+                "text": "Salt"
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0007",
+                "position": "after",
+                "text": "Pepper"
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0002",
+                "replacement_text": "Add salt and pepper to the mayonnaise, vinegar, and sugar in a bowl; whisk until well blended.",
+                "quantity_change": null
+              }
+            ]
+          }
+        ]
+      },
+      "stage4": {
+        "status": "routed",
+        "selected_review": {
+          "id": "review-primary-0001",
+          "source": "primary",
+          "reviewer": "Lori",
+          "rating": 5,
+          "helpful_votes": 36,
+          "date": "05/26/2016",
+          "permalink": null
+        },
+        "review_id": "review-primary-0001",
+        "modifications": [
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "Lori",
+              "rating": 5,
+              "helpful_votes": 36,
+              "date": "05/26/2016",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "Simply added S&P to the dressing before whisking it up."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Seasoning the dressing with salt and pepper may improve its flavor."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0007",
+                "position": "after",
+                "text": "Salt",
+                "section": "ingredients",
+                "index": 6,
+                "matched_record": {
+                  "id": "ingredient-0007",
+                  "text": "0.25 cup white sugar",
+                  "name": "white sugar",
+                  "quantity": "1/4",
+                  "unit": "cup"
+                }
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0007",
+                "position": "after",
+                "text": "Pepper",
+                "section": "ingredients",
+                "index": 6,
+                "matched_record": {
+                  "id": "ingredient-0007",
+                  "text": "0.25 cup white sugar",
+                  "name": "white sugar",
+                  "quantity": "1/4",
+                  "unit": "cup"
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0002",
+                "replacement_text": "Add salt and pepper to the mayonnaise, vinegar, and sugar in a bowl; whisk until well blended.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 1,
+                "matched_record": {
+                  "id": "instruction-0002",
+                  "text": "Whisk mayonnaise, vinegar, and sugar together in a bowl until well blended."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": []
+      },
+      "stage5": {
+        "status": "validated",
+        "review_id": "review-primary-0001",
+        "selected_review": {
+          "id": "review-primary-0001",
+          "source": "primary",
+          "text": "This salad is exceptional! I adore the bacon/chicken combo it is super in this salad. Love the crunch of the walnuts. Simply added S&P to the dressing before whisking it up. I used raw broccoli. Thanks for sharing",
+          "rating": 5,
+          "reviewer": "Lori",
+          "helpful_votes": 36,
+          "date": "05/26/2016",
+          "permalink": null,
+          "metadata": {}
+        },
+        "modifications": [
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "Lori",
+              "rating": 5,
+              "helpful_votes": 36,
+              "date": "05/26/2016",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "Simply added S&P to the dressing before whisking it up."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Seasoning the dressing with salt and pepper may improve its flavor."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0007",
+                "position": "after",
+                "text": "Salt",
+                "section": "ingredients",
+                "index": 6,
+                "matched_record": {
+                  "id": "ingredient-0007",
+                  "text": "0.25 cup white sugar",
+                  "name": "white sugar",
+                  "quantity": "1/4",
+                  "unit": "cup"
+                }
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0007",
+                "position": "after",
+                "text": "Pepper",
+                "section": "ingredients",
+                "index": 6,
+                "matched_record": {
+                  "id": "ingredient-0007",
+                  "text": "0.25 cup white sugar",
+                  "name": "white sugar",
+                  "quantity": "1/4",
+                  "unit": "cup"
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0002",
+                "replacement_text": "Add salt and pepper to the mayonnaise, vinegar, and sugar in a bowl; whisk until well blended.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 1,
+                "matched_record": {
+                  "id": "instruction-0002",
+                  "text": "Whisk mayonnaise, vinegar, and sugar together in a bowl until well blended."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "next_review": null,
+        "recipe_id": "221062"
+      },
+      "status": "validated"
+    }
+  ]
+}

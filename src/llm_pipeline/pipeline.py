@@ -22,6 +22,10 @@ from .normalization import normalize_recipe_data
 from .recipe_modifier import RecipeModifier
 from .tweak_extractor import TweakExtractor
 from .classification import ClassificationFailure
+from .application import apply_validated_edits
+from .generation import generate_final_recipe
+from .routing import route_modifications
+from .validation import validate_modifications
 
 
 class LLMAnalysisPipeline:
@@ -157,6 +161,98 @@ class LLMAnalysisPipeline:
             "skipped_reviews": skipped_reviews,
             "failures": [],
         }
+
+    def run_staged_recipe_file(self, recipe_file: str) -> Dict[str, Any]:
+        """Run Stages 2–7 together, advancing candidates rejected by validation."""
+        raw = self.load_recipe_data(recipe_file)
+        normalized = self.parse_normalized_recipe_data(raw)
+        recipe, candidates = normalized["recipe"], normalized["review_candidates"]
+        diagnostics = []
+        skipped_reviews = []
+        review_evaluations = []
+
+        for review in candidates:
+            details = _stage3_review_details(review)
+            selected_review = _stage3_review_metadata(review)
+            logger.info("Pipeline considering {}", details)
+            try:
+                classified = self.tweak_extractor.classifier.classify(
+                    recipe, review,
+                    on_retry=lambda attempt, reason: logger.warning(
+                        "Stage 3 review={}: retry {} ({})".format(review["id"], attempt, reason)
+                    ),
+                )
+            except ClassificationFailure as exc:
+                failure = {
+                    "review_id": review["id"],
+                    "reason": f"Stage 3 provider/contract failure: {exc}",
+                }
+                review_evaluations.append({
+                    "review_id": review["id"], "source": review["source"],
+                    "helpful_votes": review["helpful_votes"], "status": "failed",
+                    "diagnostics": [failure],
+                })
+                final = generate_final_recipe({
+                    "status": "failed", "recipe_id": recipe.get("recipe_id"),
+                    "review_id": review["id"], "selected_review": review,
+                    "diagnostics": [*diagnostics, failure],
+                })
+                final["review_evaluations"] = review_evaluations
+                return final
+
+            stage3_output = classified.model_dump(mode="json")
+            evaluation = {
+                "review_id": review["id"], "source": review["source"],
+                "helpful_votes": review["helpful_votes"], "stage3": stage3_output,
+            }
+            if classified.decision == "skip":
+                skipped_reviews.append({
+                    "review_id": review["id"], "source": review["source"],
+                    "reason": classified.reason,
+                })
+                evaluation["status"] = "skipped"
+                review_evaluations.append(evaluation)
+                continue
+
+            stage3 = {
+                **stage3_output,
+                "selected_review": selected_review,
+            }
+            routed = route_modifications(recipe, stage3)
+            validated = validate_modifications(raw, routed)
+            evaluation.update({"stage4": routed, "stage5": validated,
+                               "status": validated["status"]})
+            review_evaluations.append(evaluation)
+            diagnostics.extend(validated.get("diagnostics", []))
+            if validated["status"] == "continue":
+                logger.info("Stage 5 rejected all edits from {}; trying next candidate", review["id"])
+                continue
+            if validated["status"] == "failed":
+                final = generate_final_recipe({
+                    "status": "failed", "recipe_id": recipe.get("recipe_id"),
+                    "review_id": review["id"], "selected_review": review,
+                    "diagnostics": diagnostics,
+                })
+                final["review_evaluations"] = review_evaluations
+                return final
+
+            validated["diagnostics"] = diagnostics
+            applied = apply_validated_edits(recipe, validated)
+            applied["diagnostics"] = diagnostics
+            final = generate_final_recipe(applied)
+            final["skipped_reviews"] = skipped_reviews
+            final["review_evaluations"] = review_evaluations
+            return final
+
+        empty_plan = {
+            "status": "empty", "recipe_id": recipe.get("recipe_id"),
+            "review_id": None, "selected_review": None,
+            "modifications": [], "diagnostics": diagnostics,
+        }
+        final = generate_final_recipe(apply_validated_edits(recipe, empty_plan))
+        final["skipped_reviews"] = skipped_reviews
+        final["review_evaluations"] = review_evaluations
+        return final
     @staticmethod
     def _legacy_recipe(normalized: Dict[str, Any]) -> Recipe:
         """Project the canonical Stage 2 contract for existing pipeline callers."""

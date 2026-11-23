@@ -6,8 +6,8 @@
   "cases": [
     {
       "recipe_id": "13974",
-      "input_path": "data/test_data/recipe_13974.json",
-      "output_path": "data/stage3_test/recipe_13974.json",
+      "input_path": "evals/test_data/recipe_13974.json",
+      "output_path": "evals/stage3_test/recipe_13974.json",
       "selected_review": {
         "review_id": "review-featured-0001",
         "reviewer": "pipedreamMD",
@@ -22,8 +22,8 @@
     },
     {
       "recipe_id": "15641",
-      "input_path": "data/test_data/recipe_15641.json",
-      "output_path": "data/stage3_test/fallback_check/recipe_15641.json",
+      "input_path": "evals/test_data/recipe_15641.json",
+      "output_path": "evals/stage3_test/fallback_check/recipe_15641.json",
       "selected_review": {
         "review_id": "review-featured-0005",
         "reviewer": "Jillian",
@@ -38,8 +38,8 @@
     },
     {
       "recipe_id": "221062",
-      "input_path": "data/test_data/recipe_221062.json",
-      "output_path": "data/stage3_test/recipe_221062.json",
+      "input_path": "evals/test_data/recipe_221062.json",
+      "output_path": "evals/stage3_test/recipe_221062.json",
       "selected_review": {
         "review_id": "review-primary-0001",
         "reviewer": "Lori",
@@ -54,8 +54,8 @@
     },
     {
       "recipe_id": "22158",
-      "input_path": "data/test_data/recipe_22158.json",
-      "output_path": "data/stage3_test/recipe_22158.json",
+      "input_path": "evals/test_data/recipe_22158.json",
+      "output_path": "evals/stage3_test/recipe_22158.json",
       "selected_review": {
         "review_id": "review-primary-0001",
         "reviewer": "Stefanie Frank Stewart",
@@ -70,8 +70,8 @@
     },
     {
       "recipe_id": "229445",
-      "input_path": "data/test_data/recipe_229445.json",
-      "output_path": "data/stage3_test/recipe_229445.json",
+      "input_path": "evals/test_data/recipe_229445.json",
+      "output_path": "evals/stage3_test/recipe_229445.json",
       "selected_review": {
         "review_id": "review-primary-0001",
         "reviewer": "DanuNepthys",
@@ -86,8 +86,8 @@
     },
     {
       "recipe_id": "24380",
-      "input_path": "data/test_data/recipe_24380.json",
-      "output_path": "data/stage3_test/recipe_24380.json",
+      "input_path": "evals/test_data/recipe_24380.json",
+      "output_path": "evals/stage3_test/recipe_24380.json",
       "selected_review": {
         "review_id": "review-primary-0001",
         "reviewer": "Jillian",
@@ -102,8 +102,8 @@
     },
     {
       "recipe_id": "255272",
-      "input_path": "data/test_data/recipe_255272.json",
-      "output_path": "data/stage3_test/fallback_check/recipe_255272.json",
+      "input_path": "evals/test_data/recipe_255272.json",
+      "output_path": "evals/stage3_test/fallback_check/recipe_255272.json",
       "selected_review": {
         "review_id": "review-featured-0002",
         "reviewer": "GWilson",
@@ -118,8 +118,8 @@
     },
     {
       "recipe_id": "8091",
-      "input_path": "data/test_data/recipe_8091.json",
-      "output_path": "data/stage3_test/recipe_8091.json",
+      "input_path": "evals/test_data/recipe_8091.json",
+      "output_path": "evals/stage3_test/recipe_8091.json",
       "selected_review": {
         "review_id": "review-featured-0007",
         "reviewer": "EDUGATOR",
@@ -134,8 +134,8 @@
     },
     {
       "recipe_id": "9138",
-      "input_path": "data/test_data/recipe_9138.json",
-      "output_path": "data/stage3_test/recipe_9138.json",
+      "input_path": "evals/test_data/recipe_9138.json",
+      "output_path": "evals/stage3_test/recipe_9138.json",
       "selected_review": {
         "review_id": "review-primary-0001",
         "reviewer": "NANNOUSE",
@@ -150,8 +150,8 @@
     },
     {
       "recipe_id": "9397",
-      "input_path": "data/test_data/recipe_9397.json",
-      "output_path": "data/stage3_test/recipe_9397.json",
+      "input_path": "evals/test_data/recipe_9397.json",
+      "output_path": "evals/stage3_test/recipe_9397.json",
       "selected_review": {
         "review_id": "review-primary-0001",
         "reviewer": "MyRecipes Member",

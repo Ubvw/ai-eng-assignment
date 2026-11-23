@@ -1,0 +1,641 @@
+{
+  "status": "enhanced",
+  "recipe": {
+    "recipe_id": "13974",
+    "title": "Peanut Noodles",
+    "prep_time": "PT10M",
+    "cook_time": "PT15M",
+    "total_time": "PT25M",
+    "servings": "3",
+    "yield": "3",
+    "ingredients": [
+      {
+        "id": "ingredient-0001",
+        "text": "8 ounces spaghetti",
+        "name": "spaghetti",
+        "quantity": "8",
+        "unit": "ounce"
+      },
+      {
+        "id": "ingredient-0002",
+        "text": "1 bunch green onions, chopped (green and white parts)",
+        "name": "bunch green onions, chopped (green and white parts)",
+        "quantity": "1",
+        "unit": null
+      },
+      {
+        "id": "ingredient-0003",
+        "text": "2 tablespoons sesame oil",
+        "name": "sesame oil",
+        "quantity": "2",
+        "unit": "tablespoon"
+      },
+      {
+        "id": "ingredient-0004",
+        "text": "1 teaspoon minced fresh ginger root",
+        "name": "minced fresh ginger root",
+        "quantity": "1",
+        "unit": "teaspoon"
+      },
+      {
+        "id": "ingredient-0005",
+        "text": "0.33333334326744 cup peanut butter",
+        "name": "peanut butter",
+        "quantity": "4166666790843/12500000000000",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0006",
+        "text": "0.25 cup soy sauce",
+        "name": "soy sauce",
+        "quantity": "1/4",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0007",
+        "text": "0.25 cup hot water",
+        "name": "hot water",
+        "quantity": "1/4",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0008",
+        "text": "1 tablespoon cider vinegar",
+        "name": "cider vinegar",
+        "quantity": "1",
+        "unit": "tablespoon"
+      },
+      {
+        "id": "ingredient-0009",
+        "text": "1 teaspoon white sugar",
+        "name": "white sugar",
+        "quantity": "1",
+        "unit": "teaspoon"
+      },
+      {
+        "id": "ingredient-0010",
+        "text": "0.25 teaspoon crushed red pepper flakes",
+        "name": "crushed red pepper flakes",
+        "quantity": "1/4",
+        "unit": "teaspoon"
+      },
+      {
+        "id": "ingredient-0011",
+        "text": "1 cup coarse chopped peanuts",
+        "name": "coarse chopped peanuts",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0012",
+        "text": "snow peas",
+        "name": "snow peas",
+        "quantity": null,
+        "unit": null
+      },
+      {
+        "id": "ingredient-0013",
+        "text": "toasted sesame seeds",
+        "name": "toasted sesame seeds",
+        "quantity": null,
+        "unit": null
+      }
+    ],
+    "instructions": [
+      {
+        "id": "instruction-0001",
+        "text": "Cook pasta in a large pot of boiling water until done. Drain."
+      },
+      {
+        "id": "instruction-0002",
+        "text": "Meanwhile, combine oil and onions in a small skillet. Saute over low heat until tender. Add ginger; cook and stir for 1 to 2 minutes. Mix in peanut butter, soy sauce, water, vinegar, sugar, and red pepper flakes. Remove from heat."
+      },
+      {
+        "id": "instruction-0003",
+        "text": "Toss noodles with sauce, peanuts, snow peas, and toasted sesame seeds, and serve."
+      }
+    ]
+  },
+  "recipe_id": "13974",
+  "review_id": "review-featured-0001",
+  "selected_review": {
+    "id": "review-featured-0001",
+    "source": "featured",
+    "text": "Phenomenal recipe! I always get tons of compliments when I bring this to potlucks. Because I like to tweak recipes, I added sliced chicken breast, 1 cup of coarse chopped peanuts, chopped green onions (green and white parts both), snow peas, 2 tbsps of sugar instead of 1 tsp, 2 tbsps of minced ginger, and toasted sesame seeds. The flavor really melds well together, and it's even better the next day!",
+    "rating": 5,
+    "reviewer": "pipedreamMD",
+    "helpful_votes": 251,
+    "date": "09/02/2006",
+    "permalink": null,
+    "metadata": {}
+  },
+  "modifications": [
+    {
+      "id": "modification-1",
+      "changes": [
+        {
+          "modification_id": "modification-1",
+          "section": "ingredients",
+          "operation": "replace",
+          "target_id": "ingredient-0002",
+          "before": "1 bunch green onions, sliced (white parts only)",
+          "after": "1 bunch green onions, chopped (green and white parts)"
+        },
+        {
+          "modification_id": "modification-1",
+          "section": "ingredients",
+          "operation": "insert",
+          "target_id": "ingredient-0011",
+          "anchor_id": "ingredient-0010",
+          "position": "after",
+          "after": "1 cup coarse chopped peanuts"
+        },
+        {
+          "modification_id": "modification-1",
+          "section": "ingredients",
+          "operation": "insert",
+          "target_id": "ingredient-0012",
+          "anchor_id": "ingredient-0010",
+          "position": "after",
+          "after": "snow peas"
+        },
+        {
+          "modification_id": "modification-1",
+          "section": "ingredients",
+          "operation": "insert",
+          "target_id": "ingredient-0013",
+          "anchor_id": "ingredient-0010",
+          "position": "after",
+          "after": "toasted sesame seeds"
+        },
+        {
+          "modification_id": "modification-1",
+          "section": "instructions",
+          "operation": "replace",
+          "target_id": "instruction-0003",
+          "before": "Toss noodles with sauce, and serve.",
+          "after": "Toss noodles with sauce, peanuts, snow peas, and toasted sesame seeds, and serve."
+        }
+      ],
+      "benefit": {
+        "basis": "reported",
+        "description": "The reviewer reported that the additions and changes melded well in flavor and tasted even better the next day."
+      },
+      "evidence": [
+        {
+          "review_id": "review-featured-0001",
+          "quote": "Because I like to tweak recipes, I added sliced chicken breast, 1 cup of coarse chopped peanuts, chopped green onions (green and white parts both), snow peas, 2 tbsps of sugar instead of 1 tsp, 2 tbsps of minced ginger, and toasted sesame seeds."
+        },
+        {
+          "review_id": "review-featured-0001",
+          "quote": "The flavor really melds well together, and it's even better the next day!"
+        }
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "review_id": "review-featured-0001",
+      "modification_id": "modification-2",
+      "target": "ingredient-0009",
+      "reason": "quantity_change uses an unsupported unit conversion"
+    },
+    {
+      "review_id": "review-featured-0001",
+      "modification_id": "modification-3",
+      "target": "ingredient-0004",
+      "reason": "quantity_change uses an unsupported unit conversion"
+    }
+  ],
+  "skipped_reviews": [],
+  "review_evaluations": [
+    {
+      "review_id": "review-featured-0001",
+      "source": "featured",
+      "helpful_votes": 251,
+      "stage3": {
+        "review_id": "review-featured-0001",
+        "decision": "propose",
+        "modifications": [
+          {
+            "id": "modification-1",
+            "evidence_quotes": [
+              "Because I like to tweak recipes, I added sliced chicken breast, 1 cup of coarse chopped peanuts, chopped green onions (green and white parts both), snow peas, 2 tbsps of sugar instead of 1 tsp, 2 tbsps of minced ginger, and toasted sesame seeds.",
+              "The flavor really melds well together, and it's even better the next day!"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer reported that the additions and changes melded well in flavor and tasted even better the next day."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0002",
+                "replacement_text": "1 bunch green onions, chopped (green and white parts)",
+                "quantity_change": null
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0010",
+                "position": "after",
+                "text": "1 cup coarse chopped peanuts"
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0010",
+                "position": "after",
+                "text": "snow peas"
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0010",
+                "position": "after",
+                "text": "toasted sesame seeds"
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0003",
+                "replacement_text": "Toss noodles with sauce, peanuts, snow peas, and toasted sesame seeds, and serve.",
+                "quantity_change": null
+              }
+            ]
+          },
+          {
+            "id": "modification-2",
+            "evidence_quotes": [
+              "Because I like to tweak recipes, I added sliced chicken breast, 1 cup of coarse chopped peanuts, chopped green onions (green and white parts both), snow peas, 2 tbsps of sugar instead of 1 tsp, 2 tbsps of minced ginger, and toasted sesame seeds.",
+              "The flavor really melds well together, and it's even better the next day!"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer reported that the flavor melded well together."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0009",
+                "replacement_text": "2 tablespoons white sugar",
+                "quantity_change": {
+                  "mode": "multiply",
+                  "amount": null,
+                  "unit": null,
+                  "factor": "6"
+                }
+              }
+            ]
+          },
+          {
+            "id": "modification-3",
+            "evidence_quotes": [
+              "Because I like to tweak recipes, I added sliced chicken breast, 1 cup of coarse chopped peanuts, chopped green onions (green and white parts both), snow peas, 2 tbsps of sugar instead of 1 tsp, 2 tbsps of minced ginger, and toasted sesame seeds.",
+              "The flavor really melds well together, and it's even better the next day!"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer reported that the flavor melded well together."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0004",
+                "replacement_text": "2 tablespoons minced fresh ginger root",
+                "quantity_change": {
+                  "mode": "multiply",
+                  "amount": null,
+                  "unit": null,
+                  "factor": "6"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "stage4": {
+        "status": "routed",
+        "selected_review": {
+          "id": "review-featured-0001",
+          "source": "featured",
+          "reviewer": "pipedreamMD",
+          "rating": 5,
+          "helpful_votes": 251,
+          "date": "09/02/2006",
+          "permalink": null
+        },
+        "review_id": "review-featured-0001",
+        "modifications": [
+          {
+            "review_id": "review-featured-0001",
+            "selected_review": {
+              "id": "review-featured-0001",
+              "source": "featured",
+              "reviewer": "pipedreamMD",
+              "rating": 5,
+              "helpful_votes": 251,
+              "date": "09/02/2006",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "Because I like to tweak recipes, I added sliced chicken breast, 1 cup of coarse chopped peanuts, chopped green onions (green and white parts both), snow peas, 2 tbsps of sugar instead of 1 tsp, 2 tbsps of minced ginger, and toasted sesame seeds.",
+              "The flavor really melds well together, and it's even better the next day!"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer reported that the additions and changes melded well in flavor and tasted even better the next day."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0002",
+                "replacement_text": "1 bunch green onions, chopped (green and white parts)",
+                "quantity_change": null,
+                "section": "ingredients",
+                "index": 1,
+                "matched_record": {
+                  "id": "ingredient-0002",
+                  "text": "1 bunch green onions, sliced (white parts only)",
+                  "name": "bunch green onions, sliced (white parts only)",
+                  "quantity": "1",
+                  "unit": null
+                }
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0010",
+                "position": "after",
+                "text": "1 cup coarse chopped peanuts",
+                "section": "ingredients",
+                "index": 9,
+                "matched_record": {
+                  "id": "ingredient-0010",
+                  "text": "0.25 teaspoon crushed red pepper flakes",
+                  "name": "crushed red pepper flakes",
+                  "quantity": "1/4",
+                  "unit": "teaspoon"
+                }
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0010",
+                "position": "after",
+                "text": "snow peas",
+                "section": "ingredients",
+                "index": 9,
+                "matched_record": {
+                  "id": "ingredient-0010",
+                  "text": "0.25 teaspoon crushed red pepper flakes",
+                  "name": "crushed red pepper flakes",
+                  "quantity": "1/4",
+                  "unit": "teaspoon"
+                }
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0010",
+                "position": "after",
+                "text": "toasted sesame seeds",
+                "section": "ingredients",
+                "index": 9,
+                "matched_record": {
+                  "id": "ingredient-0010",
+                  "text": "0.25 teaspoon crushed red pepper flakes",
+                  "name": "crushed red pepper flakes",
+                  "quantity": "1/4",
+                  "unit": "teaspoon"
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0003",
+                "replacement_text": "Toss noodles with sauce, peanuts, snow peas, and toasted sesame seeds, and serve.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 2,
+                "matched_record": {
+                  "id": "instruction-0003",
+                  "text": "Toss noodles with sauce, and serve."
+                }
+              }
+            ]
+          },
+          {
+            "review_id": "review-featured-0001",
+            "selected_review": {
+              "id": "review-featured-0001",
+              "source": "featured",
+              "reviewer": "pipedreamMD",
+              "rating": 5,
+              "helpful_votes": 251,
+              "date": "09/02/2006",
+              "permalink": null
+            },
+            "id": "modification-2",
+            "evidence_quotes": [
+              "Because I like to tweak recipes, I added sliced chicken breast, 1 cup of coarse chopped peanuts, chopped green onions (green and white parts both), snow peas, 2 tbsps of sugar instead of 1 tsp, 2 tbsps of minced ginger, and toasted sesame seeds.",
+              "The flavor really melds well together, and it's even better the next day!"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer reported that the flavor melded well together."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0009",
+                "replacement_text": "2 tablespoons white sugar",
+                "quantity_change": {
+                  "mode": "multiply",
+                  "amount": null,
+                  "unit": null,
+                  "factor": "6"
+                },
+                "section": "ingredients",
+                "index": 8,
+                "matched_record": {
+                  "id": "ingredient-0009",
+                  "text": "1 teaspoon white sugar",
+                  "name": "white sugar",
+                  "quantity": "1",
+                  "unit": "teaspoon"
+                }
+              }
+            ]
+          },
+          {
+            "review_id": "review-featured-0001",
+            "selected_review": {
+              "id": "review-featured-0001",
+              "source": "featured",
+              "reviewer": "pipedreamMD",
+              "rating": 5,
+              "helpful_votes": 251,
+              "date": "09/02/2006",
+              "permalink": null
+            },
+            "id": "modification-3",
+            "evidence_quotes": [
+              "Because I like to tweak recipes, I added sliced chicken breast, 1 cup of coarse chopped peanuts, chopped green onions (green and white parts both), snow peas, 2 tbsps of sugar instead of 1 tsp, 2 tbsps of minced ginger, and toasted sesame seeds.",
+              "The flavor really melds well together, and it's even better the next day!"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer reported that the flavor melded well together."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0004",
+                "replacement_text": "2 tablespoons minced fresh ginger root",
+                "quantity_change": {
+                  "mode": "multiply",
+                  "amount": null,
+                  "unit": null,
+                  "factor": "6"
+                },
+                "section": "ingredients",
+                "index": 3,
+                "matched_record": {
+                  "id": "ingredient-0004",
+                  "text": "1 teaspoon minced fresh ginger root",
+                  "name": "minced fresh ginger root",
+                  "quantity": "1",
+                  "unit": "teaspoon"
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": []
+      },
+      "stage5": {
+        "status": "validated",
+        "review_id": "review-featured-0001",
+        "selected_review": {
+          "id": "review-featured-0001",
+          "source": "featured",
+          "text": "Phenomenal recipe! I always get tons of compliments when I bring this to potlucks. Because I like to tweak recipes, I added sliced chicken breast, 1 cup of coarse chopped peanuts, chopped green onions (green and white parts both), snow peas, 2 tbsps of sugar instead of 1 tsp, 2 tbsps of minced ginger, and toasted sesame seeds. The flavor really melds well together, and it's even better the next day!",
+          "rating": 5,
+          "reviewer": "pipedreamMD",
+          "helpful_votes": 251,
+          "date": "09/02/2006",
+          "permalink": null,
+          "metadata": {}
+        },
+        "modifications": [
+          {
+            "review_id": "review-featured-0001",
+            "selected_review": {
+              "id": "review-featured-0001",
+              "source": "featured",
+              "reviewer": "pipedreamMD",
+              "rating": 5,
+              "helpful_votes": 251,
+              "date": "09/02/2006",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "Because I like to tweak recipes, I added sliced chicken breast, 1 cup of coarse chopped peanuts, chopped green onions (green and white parts both), snow peas, 2 tbsps of sugar instead of 1 tsp, 2 tbsps of minced ginger, and toasted sesame seeds.",
+              "The flavor really melds well together, and it's even better the next day!"
+            ],
+            "benefit": {
+              "basis": "reported",
+              "description": "The reviewer reported that the additions and changes melded well in flavor and tasted even better the next day."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0002",
+                "replacement_text": "1 bunch green onions, chopped (green and white parts)",
+                "quantity_change": null,
+                "section": "ingredients",
+                "index": 1,
+                "matched_record": {
+                  "id": "ingredient-0002",
+                  "text": "1 bunch green onions, sliced (white parts only)",
+                  "name": "bunch green onions, sliced (white parts only)",
+                  "quantity": "1",
+                  "unit": null
+                }
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0010",
+                "position": "after",
+                "text": "1 cup coarse chopped peanuts",
+                "section": "ingredients",
+                "index": 9,
+                "matched_record": {
+                  "id": "ingredient-0010",
+                  "text": "0.25 teaspoon crushed red pepper flakes",
+                  "name": "crushed red pepper flakes",
+                  "quantity": "1/4",
+                  "unit": "teaspoon"
+                }
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0010",
+                "position": "after",
+                "text": "snow peas",
+                "section": "ingredients",
+                "index": 9,
+                "matched_record": {
+                  "id": "ingredient-0010",
+                  "text": "0.25 teaspoon crushed red pepper flakes",
+                  "name": "crushed red pepper flakes",
+                  "quantity": "1/4",
+                  "unit": "teaspoon"
+                }
+              },
+              {
+                "operation": "insert",
+                "anchor_id": "ingredient-0010",
+                "position": "after",
+                "text": "toasted sesame seeds",
+                "section": "ingredients",
+                "index": 9,
+                "matched_record": {
+                  "id": "ingredient-0010",
+                  "text": "0.25 teaspoon crushed red pepper flakes",
+                  "name": "crushed red pepper flakes",
+                  "quantity": "1/4",
+                  "unit": "teaspoon"
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0003",
+                "replacement_text": "Toss noodles with sauce, peanuts, snow peas, and toasted sesame seeds, and serve.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 2,
+                "matched_record": {
+                  "id": "instruction-0003",
+                  "text": "Toss noodles with sauce, and serve."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": [
+          {
+            "review_id": "review-featured-0001",
+            "modification_id": "modification-2",
+            "target": "ingredient-0009",
+            "reason": "quantity_change uses an unsupported unit conversion"
+          },
+          {
+            "review_id": "review-featured-0001",
+            "modification_id": "modification-3",
+            "target": "ingredient-0004",
+            "reason": "quantity_change uses an unsupported unit conversion"
+          }
+        ],
+        "next_review": null,
+        "recipe_id": "13974"
+      },
+      "status": "validated"
+    }
+  ]
+}

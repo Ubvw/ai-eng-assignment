@@ -49,8 +49,8 @@ class Stage4RoutingTests(unittest.TestCase):
 
     def test_historical_ho_ho_cake_zero_padding_mismatch_is_diagnostic(self):
         root = Path(__file__).resolve().parents[1]
-        recipe = normalize_recipe_data(json.loads((root / "data/test_data/recipe_8091.json").read_text(encoding="utf-8")))["recipe"]
-        stage3 = json.loads((root / "data/stage3_test/recipe_8091.json").read_text(encoding="utf-8"))
+        recipe = normalize_recipe_data(json.loads((root / "evals/test_data/recipe_8091.json").read_text(encoding="utf-8")))["recipe"]
+        stage3 = json.loads((root / "evals/stage3_test/recipe_8091.json").read_text(encoding="utf-8"))
         result = route_modifications(recipe, stage3)
         self.assertIn("modification-1", [m["id"] for m in result["modifications"]])
         self.assertTrue(any("ingredient-7" in item["reason"] for item in result["diagnostics"]))

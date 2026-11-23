@@ -1,0 +1,352 @@
+{
+  "status": "enhanced",
+  "recipe": {
+    "recipe_id": "9397",
+    "title": "Green Bell Pepper Jelly",
+    "prep_time": "PT45M",
+    "cook_time": "PT15M",
+    "total_time": "PT60M",
+    "servings": "28",
+    "yield": "28",
+    "ingredients": [
+      {
+        "id": "ingredient-0001",
+        "text": "6.5 cups white sugar",
+        "name": "white sugar",
+        "quantity": "13/2",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0002",
+        "text": "1.5 cups finely chopped sweet green and red bell peppers, equal amounts of each",
+        "name": "finely chopped sweet green and red bell peppers, equal amounts of each",
+        "quantity": "3/2",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0003",
+        "text": "1.5 cups distilled white vinegar",
+        "name": "distilled white vinegar",
+        "quantity": "3/2",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0004",
+        "text": "3 ounces liquid pectin",
+        "name": "liquid pectin",
+        "quantity": "3",
+        "unit": "ounce"
+      }
+    ],
+    "instructions": [
+      {
+        "id": "instruction-0001",
+        "text": "Bring sugar, sweet green and red peppers, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes."
+      },
+      {
+        "id": "instruction-0002",
+        "text": "Stir in liquid pectin, then cook, stirring constantly, 3 more minutes. Skim off foam with a metal spoon; remove from heat."
+      },
+      {
+        "id": "instruction-0003",
+        "text": "Pack jelly into hot, sterilized jars, filling to within 1/4 inch of the top. Run a clean knife or thin spatula around the insides of the jars to remove any air bubbles. Wipe the rims with a moist paper towel to remove any residue. Top with lids and screw rings on tightly."
+      },
+      {
+        "id": "instruction-0004",
+        "text": "Place a rack in the bottom of a large stockpot and fill halfway with water. Bring to a boil and lower jars 2 inches apart into the boiling water using a holder. Pour in more boiling water to cover jars by at least 1 inch. Bring to a rolling boil, cover, and process for 10 minutes."
+      },
+      {
+        "id": "instruction-0005",
+        "text": "Remove the jars from the stockpot and let rest, several inches apart, for 12 to 24 hours. Press the center of each lid with a finger to ensure the lid does not move up or down. Remove the rings for storage and store in a cool, dark area."
+      }
+    ]
+  },
+  "recipe_id": "9397",
+  "review_id": "review-primary-0001",
+  "selected_review": {
+    "id": "review-primary-0001",
+    "source": "primary",
+    "text": "I've been making this for years and it's wonderful BUT use equal amounts sweet green and red peppers - the colour of the jelly will be a wonderful amber hue. Also, do use your food processor that's what those blades are for! By the way, this jelly is a wonderful accompaniment for roast pork! Kay",
+    "rating": 5,
+    "reviewer": "MyRecipes Member",
+    "helpful_votes": 140,
+    "date": "06/10/2002",
+    "permalink": null,
+    "metadata": {}
+  },
+  "modifications": [
+    {
+      "id": "modification-1",
+      "changes": [
+        {
+          "modification_id": "modification-1",
+          "section": "ingredients",
+          "operation": "replace",
+          "target_id": "ingredient-0002",
+          "before": "1.5 cups finely chopped green bell pepper",
+          "after": "1.5 cups finely chopped sweet green and red bell peppers, equal amounts of each"
+        },
+        {
+          "modification_id": "modification-1",
+          "section": "instructions",
+          "operation": "replace",
+          "target_id": "instruction-0001",
+          "before": "Bring sugar, green pepper, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes.",
+          "after": "Bring sugar, sweet green and red peppers, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes."
+        }
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Using equal amounts of sweet green and red peppers may give the jelly an amber hue."
+      },
+      "evidence": [
+        {
+          "review_id": "review-primary-0001",
+          "quote": "use equal amounts sweet green and red peppers - the colour of the jelly will be a wonderful amber hue."
+        }
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "review_id": "review-primary-0001",
+      "modification_id": "modification-2",
+      "target": "instruction-0001",
+      "reason": "conflicts with kept modification 'modification-1' on target 'instruction-0001'",
+      "kept_modification_id": "modification-1"
+    }
+  ],
+  "skipped_reviews": [],
+  "review_evaluations": [
+    {
+      "review_id": "review-primary-0001",
+      "source": "primary",
+      "helpful_votes": 140,
+      "stage3": {
+        "review_id": "review-primary-0001",
+        "decision": "propose",
+        "modifications": [
+          {
+            "id": "modification-1",
+            "evidence_quotes": [
+              "use equal amounts sweet green and red peppers - the colour of the jelly will be a wonderful amber hue."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Using equal amounts of sweet green and red peppers may give the jelly an amber hue."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0002",
+                "replacement_text": "1.5 cups finely chopped sweet green and red bell peppers, equal amounts of each",
+                "quantity_change": null
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0001",
+                "replacement_text": "Bring sugar, sweet green and red peppers, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes.",
+                "quantity_change": null
+              }
+            ]
+          },
+          {
+            "id": "modification-2",
+            "evidence_quotes": [
+              "do use your food processor that's what those blades are for!"
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Using a food processor to chop the peppers may make preparation easier."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "instruction-0001",
+                "position": "before",
+                "text": "Finely chop the sweet green and red peppers in a food processor."
+              }
+            ]
+          }
+        ]
+      },
+      "stage4": {
+        "status": "routed",
+        "selected_review": {
+          "id": "review-primary-0001",
+          "source": "primary",
+          "reviewer": "MyRecipes Member",
+          "rating": 5,
+          "helpful_votes": 140,
+          "date": "06/10/2002",
+          "permalink": null
+        },
+        "review_id": "review-primary-0001",
+        "modifications": [
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "MyRecipes Member",
+              "rating": 5,
+              "helpful_votes": 140,
+              "date": "06/10/2002",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "use equal amounts sweet green and red peppers - the colour of the jelly will be a wonderful amber hue."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Using equal amounts of sweet green and red peppers may give the jelly an amber hue."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0002",
+                "replacement_text": "1.5 cups finely chopped sweet green and red bell peppers, equal amounts of each",
+                "quantity_change": null,
+                "section": "ingredients",
+                "index": 1,
+                "matched_record": {
+                  "id": "ingredient-0002",
+                  "text": "1.5 cups finely chopped green bell pepper",
+                  "name": "finely chopped green bell pepper",
+                  "quantity": "3/2",
+                  "unit": "cup"
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0001",
+                "replacement_text": "Bring sugar, sweet green and red peppers, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 0,
+                "matched_record": {
+                  "id": "instruction-0001",
+                  "text": "Bring sugar, green pepper, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes."
+                }
+              }
+            ]
+          },
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "MyRecipes Member",
+              "rating": 5,
+              "helpful_votes": 140,
+              "date": "06/10/2002",
+              "permalink": null
+            },
+            "id": "modification-2",
+            "evidence_quotes": [
+              "do use your food processor that's what those blades are for!"
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Using a food processor to chop the peppers may make preparation easier."
+            },
+            "edits": [
+              {
+                "operation": "insert",
+                "anchor_id": "instruction-0001",
+                "position": "before",
+                "text": "Finely chop the sweet green and red peppers in a food processor.",
+                "section": "instructions",
+                "index": 0,
+                "matched_record": {
+                  "id": "instruction-0001",
+                  "text": "Bring sugar, green pepper, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": []
+      },
+      "stage5": {
+        "status": "validated",
+        "review_id": "review-primary-0001",
+        "selected_review": {
+          "id": "review-primary-0001",
+          "source": "primary",
+          "text": "I've been making this for years and it's wonderful BUT use equal amounts sweet green and red peppers - the colour of the jelly will be a wonderful amber hue. Also, do use your food processor that's what those blades are for! By the way, this jelly is a wonderful accompaniment for roast pork! Kay",
+          "rating": 5,
+          "reviewer": "MyRecipes Member",
+          "helpful_votes": 140,
+          "date": "06/10/2002",
+          "permalink": null,
+          "metadata": {}
+        },
+        "modifications": [
+          {
+            "review_id": "review-primary-0001",
+            "selected_review": {
+              "id": "review-primary-0001",
+              "source": "primary",
+              "reviewer": "MyRecipes Member",
+              "rating": 5,
+              "helpful_votes": 140,
+              "date": "06/10/2002",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "use equal amounts sweet green and red peppers - the colour of the jelly will be a wonderful amber hue."
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Using equal amounts of sweet green and red peppers may give the jelly an amber hue."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "ingredient-0002",
+                "replacement_text": "1.5 cups finely chopped sweet green and red bell peppers, equal amounts of each",
+                "quantity_change": null,
+                "section": "ingredients",
+                "index": 1,
+                "matched_record": {
+                  "id": "ingredient-0002",
+                  "text": "1.5 cups finely chopped green bell pepper",
+                  "name": "finely chopped green bell pepper",
+                  "quantity": "3/2",
+                  "unit": "cup"
+                }
+              },
+              {
+                "operation": "replace",
+                "target_id": "instruction-0001",
+                "replacement_text": "Bring sugar, sweet green and red peppers, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 0,
+                "matched_record": {
+                  "id": "instruction-0001",
+                  "text": "Bring sugar, green pepper, and white vinegar to a boil in a large, stainless steel saucepan over medium-high heat, stirring constantly, 6 minutes."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": [
+          {
+            "review_id": "review-primary-0001",
+            "modification_id": "modification-2",
+            "target": "instruction-0001",
+            "reason": "conflicts with kept modification 'modification-1' on target 'instruction-0001'",
+            "kept_modification_id": "modification-1"
+          }
+        ],
+        "next_review": null,
+        "recipe_id": "9397"
+      },
+      "status": "validated"
+    }
+  ]
+}

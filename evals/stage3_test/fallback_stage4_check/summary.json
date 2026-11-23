@@ -4,9 +4,9 @@
     {
       "recipe_id": "15641",
       "title": "Grilled Chicken with Herbs",
-      "input_file": "data/test_data/recipe_15641.json",
-      "stage3_output": "data/stage3_test/fallback_stage4_check/stage3/recipe_15641.json",
-      "stage4_output": "data/stage3_test/fallback_stage4_check/stage4/recipe_15641.json",
+      "input_file": "evals/test_data/recipe_15641.json",
+      "stage3_output": "evals/stage3_test/fallback_stage4_check/stage3/recipe_15641.json",
+      "stage4_output": "evals/stage3_test/fallback_stage4_check/stage4/recipe_15641.json",
       "stage3_status": "proposal",
       "stage4_status": "routed",
       "selected_review": {
@@ -34,9 +34,9 @@
     {
       "recipe_id": "255272",
       "title": "Spanish Rice Stuffed Bell Peppers",
-      "input_file": "data/test_data/recipe_255272.json",
-      "stage3_output": "data/stage3_test/fallback_stage4_check/stage3/recipe_255272.json",
-      "stage4_output": "data/stage3_test/fallback_stage4_check/stage4/recipe_255272.json",
+      "input_file": "evals/test_data/recipe_255272.json",
+      "stage3_output": "evals/stage3_test/fallback_stage4_check/stage3/recipe_255272.json",
+      "stage4_output": "evals/stage3_test/fallback_stage4_check/stage4/recipe_255272.json",
       "stage3_status": "proposal",
       "stage4_status": "routed",
       "selected_review": {

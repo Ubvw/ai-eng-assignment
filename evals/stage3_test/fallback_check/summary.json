@@ -10,8 +10,8 @@
   "all_edit_target_ids_known": true,
   "results": [
     {
-      "input_path": "data/test_data/recipe_15641.json",
-      "output_path": "data/stage3_test/fallback_check/recipe_15641.json",
+      "input_path": "evals/test_data/recipe_15641.json",
+      "output_path": "evals/stage3_test/fallback_check/recipe_15641.json",
       "outcome": "proposal",
       "cli_exit_code": 0,
       "selected_review": {
@@ -43,8 +43,8 @@
       }
     },
     {
-      "input_path": "data/test_data/recipe_255272.json",
-      "output_path": "data/stage3_test/fallback_check/recipe_255272.json",
+      "input_path": "evals/test_data/recipe_255272.json",
+      "output_path": "evals/stage3_test/fallback_check/recipe_255272.json",
       "outcome": "proposal",
       "cli_exit_code": 0,
       "selected_review": {

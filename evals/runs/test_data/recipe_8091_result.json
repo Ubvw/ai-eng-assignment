@@ -1,0 +1,288 @@
+{
+  "status": "enhanced",
+  "recipe": {
+    "recipe_id": "8091",
+    "title": "Ho Ho Cake",
+    "prep_time": null,
+    "cook_time": null,
+    "total_time": "PT0M",
+    "servings": "18",
+    "yield": "18",
+    "ingredients": [
+      {
+        "id": "ingredient-0001",
+        "text": "1 (9 ounce) package chocolate cake mix",
+        "name": "(9 ounce) package chocolate cake mix",
+        "quantity": "1",
+        "unit": null
+      },
+      {
+        "id": "ingredient-0002",
+        "text": "5 tablespoons all-purpose flour",
+        "name": "all-purpose flour",
+        "quantity": "5",
+        "unit": "tablespoon"
+      },
+      {
+        "id": "ingredient-0003",
+        "text": "1.25 cups milk",
+        "name": "milk",
+        "quantity": "5/4",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0004",
+        "text": "1 cup white sugar",
+        "name": "white sugar",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0005",
+        "text": "0.5 cup margarine",
+        "name": "margarine",
+        "quantity": "1/2",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0006",
+        "text": "1 cup shortening",
+        "name": "shortening",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0007",
+        "text": "0.5 cup margarine",
+        "name": "margarine",
+        "quantity": "1/2",
+        "unit": "cup"
+      },
+      {
+        "id": "ingredient-0008",
+        "text": "1 teaspoon vanilla extract",
+        "name": "vanilla extract",
+        "quantity": "1",
+        "unit": "teaspoon"
+      },
+      {
+        "id": "ingredient-0009",
+        "text": "1 egg",
+        "name": "egg",
+        "quantity": "1",
+        "unit": null
+      },
+      {
+        "id": "ingredient-0010",
+        "text": "1.5 teaspoons hot water",
+        "name": "hot water",
+        "quantity": "3/2",
+        "unit": "teaspoon"
+      },
+      {
+        "id": "ingredient-0011",
+        "text": "3 (1 ounce) squares unsweetened chocolate, melted",
+        "name": "(1 ounce) squares unsweetened chocolate, melted",
+        "quantity": "3",
+        "unit": null
+      },
+      {
+        "id": "ingredient-0012",
+        "text": "1.75 cups confectioners' sugar",
+        "name": "confectioners' sugar",
+        "quantity": "7/4",
+        "unit": "cup"
+      }
+    ],
+    "instructions": [
+      {
+        "id": "instruction-0001",
+        "text": "Prepare and bake cake as directed on the package for a 9 x 13 inch pan. Cool completely."
+      },
+      {
+        "id": "instruction-0002",
+        "text": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup margarine, and shortening for at least 10-12 minutes. Add cooled milk mixture, and beat well. Spread over cake. Refrigerate."
+      },
+      {
+        "id": "instruction-0003",
+        "text": "In a small bowl, beat egg. Stir in vanilla, melted chocolate, hot water, confectioner’s sugar, and 1/2 cup margarine. Pour over second layer. Refrigerate."
+      }
+    ]
+  },
+  "recipe_id": "8091",
+  "review_id": "review-featured-0007",
+  "selected_review": {
+    "id": "review-featured-0007",
+    "source": "featured",
+    "text": "I made this recipe and EVERYONE loved it. I think that I gave out the recipes to 6 or 7 people that day. Just as previously commented you MUST cream the shortening, margarine and sugar at least 10-12 minutes and do not leave out the flour and milk either. Once you spread it on the cake, refrigerate it for about an hour then spread the icing. I did not make the icing from the recipe. To save time and dishes, I used duncan hines classic chocolate icing. It was perfect. I will make again. Next time I might try to make it a layer cake. But this was wonderful as is.",
+    "rating": 5,
+    "reviewer": "EDUGATOR",
+    "helpful_votes": 24,
+    "date": "02/01/2007",
+    "permalink": null,
+    "metadata": {}
+  },
+  "modifications": [
+    {
+      "id": "modification-1",
+      "changes": [
+        {
+          "modification_id": "modification-1",
+          "section": "instructions",
+          "operation": "replace",
+          "target_id": "instruction-0002",
+          "before": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup margarine, and shortening. Add cooled milk mixture, and beat well. Spread over cake. Refrigerate.",
+          "after": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup margarine, and shortening for at least 10-12 minutes. Add cooled milk mixture, and beat well. Spread over cake. Refrigerate."
+        }
+      ],
+      "benefit": {
+        "basis": "inferred",
+        "description": "Longer creaming may improve the texture of the filling."
+      },
+      "evidence": [
+        {
+          "review_id": "review-featured-0007",
+          "quote": "you MUST cream the shortening, margarine and sugar at least 10-12 minutes"
+        }
+      ]
+    }
+  ],
+  "diagnostics": [],
+  "skipped_reviews": [],
+  "review_evaluations": [
+    {
+      "review_id": "review-featured-0007",
+      "source": "featured",
+      "helpful_votes": 24,
+      "stage3": {
+        "review_id": "review-featured-0007",
+        "decision": "propose",
+        "modifications": [
+          {
+            "id": "modification-1",
+            "evidence_quotes": [
+              "you MUST cream the shortening, margarine and sugar at least 10-12 minutes"
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Longer creaming may improve the texture of the filling."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "instruction-0002",
+                "replacement_text": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup margarine, and shortening for at least 10-12 minutes. Add cooled milk mixture, and beat well. Spread over cake. Refrigerate.",
+                "quantity_change": null
+              }
+            ]
+          }
+        ]
+      },
+      "stage4": {
+        "status": "routed",
+        "selected_review": {
+          "id": "review-featured-0007",
+          "source": "featured",
+          "reviewer": "EDUGATOR",
+          "rating": 5,
+          "helpful_votes": 24,
+          "date": "02/01/2007",
+          "permalink": null
+        },
+        "review_id": "review-featured-0007",
+        "modifications": [
+          {
+            "review_id": "review-featured-0007",
+            "selected_review": {
+              "id": "review-featured-0007",
+              "source": "featured",
+              "reviewer": "EDUGATOR",
+              "rating": 5,
+              "helpful_votes": 24,
+              "date": "02/01/2007",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "you MUST cream the shortening, margarine and sugar at least 10-12 minutes"
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Longer creaming may improve the texture of the filling."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "instruction-0002",
+                "replacement_text": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup margarine, and shortening for at least 10-12 minutes. Add cooled milk mixture, and beat well. Spread over cake. Refrigerate.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 1,
+                "matched_record": {
+                  "id": "instruction-0002",
+                  "text": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup margarine, and shortening. Add cooled milk mixture, and beat well. Spread over cake. Refrigerate."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": []
+      },
+      "stage5": {
+        "status": "validated",
+        "review_id": "review-featured-0007",
+        "selected_review": {
+          "id": "review-featured-0007",
+          "source": "featured",
+          "text": "I made this recipe and EVERYONE loved it. I think that I gave out the recipes to 6 or 7 people that day. Just as previously commented you MUST cream the shortening, margarine and sugar at least 10-12 minutes and do not leave out the flour and milk either. Once you spread it on the cake, refrigerate it for about an hour then spread the icing. I did not make the icing from the recipe. To save time and dishes, I used duncan hines classic chocolate icing. It was perfect. I will make again. Next time I might try to make it a layer cake. But this was wonderful as is.",
+          "rating": 5,
+          "reviewer": "EDUGATOR",
+          "helpful_votes": 24,
+          "date": "02/01/2007",
+          "permalink": null,
+          "metadata": {}
+        },
+        "modifications": [
+          {
+            "review_id": "review-featured-0007",
+            "selected_review": {
+              "id": "review-featured-0007",
+              "source": "featured",
+              "reviewer": "EDUGATOR",
+              "rating": 5,
+              "helpful_votes": 24,
+              "date": "02/01/2007",
+              "permalink": null
+            },
+            "id": "modification-1",
+            "evidence_quotes": [
+              "you MUST cream the shortening, margarine and sugar at least 10-12 minutes"
+            ],
+            "benefit": {
+              "basis": "inferred",
+              "description": "Longer creaming may improve the texture of the filling."
+            },
+            "edits": [
+              {
+                "operation": "replace",
+                "target_id": "instruction-0002",
+                "replacement_text": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup margarine, and shortening for at least 10-12 minutes. Add cooled milk mixture, and beat well. Spread over cake. Refrigerate.",
+                "quantity_change": null,
+                "section": "instructions",
+                "index": 1,
+                "matched_record": {
+                  "id": "instruction-0002",
+                  "text": "Combine flour and milk in saucepan. Cook, stirring constantly, until thick. Cool completely. Cream 1 cup sugar, 1/2 cup margarine, and shortening. Add cooled milk mixture, and beat well. Spread over cake. Refrigerate."
+                }
+              }
+            ]
+          }
+        ],
+        "diagnostics": [],
+        "next_review": null,
+        "recipe_id": "8091"
+      },
+      "status": "validated"
+    }
+  ]
+}
